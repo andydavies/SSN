@@ -37,17 +37,17 @@ reveal what information is used by the facilities (UID of the card or some other
 
 
 \section{Related work}
-
+Nowadays, we have more and more applications that are based on RFID implementation but the big question that arises is "How secure is this mechanism?". Although, it is safe to say that this technology has matured enough to be used in toll-gate payment systems, automobile security, casino management, animal tracking etc., it would not be wise to say that RFIDs are secure enough when it comes down to financial transactions or using ID documents embedded with RFID chips unless better safeguards are implemented to ensure foolproof security. \cite{grover2011survey}
+\newline
+\newline
+The paper by Ortiz Jr. stated that there are a number of security issues that arise with the use of RFID. They can for example be used to send malicious data to a back end server. SRI International’s Neumann stated further that terrorist could copy cards that give access to RFID-based airport luggage-scanning systems. There is also a possibility that hackers "could record data from an RFID chip that is on an inexpensive product and upload the data to a chip that is on an expensive product, thereby getting the latter for a lower price" says Lukas Grunwald, a con-sultant with DN-Systems Enterprise Solution. \cite{ortiz2006secure}
 
 \section{Planning}
 
-
-
-
 \begin{center}
-\begin{tabular}{ | c | m{12cm}|  } 
+\begin{tabular}{ | c | m{11cm}|  } 
 \hline
-Week& Work \\ 
+Week & Work \\ 
 \hline
 1 & Start by looking at RFID implantation and data structure. Look at the data dump of the UvA card. Possible reverse engineering?  \\ 
 \hline
@@ -57,22 +57,20 @@ Week& Work \\
 \hline
 4 & Writing the report, making conclusions \& writing down test results, preparing the presentation. \\
 \hline
-
 \end{tabular}
 \end{center}
 
-
-
+\clearpage
 
 \section{Hardware}
 We intended to use a simple RFID reader/writing, a cheap solution would be to use an Arduino in combination with a simple RFID module (less than \euro{10}) in combination with blank RFID cards. 
 
-
-
 \section{Ethical issues}
-The first main issue that arises is the fact that if we can duplicate a card the privacy of the card holder is compromised and the basis of unique identification is undermined. This poses a risk of being exploited by hackers. 
+The first main issue that arises is the fact that if we can duplicate a card the privacy of the card holder is compromised and the basis of unique identification is undermined. This poses a risk of being exploited by hackers.
 
-Secondly, if we are able to manipulate data, it would lead to possible attacks from malicious users that might want to get access or payment rights of other users. 
+Secondly, if we are able to manipulate data, it would lead to possible attacks from malicious users that might want to get access or payment rights of other users.
 
+\bibliographystyle{plain}
+\bibliography{bibliography}
 
 \end{document}
