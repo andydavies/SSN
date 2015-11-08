@@ -2,6 +2,8 @@
 
 \documentclass[11pt]{article}
 \usepackage{framed}
+\usepackage{array}
+\usepackage{eurosym}
 %Gummi|065|=)
 \title{\textbf{SSN project proposal}}
 \author{Stamatis Maritsas\\
@@ -27,19 +29,50 @@ Our research will be include the following steps:
 \item{Make a copy of UvA card and investigate the behaviour when using university facilities. This would
 reveal what information is used by the facilities (UID of the card or some other information)}
 \item{Finally, investigate the possibilities of manipulating data on the card (including a manipulated copy).}
+\item{Investigate the security weaknesses of related facilities like door mechanisms and payment facilities.}
 \end{enumerate}
 
 \clearpage
 
 
 
-\section{Relatedwork}
+\section{Related work}
 
 
 \section{Planning}
 
 
+
+
+\begin{center}
+\begin{tabular}{ | c | m{12cm}|  } 
+\hline
+Week& Work \\ 
+\hline
+1 & Start by looking at RFID implantation and data structure. Look at the data dump of the UvA card. Possible reverse engineering?  \\ 
+\hline
+2 & Investigate the possibilities of copying cards, either complete a complete copy (byte by byte) or partial copies. Test the copied cards at door locks (find out which data is used for access rights). If we succeed in manipulating the door locks, we can repeat the test for other facilities like vending machines, printers etc.....  \\ 
+\hline
+3 & Investigate the possibilities of modifying data structures of the card and run the tests again (acquiring different access rights). \\ 
+\hline
+4 & Writing the report, making conclusions \& writing down test results, preparing the presentation. \\
+\hline
+
+\end{tabular}
+\end{center}
+
+
+
+
+\section{Hardware}
+We intended to use a simple RFID reader/writing, a cheap solution would be to use an Arduino in combination with a simple RFID module (less than \euro{10}) in combination with blank RFID cards. 
+
+
+
 \section{Ethical issues}
+The first main issue that arises is the fact that if we can duplicate a card the privacy of the card holder is compromised and the basis of unique identification is undermined. This poses a risk of being exploited by hackers. 
+
+Secondly, if we are able to manipulate data, it would lead to possible attacks from malicious users that might want to get access or payment rights of other users. 
 
 
 \end{document}
