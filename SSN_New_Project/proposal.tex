@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+\usepackage{framed}
+\usepackage{array}
+\usepackage{eurosym}
+\title{\textbf{SSN Project Proposal}}
+\author{Stamatis Maritsas\\
+		Kenneth van Rijsbergen\\
+		Yadvir Singh}
+\date{}
+\begin{document}
+
+\maketitle
+
+
+\abstract{Today RFID tags are used in many places where a user has to be authenticated. The scope of this research project is to create a secure Android mobile application that is going to be used to access usernames and passwords stored in a card based on RFID technology making the user's life easier.}
+
+
+\section{Research question}
+
+\begin{framed}
+\noindent \textit{How can we securely store/access sensitive data on a RFID card using an Android mobile application?}
+\end{framed}
+Our research will be include the following steps:
+
+\begin{enumerate}
+\item{Investigate what can be read from the cards and how data is structured.}
+\item{Make a copy of UvA card and investigate the behaviour when using university facilities. This would
+reveal what information is used by the facilities (UID of the card or some other information)}
+\item{Finally, investigate the possibilities of manipulating data on the card (including a manipulated copy).}
+\item{Investigate the security weaknesses of related facilities like door mechanisms and payment facilities.}
+\end{enumerate}
+
+\clearpage
+
+\section{Related work}
+Nowadays, we have more and more applications that are based on RFID implementation but the big question that arises is "How secure is this mechanism?". Although, it is safe to say that this technology has matured enough to be used in toll-gate payment systems, automobile security, casino management, animal tracking etc., it would not be wise to say that RFIDs are secure enough when it comes down to financial transactions or using ID documents embedded with RFID chips unless better safeguards are implemented to ensure foolproof security. \cite{grover2011survey}
+\newline
+\newline
+The paper by Ortiz Jr. stated that there are a number of security issues that arise with the use of RFID. They can for example be used to send malicious data to a back end server. SRI International’s Neumann stated further that terrorist could copy cards that give access to RFID-based airport luggage-scanning systems. There is also a possibility that hackers "could record data from an RFID chip that is on an inexpensive product and upload the data to a chip that is on an expensive product, thereby getting the latter for a lower price" says Lukas Grunwald, a con-sultant with DN-Systems Enterprise Solution. \cite{ortiz2006secure}
+
+\section{Planning}
+
+\begin{center}
+\begin{tabular}{ | c | m{11cm}|  } 
+\hline
+Week & Work \\ 
+\hline
+1 & Start by looking at RFID implementation, deciding how data are going to be structured, looking at Android SDK and investigate encryptions methods and libraries. Also, we are going to decide how the design of the application is going to be. \\ 
+\hline
+& Start the development of a prototype application in an incremental approach.\\
+2 & \textbf{Phase 1 of 2nd week:} Test the writing/reading procedure on the card using plaintext.\\
+& \textbf{Phase 2 of 2nd week:} Implement encryption/decryption.\\ 
+\hline
+3 & Finalize the software application and run complete tests on the whole functionality.\\ 
+\hline
+4 & Writing the report, making conclusions, start writing down our test results and preparing the presentation. \\
+\hline
+\end{tabular}
+\end{center}
+
+\clearpage
+
+\section{Hardware}
+We intended to use an Android smartphone with NFC in combination with blank RFID cards. 
+
+\section{Ethical issues}
+Due to the use of sensitive data (usernames and passwords) we have to make sure that the software is going to be as secured as possible. The encryption method that we are going to use has to be recommended as secured by the informatics community.
+
+In addition, the libraries that we are going to use for the encryption must be well-defined and properly tested to make sure that is a correct implementation of the cryptosystem.
+
+Finally, we have to make sure that in the implementation there will be no vulnerabilities except from the encryption mechanism.
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}
