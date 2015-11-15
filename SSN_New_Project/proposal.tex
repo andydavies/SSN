@@ -25,9 +25,9 @@ Our research is going to include the following steps:
 
 \begin{enumerate}
 \item{Investigate the architecture of Android processes, related work, and methods of analysing the application memory.}
-\item{Set up the test environment.}
-\item{Run specific tests to verify the functionality of the whole application.}
-\item{Drawing conclusions, which indicate how close we finally got comparing to our initial goal. And writing the report.}
+\item{Understand how SSL protocol and keys work.}
+\item{Set up a testing environment using an analysing tool and try to find out if there is a way to extract the SSL keys.}
+\item{Drawing conclusions, which indicate how close we finally got comparing to our initial goal.}
 \end{enumerate}
 
 \clearpage
@@ -42,13 +42,13 @@ The article by Gursev Singh Kalra, titled "Extracting RSAPrivateCrtKey and Certi
 \hline
 Week & Work \\ 
 \hline
-1 & Start by looking at RFID implementation, deciding how data are going to be structured, looking at Android SDK and investigate encryptions methods and libraries. Also, we are going to decide how the design of the application is going to be. \\ 
+1 & Start by looking at how Android processes work, researching around memory analysis, analysing tools and how SSL protocol works. Also, we are going to decide which tool it is going to be used for the research. \\ 
 \hline
-& Start the development of a prototype application in an incremental approach.\\
-2 & \textbf{Phase 1 of 2nd week:} Test the writing/reading procedure on the card using plaintext.\\
-& \textbf{Phase 2 of 2nd week:} Implement encryption/decryption.\\ 
+& Getting familiar with the tool that we are going to use for memory analysis\\
+2 & \textbf{Phase 1 of 2nd week:} Locate the cryptographic material.\\
+& \textbf{Phase 2 of 2nd week:} Try to dump any possible certificates and extract the SSL keys.\\ 
 \hline
-3 & Finalize the software application and run complete tests on the whole functionality.\\ 
+3 & Finalize the memory and heap analysis. Save any findings and try to draw an initial conclusion about the research.\\ 
 \hline
 4 & Writing the report, making conclusions, start writing down our test results and preparing the presentation. \\
 \hline
@@ -61,7 +61,13 @@ Week & Work \\
 We intend to use an Android smartphone for memory analysis in combination with a heap analyzer (i.e. Eclipse Memory Analyzer), in order to find memory leaks and see if we can extract the SSL keys. 
 
 \section{Ethical issues}
+We will use a phone that is owned by one of the researchers. This will ensure no personal information is published without consent.
 
+The research goal is to obtain the SSL keys so captured SSL traffic can be decoded. This means that the information in this paper can be used break confidentiality.
+
+Some may use this information for malicious purposes. We feel that doing this research will contribute to the security awareness of android processes.
+
+We also have to be sure that the software that we are going to use in order to analyse the memory of an application and the heap are NOT violating the terms and conditions of said application. 
 
 \bibliographystyle{plain}
 \bibliography{bibliography}
