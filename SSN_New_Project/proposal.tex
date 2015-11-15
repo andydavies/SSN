@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage{framed}
+\usepackage{url}
 \usepackage{array}
 \usepackage{eurosym}
 \title{\textbf{SSN Project Proposal}}
@@ -32,10 +33,7 @@ Our research is going to include the following steps:
 \clearpage
 
 \section{Related work}
-Nowadays, we have more and more applications that are based on RFID implementation but the big question that arises is "How secure is this mechanism?". Although, it is safe to say that this technology has matured enough to be used in toll-gate payment systems, automobile security, casino management, animal tracking etc., it would not be wise to say that RFIDs are secure enough when it comes down to financial transactions or using ID documents embedded with RFID chips unless better safeguards are implemented to ensure foolproof security. \cite{grover2011survey}
-\newline
-\newline
-The paper by Ortiz Jr. stated that there are a number of security issues that arise with the use of RFID. They can for example be used to send malicious data to a back end server. SRI International’s Neumann stated further that terrorist could copy cards that give access to RFID-based airport luggage-scanning systems. There is also a possibility that hackers "could record data from an RFID chip that is on an inexpensive product and upload the data to a chip that is on an expensive product, thereby getting the latter for a lower price" says Lukas Grunwald, a con-sultant with DN-Systems Enterprise Solution. \cite{ortiz2006secure}
+The article by Gursev Singh Kalra, titled "Extracting RSAPrivateCrtKey and Certificates from an Android Process", describes how to dump X.509 certificates and construct a RSA private key (RSAPrivateCrtKey) from the Android application memory using Eclipse Memory Analyzer Tool (MAT) and Java code.\cite{cite1}
 
 \section{Planning}
 
@@ -59,15 +57,12 @@ Week & Work \\
 
 \clearpage
 
-\section{Hardware}
-We intended to use an Android smartphone with NFC in combination with blank RFID cards. 
+\section{Tools and Equipment}
+We intend to use an Android smartphone for memory analysis in combination with a heap analyzer (i.e. Eclipse Memory Analyzer), in order to find memory leaks and see if we can extract the SSL keys. 
 
 \section{Ethical issues}
-Due to the use of sensitive data (usernames and passwords) we have to make sure that the software is going to be as secured as possible. The encryption method that we are going to use has to be recommended as secured by the informatics community.
 
-In addition, the libraries that we are going to use for the encryption must be well-defined and properly tested to make sure that is a correct implementation of the cryptosystem.
 
-Finally, we have to make sure that in the implementation there will be no vulnerabilities except from the encryption mechanism.
 \bibliographystyle{plain}
 \bibliography{bibliography}
 
