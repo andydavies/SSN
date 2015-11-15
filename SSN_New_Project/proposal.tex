@@ -25,15 +25,15 @@ Our research is going to include the following steps:
 
 \begin{enumerate}
 \item{Investigate the architecture of Android processes, related work, and methods of analysing the application memory.}
-\item{Understand how SSL protocol and keys work.}
-\item{Set up a testing environment using an analysing tool and try to find out if there is a way to extract the SSL keys.}
-\item{Drawing conclusions, which indicate how close we finally got comparing to our initial goal.}
+\item{The actual analysis of memory dumps of running process and parsing the data to find keys}
+\item{Extract the SSL keys and try to decode captured traffic.}
+\item{Testing different application to examine similarities in key storage.}
 \end{enumerate}
 
 \clearpage
 
 \section{Related work}
-The article by Gursev Singh Kalra, titled "Extracting RSAPrivateCrtKey and Certificates from an Android Process", describes how to dump X.509 certificates and construct a RSA private key (RSAPrivateCrtKey) from the Android application memory using Eclipse Memory Analyzer Tool (MAT) and Java code.\cite{cite1}
+The article by Gursev Singh Kalra, titled "Extracting RSAPrivateCrtKey and Certificates from an Android Process", describes how to dump X.509 certificates and construct a RSA private key (RSAPrivateCrtKey) from the Android application memory using Eclipse Memory Analyzer Tool (MAT) and Java code. This paper gave us the indication that their are possibilities to extract the keys from a running process. \cite{cite1}
 
 \section{Planning}
 
@@ -42,15 +42,14 @@ The article by Gursev Singh Kalra, titled "Extracting RSAPrivateCrtKey and Certi
 \hline
 Week & Work \\ 
 \hline
-1 & Start by looking at how Android processes work, researching around memory analysis, analysing tools and how SSL protocol works. Also, we are going to decide which tool it is going to be used for the research. \\ 
+1 & Start looking at how Android processes internally work and how keys are stored. Also, research memory analysis and tools that can parse and analyse memory dumps. Furthermore do research on the SSL protocol and its implementation in android. \\ 
 \hline
-& Getting familiar with the tool that we are going to use for memory analysis\\
-2 & \textbf{Phase 1 of 2nd week:} Locate the cryptographic material.\\
-& \textbf{Phase 2 of 2nd week:} Try to dump any possible certificates and extract the SSL keys.\\ 
+2 & \textbf{Phase 1 of 2nd week:} Locate the cryptographic material using the chosen memory analysis tool.\\
+& \textbf{Phase 2 of 2nd week:} Try to dump any possible certificates and extract the SSL keys. Repeat the process on multiple applications.\\ 
 \hline
-3 & Finalize the memory and heap analysis. Save any findings and try to draw an initial conclusion about the research.\\ 
+3 & Finalize memory analysis and dump. Set-up test environment to capture encrypted traffic and try decrypting the traffic using the captured keys. Write down initial conclusions and repeat experiment on different applications.  \\ 
 \hline
-4 & Writing the report, making conclusions, start writing down our test results and preparing the presentation. \\
+4 & Write the report and finalize conclusions. Start preparation of the presentation + extra time for any delays. \\
 \hline
 \end{tabular}
 \end{center}
@@ -58,14 +57,12 @@ Week & Work \\
 \clearpage
 
 \section{Tools and Equipment}
-We intend to use an Android smartphone for memory analysis in combination with a heap analyzer (i.e. Eclipse Memory Analyzer), in order to find memory leaks and see if we can extract the SSL keys. 
+We intend to use an Android smart phone for the memory analysis in combination with a tool to dump and inspect the memory (i.e. Eclipse Memory Analyzer). When successfully extracted a key we will use a separate router to capture and later decode the traffic. 
 
 \section{Ethical issues}
-We will use a phone that is owned by one of the researchers. This will ensure no personal information is published without consent.
+We will use a test phone that is owned by one of the team members. This will ensure no personal information is published without consent. At start we will try to extract SSL keys from a simple application that does not involve personal information. When successful we will try different application that involve personal information. When it turns out that encryption keys of these application can also be captured it will break the confidentiality of the network connection and the process of capturing keys could possible be used for malicious purposes. 
 
-The research goal is to obtain the SSL keys so captured SSL traffic can be decoded. This means that the information in this paper can be used break confidentiality.
-
-Some may use this information for malicious purposes. We feel that doing this research will contribute to the security awareness of android processes.
+Although the risk of misusing this information, we feel that doing this research will contribute to the security awareness of android processes.
 
 We also have to be sure that the software that we are going to use in order to analyse the memory of an application and the heap are NOT violating the terms and conditions of said application. 
 
