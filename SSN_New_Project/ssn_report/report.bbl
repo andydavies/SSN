@@ -1,0 +1,10 @@
+\begin{thebibliography}{1}
+
+\bibitem{ref1}
+Gursev~Singh Kalra.
+\newblock Extracting rsaprivatecrtkey and certificates from an android process.
+\newblock
+  \url{http://blog.opensecurityresearch.com/2013/10/extracting-rsaprivatecrtkey-and.html},
+  2013.
+
+\end{thebibliography}
