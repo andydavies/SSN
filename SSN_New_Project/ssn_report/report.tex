@@ -89,15 +89,23 @@ Analyzer Tool (MAT) and Java code. This paper gave us the indication that there 
 process.\cite{ref1}
 
 \chapter{Approach}
-\section{Dynamic code instrumentation (Frida)}
+\section{Dynamic code instrumentation}
 
 A dynamic code instrumentation tool is used to monitor, debug and log extensive information about the execution of an application. It is often used for software engineering for debugging. A dynamic code instrumentation tool will "hook" into a process and "trace" certain function calls and can output or alter certain variables of the process memory while the application is running.
 
-Frida is an instrumentation tool that injects javascript (using Google's V8 engine) into the process space of an application. Frida is also open source.
+Using this kind of tooling, we wanted to extract the session-ID and the master-key out of the process memory. 
 
-Frida can be executed from the command line or by using the bindings (QML, Python, .NET, Node.js).These bindings makes Frida scriptable. In this research the python API was being used since this API offered the most documentation. This resulted in a single script that attaches the process, traces the desired function and prints out the desired values to a certain format. The script contains the javascript code that frida executes in the process that it hooks.
+\subsection{Frida}
 
-\textbf{frida python script here?}
+The instrumentation tool we used was Frida. Frida is an open source instrumentation tool that injects javascript (using Google's V8 engine) into the process space of an application. Frida can be executed from the command line but can also be controlled by using bindings (QML, Python, .NET, Node.js). These bindings makes Frida scriptable. 
+
+To use Frida on android, a "frida server" has to be running on the phone. This is simply done by pushing the executable to the phone and execute it through the Android Debugger shell as a linux process. This frida-server will then take commands and attaches to running android processes.
+
+Initially we used the CLI of frida to find functions that would return the value's that we wanted. When we found the right function (SS\_CTX\_add\_session) we’ve created an python script so the results could be more easily parsed. We used Python since this API offered the most documentation. 
+
+The result of this was a single script that attaches the process, traces the desired function and prints out the desired values to a certain format. The script contains the javascript code that frida executes in the process that it hooks.
+
+The final script can be found at Appendix A1.
 \clearpage
 
 \section{Exploring OpenSSL}

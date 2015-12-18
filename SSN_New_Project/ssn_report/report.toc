@@ -4,7 +4,8 @@
 \contentsline {section}{\numberline {1.2}The research}{6}
 \contentsline {chapter}{\numberline {2}Related Work}{7}
 \contentsline {chapter}{\numberline {3}Approach}{8}
-\contentsline {section}{\numberline {3.1}Dynamic code instrumentation (Frida)}{8}
+\contentsline {section}{\numberline {3.1}Dynamic code instrumentation}{8}
+\contentsline {subsection}{\numberline {3.1.1}Frida}{8}
 \contentsline {section}{\numberline {3.2}Exploring OpenSSL}{9}
 \contentsline {chapter}{\numberline {4}Experiments}{11}
 \contentsline {section}{\numberline {4.1}Setup}{11}
