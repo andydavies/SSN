@@ -1,8 +1,16 @@
 \contentsline {chapter}{\numberline {1}Introduction}{3}
 \contentsline {section}{\numberline {1.1}Your Section title Here}{3}
-\contentsline {chapter}{\numberline {2}Inspiration}{4}
-\contentsline {chapter}{\numberline {3}Literature}{5}
-\contentsline {section}{\numberline {3.1}Your Section title Here}{5}
-\contentsline {chapter}{\numberline {4}Analysis}{6}
-\contentsline {section}{\numberline {4.1}Your Section title Here}{6}
-\contentsline {chapter}{\numberline {5}Conclusions}{7}
+\contentsline {chapter}{\numberline {2}Related Work}{4}
+\contentsline {chapter}{\numberline {3}Approach}{5}
+\contentsline {section}{\numberline {3.1}Heap dumping}{5}
+\contentsline {section}{\numberline {3.2}Dynamic code instrumentation (Frida)}{5}
+\contentsline {chapter}{\numberline {4}Experiments}{6}
+\contentsline {section}{\numberline {4.1}Setup}{6}
+\contentsline {subsection}{\numberline {4.1.1}Traffic capture}{6}
+\contentsline {subsubsection}{Proxy server}{6}
+\contentsline {subsubsection}{Wireshark}{6}
+\contentsline {subsection}{\numberline {4.1.2}Desktop/Smartphone Setup}{6}
+\contentsline {chapter}{\numberline {5}Results}{7}
+\contentsline {chapter}{\numberline {6}Conclusion}{8}
+\contentsline {chapter}{\numberline {7}Attack Limitations}{9}
+\contentsline {chapter}{\numberline {8}Contribution}{10}
