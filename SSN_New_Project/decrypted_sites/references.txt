@@ -1,0 +1,11 @@
+references:
+
+1.  https://banu.com/tinyproxy/
+2.  https://en.wikipedia.org/wiki/Wireshark
+3.  http://manpages.ubuntu.com/manpages/wily/man5/tinyproxy.conf.5.html
+4.  http://www.justinmccandless.com/blog/Set+Up+Tinyproxy+in+Ubuntu
+5.  http://blog.jorisvisscher.com/2015/07/22/create-a-simple-https-server-with-openssl-s_server/
+6.  http://www.davehofmann.de/?p=153
+7.  https://github.com/frida/frida-presentations/blob/master/ZeroNights2015/Cross-platform%20reversing%20with%20Frida.pdf
+8.  http://www.frida.re/docs/home/
+
