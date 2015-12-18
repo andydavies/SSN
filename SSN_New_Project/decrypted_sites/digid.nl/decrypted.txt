@@ -1,0 +1,338 @@
+GET / HTTP/1.1
+Host: www.digid.nl
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; sdk Build/JB_MR1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+
+HTTP/1.1 200 OK
+Last-Modified: Mon, 30 Nov 2015 14:31:27 GMT
+Expires: Wed, 09 Dec 2015 20:27:34 GMT
+ETag: "fb9b281af63d5d35774ab8a7caba373c"
+Cache-Control: max-age=28015
+Pragma: public
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block
+Keep-Alive: timeout=4, max=93
+Content-Type: text/html; charset=utf-8
+X-FRAME-OPTIONS: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Accept-Ranges: bytes
+Connection: Keep-Alive
+Date: Wed, 09 Dec 2015 12:42:28 GMT
+Content-Length: 7981
+
+<!DOCTYPE html>
+<html lang="nl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+<!-- 
+	This website is powered by TYPO3 - inspiring people to share!
+	TYPO3 is a free open source Content Management Framework initially created by Kasper Skaarhoj and licensed under GNU/GPL.
+	TYPO3 is copyright 1998-2015 of Kasper Skaarhoj. Extensions are copyright of their respective owners.
+	Information and contribution at http://typo3.org/
+-->
+
+<base href="https://www.digid.nl/">
+
+
+<meta name="generator" content="TYPO3 6.2 CMS">
+
+
+<link rel="stylesheet" type="text/css" href="typo3temp/stylesheet_5a17574694.css?1431425732" media="all">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/digid-V3/css/screen.css?1423127048" media="screen">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/digid-V3/css/intro.css?1423127048" media="screen">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/digid-V3/css/responsive.css?1423127048" media="screen">
+<link rel="stylesheet" type="text/css" href="fileadmin/site/digid-V3/css/print.css?1423127048" media="print">
+
+
+
+<script src="fileadmin/site/digid-V3/script/jquery.min.js?1423127048" type="text/javascript"></script>
+<script src="fileadmin/site/digid-V3/script/rs_exp_v1_nl_nl.js?1423127048" type="text/javascript"></script>
+<script src="fileadmin/site/digid-V3/script/jquery.functions.js?1423127048" type="text/javascript"></script>
+
+
+<!--[if IE 8]><meta http-equiv="X-UA-Compatible" content="IE=8" /><![endif]-->
+    <!--[if IE 9]><meta http-equiv="X-UA-Compatible" content="IE=9" /><![endif]-->
+    <!--[if IE 10]><meta http-equiv="X-UA-Compatible" content="IE=10" /><![endif]--><title>DigiD</title><link rel="shortcut icon" href="https://www.digid.nl/favicon.ico" />  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3" /><style type="text/css" media="screen"> #header { background-image:url('uploads/media/18');} </style>    <!--[if lt IE 8]>
+    <link rel="stylesheet" type="text/css" href="/fileadmin/site/digid-V3/css/ie/ie.css" media="screen" />
+    <script src="/fileadmin/site/digid-V3/script/html5shiv.js" type="text/javascript"></script>
+    <script src="/fileadmin/site/digid-V3/script/html5shiv-printshiv.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+<body id="home">
+<div class="container orange">
+    <h1 class="skiplink">DigiD</h1>
+    <nav id="skiplink"><ul id="skip">
+<li>
+<a title="Direct naar de inhoud" href="https://www.digid.nl/#hoofd_content">Ga direct naar: inhoud <span>&nbsp;</span></a>
+<a title="Direct naar de subnavigatie" href="https://www.digid.nl/#subnavigatie">Ga direct naar: subnavigatie<span>&nbsp;</span></a>
+<a title="Direct naar het service menu" href="https://www.digid.nl/#service_menu">Ga direct naar: service menu <span>&nbsp;</span></a>
+<a title="Direct naar zoeken" href="https://www.digid.nl/#zoeken">Ga direct naar: zoeken<span>&nbsp;</span></a>
+</li>
+</ul></nav>
+    <div class="c1">
+        <div class="c2">
+            <section class="content" role="main"><section id="intro_blok"><div id="logo"><img src="fileadmin/site/digid-V3/images/logos/logo.png" alt="Logo DigiD" /></div><nav id="nav-intro"><div class="frame-03 frame"><h2>Machtigen</h2><p>Iemand uw zaken laten regelen? Of helpt u iemand met zijn digitale zaken?</p>
+<p><a href="https://machtigen.digid.nl" title="Opent een interne link">Machtigen</a></p></div><div class="frame-01 frame"><h2><a href="aanvragen/">DigiD aanvragen</a></h2><p>Vraag uw DigiD aan om toegang te krijgen tot websites van de overheid.</p>
+<p><a href="aanvragen/" title="Opent een interne link" class="internal-link">Aanvragen</a></p></div><div class="frame-02 frame"><h2><a href="code/">Code ontvangen?</a></h2><p>Vul uw activeringscode, herstelcode, e-mailcode of machtigingscode in.</p>
+<p><a href="code/" title="Opent een interne link">Code invoeren</a></p></div></nav></section><!--TYPO3SEARCH_begin--><!-- RSPEAK_START --><div id="hoofd_content" class="content_main" tabindex="-1"><section class="colWrap"><div id="left" class="content_add"><div class="frame foldable"><h3>Vraag en antwoord</h3><ul><li><a href="vraag-en-antwoord/ik-ben-mijn-gebruikersnaam-vergeten/" title="Opent een interne link" class="internal-link">Ik ben mijn gebruikersnaam vergeten</a></li><li><a href="vraag-en-antwoord/ik-ben-mijn-wachtwoord-vergeten/" title="Opent een interne link" class="internal-link">Ik ben mijn wachtwoord vergeten</a></li><li><a href="vraag-en-antwoord/hoe-kan-ik-een-digid-aanvragen/" title="Opent een interne link" class="internal-link">Hoe kan ik een DigiD aanvragen?</a>&nbsp;</li></ul><p><a href="vraag-en-antwoord/" title="Opent een interne link" class="internal-link">Meer veelgestelde vragen</a></p></div></div><div id="center" class="content_add"><div id="c771" class="csc-default"><h3>Inloggen met sms-code</h3><p>Op steeds meer websites kunt u alleen inloggen met de extra controle via sms. Bijvoorbeeld bij uw zorgverzekeraar. Als u uw mobiele nummer nog niet heeft toegevoegd kunt u dat alsnog doen via <a href="mijn-digid/" title="Opent een interne link" class="internal-link">Mijn DigiD</a>.</p></div></div></section><section id="right" class="content_add"><div class="frame foldable"><h3>Mijn DigiD</h3><p>Wijzig instellingen van uw DigiD en bekijk uw inloggeschiedenis.</p>
+<p><a href="mijn-digid/" title="Opent een interne link" class="internal-link">Inloggen Mijn DigiD</a></p></div></section>&nbsp;</div><!-- RSPEAK_STOP --><!--TYPO3SEARCH_end--></section></div>
+            <div id="headerwrapper">
+                <header class="header"><div class="branding" lang="nl">
+<a href="/" title="Ga naar homepagina"><img src="fileadmin/site/digid-V3/images/logos/GBO-Overheid-leeg.png" alt="DigiD" /></a>
+</div><div id="titelbalk"><strong>DigiD</strong>&nbsp;<em lang="nl"></em></div><nav class="nav_bar"><div id="menu">Menu</div><ul class="nav_main"><li><a href="https://www.digid.nl/" class="m-222">Home</a></li><li><a href="over-digid/" class="m-19">Over DigiD</a></li><li><a href="machtigen/" class="m-210">Machtigen</a></li><li><a href="veiligheid/" class="m-125">Veiligheid</a></li><li><a href="vraag-en-antwoord/" class="m-255">Vraag en antwoord</a></li><li><a href="contact/" class="m-6">Contact</a></li></ul><div class="search"  tabindex="-1"><div class="tx-macinasearchbox-pi1">
+		
+<form method="post" action="nc/nl/zoeken/" name="searchform" id="zoeken">
+<fieldset>
+  <legend>Zoekformulier</legend>
+  <label class="hidden" for="zoekterm">Zoek</label>
+  <input type="text" id="zoekterm" value="" name="tx_indexedsearch[sword]"/>
+  <input class="submit" type="submit" value="zoek" name="tx_indexedsearch[submit_button]" />
+  
+  <input class="hidden" type="hidden" name="tx_indexedsearch[_sections]" value="0" />
+  <input class="hidden" type="hidden" name="tx_indexedsearch[pointer]" value="0" />
+  <input class="hidden" type="hidden" name="tx_indexedsearch[ext]" value="0" />
+  <input class="hidden" type="hidden" name="tx_indexedsearch[lang]" value="0" />
+</fieldset>
+</form>      
+
+	</div>
+	</div></nav></header>
+                <nav class="func_links" id="service_menu" tabindex="-1"><ul class="right"><li><a class="login" href="/mijn-digid/" title="Inloggen Mijn DigiD">Inloggen Mijn DigiD</a></li></ul><ul class="language right"><li><a href="https://www.digid.nl/en/" class="en">English</a></li><li class="active hidden">Nederlands</li></ul></nav>
+            </div>
+    </div>
+    <footer class="footer"><div class="ref">&nbsp;</div><nav class="nav-footer"><ul><li><a href="contact/" class="m-6">Contact</a></li><li><a href="help/" class="m-225">Help</a></li><li><a href="sitemap/" class="m-145">Sitemap</a></li><li><a href="wet-en-regelgeving/" class="m-9">Wet- en regelgeving</a></li><li><a href="responsible-disclosure/" class="m-279">Responsible disclosure</a></li><li><a href="privacyverklaring/" class="m-287">Privacyverklaring</a></li></ul></nav></footer>
+</div>
+
+
+
+
+</body>
+</html>GET /typo3temp/stylesheet_5a17574694.css?1431425732 HTTP/1.1
+Host: www.digid.nl
+Connection: keep-alive
+Referer: https://www.digid.nl/
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; sdk Build/JB_MR1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+
+HTTP/1.1 200 OK
+Last-Modified: Tue, 12 May 2015 10:27:12 GMT
+ETag: "12ee-515dff00148ad"
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Expires: Thu, 10 Dec 2015 11:42:07 GMT
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block
+Keep-Alive: timeout=4, max=98
+Content-Type: text/css
+X-FRAME-OPTIONS: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Content-Encoding: gzip
+Connection: Keep-Alive
+Date: Wed, 09 Dec 2015 12:42:28 GMT
+Content-Length: 1305
+
+‹      ÿ­XßoÛ6~NşŠƒ‡i`6Ië¼(OIW£²aXó^Pms¡EA¤b§Áş÷TlI”bíC‘º»÷ó»\œC.¼VŒ}VÂÀBW ¶VFê&vû=3†îòLxn'p~qzrq_ÏEeè×÷™ÉØŠWrY¬ñK–á¢‚°¨ÒŸ'àoàß!©J.W¶#Dg#2J,º"îÈIœäò‰ğ9¥ÌX%L©ñOb
+ÃwpØZÿ`©Ş2#Èb™@ª+÷F<º¶é£´ƒ÷Cr
+øI	^ÁBinğ…sÕLàEŞ?erÍ—¢Òr{}ï9½ç5ÒS¨ù¤.Ñ|n@I|­~ÂÙ$°’y.
+ï>DúMX(y£(C,O]²D @ËÓdnSñÒK ‰à¿L+ÅK#0ÂO7Í•)yF®¾¤xw8®ß"´­¬¤ßdeÆU“V—ûï²hË§ıB.ëJÛñÇŒ—Ö•ÀÙ—‡?î¯ßóV¯¨>à Xój)±@s.M©øsâİö
+÷“Çä¿ÃØÒØà~é(aábWDM9ì$öËÔ—O¸ÃôÏ1V©¶V¯cai´³¬  ?
+[:êìİrmğU?Ál·QízÎUõ¬ªÎcwmënîzØ•peR¯Cä»%Ñ…GUçP9õ—Zzï¨‹Á?µ±À+]cÊ;#$Ëtlq$µDõ-×Kx9=9ñ&ğ¡Ü‚ÑJæ*=ŞàÕ®(ñî²ÜâY¤;e
+="BX¯e’*6^»v©ÀN‚g«ğ®3®ŒY°TØ`5Gv¿t’/[ô«®ÜËh\}‹)‘9Ä5IêÑğoôğPÌ7Sê™(-5:Rò#ÒÂıˆñ÷Sì§}AvÏ°7öm´Ô8l¨~ÌnìûQ_,;Wİæy,*½öùÁ(‰Àjb+p&ì~F€^ÀäÁü_İwfÍ&‘Ö Ë!&ïñÓ>Ùb…¦JšXA!Õö}ëj¨Gp‚VO¤ÅBR‡ƒqïqöõŒ©ø—6Ò*GĞ}ä^“¸Æây§…g<EÂ˜Tªq¯
+9ğˆ^C
+Ÿ¿1ic<§çÄ˜eÆtíimŞ™@%·H(ošv†GÕõå¯ñ©é=Ñ‚Ş†,Šãl°`„\ü7…ş eÉn|C/ßTC/9Š‹îiè;»w%r¶‘bêO¶^IzXk*z\X÷üÿ-ò‰rˆò#²ï ~Šó¨™øY0ú–ƒê½“Ö¡Î[;Ê¨óû[=¦Ï\">Íø<|B …è%
+MÉŞxß‘;G°Dr»ßÜærKC¶.ˆ		Üá]5?+‰J7Ò6œdòÕgÛ”ø™_­Û½noª¸±8xY;"(¡fDEvÍ×V¿Ò…¹Ä}ì^~›è¬ƒí
+GLl]taô·OÈ û¢[;kö™+±»\G‰§t-~Ú™p—ı­‹×FÇvû”0öáşêËè‰?ùÚm§4Ásä>vs»¨”td3äü-²)rÚ¥'ÎÈVtÕL7Ú×Ş‡¿”Ğ/ŒîÙ•#¯¯Bş0_>ÿşùn~E³aPôC\t~=ŸßŞ¾!:»Œ
+{N>nu‡¼YIKŞ<€ü‘ş½%ü1
+yYñç·$gQI#æÊş{ÜĞ¶î  GET /fileadmin/site/digid-V3/css/screen.css?1423127048 HTTP/1.1
+Host: www.digid.nl
+Connection: keep-alive
+Referer: https://www.digid.nl/
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; sdk Build/JB_MR1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+
+HTTP/1.1 200 OK
+Last-Modified: Thu, 05 Feb 2015 09:04:08 GMT
+ETag: "31f4-50e53962a9200"
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Expires: Tue, 10 Nov 2015 00:42:18 GMT
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block
+Keep-Alive: timeout=4, max=99
+Content-Type: text/css
+X-FRAME-OPTIONS: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Content-Encoding: gzip
+Connection: Keep-Alive
+Date: Wed, 09 Dec 2015 12:42:28 GMT
+Content-Length: 3651
+
+‹      ÿ¬koã¸ñ{~qA±IÉ’e;Ü×öp8´İ/½¢÷1 %ÚâF–|’oºØÿŞ™!)‘z$¾ë:K"93œ÷5»»cWìÕI%Dá'uM·ø÷3=buóš‹šİğ<gG^5õ-Û•ûãYlkÙVğƒø³o}ÿ"ªZ–£Oè~€Cß§¦Òg^°öækÈyİÊTî¤HÍ Œ?²pGšÂOMéóssJeÉ~8¶¼b7/Şd¼`/ğ÷Ë©(äó-­9Vå'‘4fĞt±È†ıK~z®K 32U$ÈâYMÌšæÏfçóÙ×Ûó“ò@“€3i™¨if°=ïX‰vïI™—U*v8çzí–»Õ†myò¼¯ÊS‘²›\î³†í+ñª¨t,#üÙ°F|nÒT3à£½<åÕ³ZÍrş*ª!Œp¹˜?¸0n¶ùI :ø]]}/Ç²jØ©Êo¾«D-úw·wd_É´iÄá˜ƒ4Ç_ã 2‡qxÄƒñ!¦²eâ¹Avu5Ó
+ûQÖ‰Ès^ˆòT·¨Aæ­ö9S”3,(.~dûÂ¶(¶*fEYˆûzïÊäTÃ@yj@"fM&––M#ÒÍ×+yØÃàW{Yx[xZbPöÅr±…æÜ³l®¿#ı½ĞßKı½ÂïVÌ‚l»ØÓõ×nÃ?	4ïTİE@eÁ_ä8(İîTOx®•j‚~F@€T@ƒ®q"
+0¤ÃûÛ
+ }0qWWËÿŠ88~Ş xáU«4¾ã™¿Æ5/j¯•Üm4ã›= 3õr¶~@ g™6YÁ6Mv——ç8“i*ŠqšÌúÀ'ôš`MûK%y~ÿ“È_D#~ÿ…¡‰P,‡X.v­g\Y%À:äéh+ûØ“	(QD²²yúsTbÚYqq[æ)òµ6£úÆJA•âÅ–®àV‘aDX*’²"PóAx-Â\¢º·.I¾ò&V;N¼¶Ap ’ÊüÀk¼ÍËä¹ÓÚÀWÈ&ÿ1xéb¾ÀmR6€g(f€N^!¾Ãíş¦zKıò±Šß3›Nı°jíûúÇÕ‹¿Î7—!ªEÎpÏ6UJºÿ–xÔ.”kƒwZ×4]‹Fõ±E¥¬ìM²€;µÂhı ‡Ux®•F©“@MHf=õlœ©­ï³µœëK¯<ø±ïaèvTû¢í˜)CîL…oë2?5 ÑMyŒÙãUÈ¶Öfó{÷>êİ/z÷KK5»=YOy+Hvmb®Qf&ôbÍi(­<ÙÉt½´MrßÄôzecZÔ£ÊAÃ†„BëğøÑ*²MkhS£ûå1å7Fyµøm×ì8BŞ— _$&zéÛ\YñõNi¤B¢RlîoØ‡pª]‘rÿ˜S0îÌ×“¾UÇ$¦~–ÅL&Ğıc±¿µ.¯GL/J}i,c¸¦5z¦Ã“ÎªSwG<ŠZ—²N»Ñ¢bo˜	já5G§yxæY…áĞÆ¶ßCâ­—¸ÎE£bgÒQ,¿‚<ß‰c¬¤µÌ ºÍÂQ«Ùçávc6'îá¶™æ£æ=aÒĞ)·^kbÆ†¡^´™ŞD…ñ9·›ñ,¨xSŸ¶·v4•ò`Lƒ¹¦Êµ7èbÚô/íÍÒº^9šnœÜL¹½2c“`NZ‹	V€v¦O±´ÄH4L˜p5VÂĞw^ƒôÒF	àqBGşagåÓA¡ª!Z—Í÷gdÁõ¬~ÙÏxU•gËno•]*å³w[ë¹{yÚ2BQ)^)k?Cªï+~Œ·•àÏŞ;lÍ¥JtKöğ˜Cı"h`ÄxŞŞag`ëö–,ßîÒ:W´š™ß‘5E¦úÿ"“_Lft	™ï‘û-È&B.&{¡È¶4{È\Cõ¥Ô‹]]ïbù[˜ÿ{·ó-¶E„^¼­U»­Î—ñ¸fçuQPY—·¦øú†\'(½À»”(M¼Ğ» •Rüv€ïVbiS"_–PíÛS«ŞN´	«M©á¶™@É¸d“K+XSHÔrñT„®J™ê”Ñ®³Œ“t*óV!Ùá0^QõW8ù§KZŒíH¯ÜQ¸Vn^µ†Lg¨ÍJşi4GÆ3=Èê£H ³™L5Ÿ¾,šªìWuªìÿzuô~¤FN—½?¬ğ§Í"»æ6@†:»¤‚Êƒè·¹›$jÀv`V` Ãp Pè¤4ıÈÚBb‰†ÂDhš¤ÆˆpPY!1˜<5%ü"Øa}aÚ˜8÷Èëƒô›ß!ÉâvØµİ2µ['VÎ™BšTĞs¶k %~Ü®&dÖŠAı5‰ĞÕKÄ4‹ŞŞ¹KHëA¸š' ioÃpvC-ˆV¦Æ*l4õZñ_¨â9ƒ²ÑƒûW˜sm KârÇ‡Ti9Ì9€9½]åQ¢hÊ<S…êŠóÈª?´ƒººÎÊƒ`Y„ı!}½°®—ÖõŠŒŞ®”)/`©ª“™İ'ì: e>Dtßeg6×½Tjô±i$-Ò	l¡Of»Y®J¹¥€Ø‹vğÚv×ÏÏ©¦¶¸ÍÈMc)øèf°ÊQk¯m*A]Ùªbv²HCÚ9Mæt/Êí'´úŸĞ68À¡Î'ç@ ìê.SÓúÔÁ¤†ßÕ[uİWÔdm“Âf(5V.3{ç	±[_›])³;«Èì2"YÔ2èü5hıë‰WØ. ”P “v‰hö¬Ùr¹£3n°µpRUìyƒÓeîTó²¢CYa\µ`‰Ï‹Nk%ÇqFØæ¢ö2àr·u¤}grS™Œ3÷rÏßqµC<i4m>È¶§<6„ŞR¥IEÃ°€L´$Æ9Î6ç¤Áì`\9°È‹W<Ûÿ"‹´<c[ärMtCî¤ËùÏŞ¦]Ü(ÉÑ°‡zQÏ‘­Ü¥O˜{a$ÕmŠ·cûÈš÷{şhKàà¨ITæX‘´£¦Gƒ|‘é	:vÎ”šáÉì”Åz~öŞiòö»œÑƒj"ÈTŸôò"T1úh$¢®åVæ²y™uOê,wæA¡É(Óp4˜ÎàTëRóø$-2f_²Ø•§?ÓÑ³ |Ğ{‚) ¶Ğl2hšó§”ƒ)V¬2ÇÅmøSÅÜx}¢½›JìDÊ"¡Ö¬-ôâAóIÜT,x6¡Ê@Öu¥Dt¦xä;Ã²ĞÎXt’6§ştWÉêeü ÙF2r«´ßf`Ëôï¦\XƒİÀk&8}lo$Z}fGòØ›„Şı^4ì÷,›Œö‡»Ô¹†ÙGhjÃ1¨{İ©·êĞê!E»>öQşÖä¬ğFKi%­˜_ĞÉ`ïôß´ÑéØ]ì J:Í¢sß¶“Ò-äØ85á<”.ææ"2s±4+}z§V¾©‹Ô\õêµşze rziŸzk™©øÍ>4e±ÿ ÎGájU#{U®KõhäPİ)OÕ4uk°×£ğ©kıŠÅï}[aôàÎCFÓI.dÅíÿÁ± jK2—W´Wş"
+C4ÕNêôæf¹^ÏnÖsoÜŞŞÁêŸôDÚ‚_‡s>x|:.BùÑ:ˆúH£U0CÌR5±Eºt‘‚LÇ7úáÃjÙ‡?`S€Ä‚¯&¶ğ;òıŒç;zYFm¬CÜLa_’ÙØÜœ¯½-cúZ"<ä?
+öÁV$ô›Ş‡ƒğš3E½Ò3…[u+;´V¶¥6^õÖ†c½ú”Ç]g,ÙelÚ~¤­ûZÛN1ıß41WÀ„Ï\ô‘HL|áß3—î™ÒŠ1$dgÚm§İÎt.‡Y®çÌrg–ë>±Â
++ì±Â2ËmqšÖÂÊ…f®*b›’µz³>ÆOÓj{æ<„×~*'Sƒ¶R`Ô²ÊûúûÁl±” ÌR6:êÌj-×ßƒÀ˜>™÷ÁlªÃ|˜­†ÅÊ†¯B|%·mp%SXÑ¯:¼îG+x'¬XÁ=àã£¥­à|·Ì•Y?Cˆj¤]‡”·$Iú&ÇªâàTù”h-Ï‹&ODı;éŒt½
+Dª‹;_H=¥uH>@„Šä
+
+JSBAI^2–¢ 7¯evê]“8Äşz÷¦–%z³D5ùÒHã]Kı™š@}‰¶¨~õ¹t+fJµRiãÇ·«¢¸²Q²§ŒÕôÁ×eKñc´EëîÑM¨»—–%ÏD˜ìó˜ì„X¦‰8ÒsR‘Ö^°¥RîÇ×QâZ†ŞøúgŞN™µXM¼w™IÂ!Bw[»¦ãD2¥æ‰Z$j™¨g¥zÒjİˆOW4ñh¾ÙI cØš5ólîÌ3	2Ïä0^úÆÈ[©aÄoe®[1‰Š/•böË— ‰îÈ¬FJÍ:WÁD"¾ş³è§g¤×†#ÓkÃ	êµá@õÚ ì ¨QXÑqÀÏö³zu»ÿ8²¾²æë»?A'9Ô˜J^ÓÈõÀ(¿^¶ı×1ƒjæÍ}
+@9ş¬ƒÏN ®9I9Yš™¤Mj ­øâÕƒXİÎZœš\	M£ 6š#äö¶®7OÉzÿ‚£1!·ÌCo´Û#»a#0Ê?ŒŒAÊĞq±è8Ã~¤‰ÍşQ 1T6A3HX*LE«ùEµp¼¦cË…Ñ-?ÿ ¼ #’ô1  GET /fileadmin/site/digid-V3/css/intro.css?1423127048 HTTP/1.1
+Host: www.digid.nl
+Connection: keep-alive
+Referer: https://www.digid.nl/
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; sdk Build/JB_MR1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+
+HTTP/1.1 200 OK
+Last-Modified: Thu, 05 Feb 2015 09:04:08 GMT
+ETag: "a62-50e53962a9200"
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Expires: Tue, 10 Nov 2015 00:42:18 GMT
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block
+Keep-Alive: timeout=4, max=100
+Content-Type: text/css
+X-FRAME-OPTIONS: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Content-Encoding: gzip
+Connection: Keep-Alive
+Date: Wed, 09 Dec 2015 12:42:28 GMT
+Content-Length: 1099
+
+‹      ÿ}VÛnÛ8} `HJÖÍ—È/mŠ¶û²ÛÇ}h‘²¸¡D¤/iĞßR’eÇnb+&9Ë9Ã3™M§äşL‰h¬VaaŒ_ºÇ×Š6[nˆUÄØW)š-©TÍ[ºåáÉêók#TCÜO&îè3£–û­$Šx%+"©±µb¢œáiœái‘‡¿EQ	.?z;º³•ÒŞÇ?ÜšS«´!ßj!9y’»šw¦­VÿñÂzÛO?ÃŸTÅë"ŠæÅŸù5”ÉTáwúìã0
+ZÍÑ ß3xÜßM,Ï©^>‘	OU²çB5–7ñIMõV4UmµÇ5nµ”1@,üJa¤\sI­Øs·[HNu¾Q¶rËšƒƒ`¶Êã(ú°ÆdÉùú÷ı$%ÕV‘7"yióãCm÷iD7FÉåkò+ãGpº&ŞAC÷°•AQîo Å¶Âb¦•ô5ğ_.¥¢6ÇPë¾Jg›'a)Óß'Ï—-^¶ZíhŞy±Ü'Wñè|H<"²Ñ™¿x^( ÊãP¹˜E6Ÿ÷x_Aø<£°Ô|yÎ'å†Sö¸èJ>şÕW—,ÂÅjíHöå“Às4¤MN€¡VÕ9´6rs-‰ ŠßzFzË2¹°L3ŸÎu¿é…õb¦ékR%€F	8„ãpÎk 7ß’¬ëšÙtzÖ,C 4×©Ó8\ù çßñQzÉBZÎËÅšl”f\çq{$Ğ½‚‘	/ğw ¿ƒÖ#Û_1OVéÛñáyãÈŸòyEr‡Q§w}ÕzqNÕÂT|ŞÕù„ÇË(ŠÈNË‡0œ‰tÕÌÌ~;£Z«Cp¨„å!¬?’áÖ8lğáå¡PRièâ²ìx+)ˆãkşE*?ıÅå[QĞk¤yKd~¬[Æ˜	~Hà±&Ñ@ù¹±ühÆ¥Aè@ñ…:r‡ı:›KtF÷½«*^dÉ2…®8©ÈÏãvìy…šñ'V¼ps™5H×^¯ªH›—BÀÀ’0Åà2œD‰¸Öù5C^nh„ı¸xš6^!¸ v w®3¯—á’¡Âg½ôîaÆ@uf·E[Àåí¦dga“C^	Æx3¨ÜÊqŒ‰\ø;Ó=—‚¿fÉÊµ¡)CF5	~0ˆˆ	l!6öèçg¦`QÁ\0(^|×€oïkÂ8ívÇ~Ò®ûĞò_M[ä` ïÛÏ«16£Ù…q éœ›	
+²Ë¶[0ç]¹şc4ã Zîf¯ãx\¹Üñf3[:Á¼§—9¸ñ?T[dêZF>¤;éeó–8ƒ*¹¶$4\ïEq>;'.ß¿}Ÿ¾³g8u»l»E_]§¾@ÈñºÅÚb
+  GET /fileadmin/site/digid-V3/script/rs_exp_v1_nl_nl.js?1423127048 HTTP/1.1
+Host: www.digid.nl
+Connection: keep-alive
+Referer: https://www.digid.nl/
+Accept: */*
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; sdk Build/JB_MR1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+
+HTTP/1.1 200 OK
+Last-Modified: Thu, 05 Feb 2015 09:04:08 GMT
+ETag: "483f-50e53962a9200"
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Expires: Tue, 10 Nov 2015 00:42:19 GMT
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block
+Keep-Alive: timeout=4, max=100
+Content-Type: application/javascript
+X-FRAME-OPTIONS: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Content-Encoding: gzip
+Connection: Keep-Alive
+Date: Wed, 09 Dec 2015 12:42:28 GMT
+Content-Length: 5351
+
+‹      ÿäYkoÛFı+ô|°Hˆ-;Îv%Ó†“­ÙØˆİ
+'0FäPä†"ÙáP¶+ë¿ï™)ê•È]`ûa‹ 29÷ÎÜ¹sœRn•,e`á­àI6ö³*M‡S¼çååSáÏJ&Ş—ƒYU²›¼ƒˆ¦%sñô>Í«ğ–ñi0ó¶à¹Èƒ<„yPMX&ziP‘äY¯^zy!±Å€¸œ±0'º¼ñ€¨âÒ¢(±/ã±<à±ÇË‚ÑoŒ÷‚|BÜ(¥e<˜Ñ4Íoâ"XY‚<}¤Ï%qc–Œc°· œN°¶O+‘)}öûû<¥òÂé>/¿%™?ª&Å¾H&ì!Êù„
+‚=“PÄØâäÌçn2¡cvËƒÁ,wW?¥zA¼1§Eœ^È"Z¥ÂS´¥ÇËyãŠö¡\<õŠll. yÕ]¼öËÇˆ¸Ig;n.Iúo±÷8§<rGNIÚ’J>^e4Ét×‹©ÃÓŞŠÂIv•BÒ®ò¾VµÇAJ˜|G9$iKùøJ)ÔëBÌİ	ºä2ÆEàòŒ<)Yã<ÊW~ì&G‡=å(soßRÒè×Mü}®#Ã¶0çwè%Q‹~Yy?à3-Ìµ^ÒècÖMô}.sÈ"¶ù¨"ÏJ/MJÁ²¹^zËa©€š(äÒìÅŠ˜ÓtÜÈmˆåÊ´J°7qÇ@ÉG6*ñ4 ?ç–À¿˜YŸq –g™eâfy™WY:Æ2kÌ°Gx.ŠZıÁ´Iä"B¦ò ü² f¥¬ØæÙ=[§ÔŠ9‹üÂbÏ{||\…X/K½sICº,òıúùê}>)òk¯¼ÜÏé’%(3áwF Øo³ÖµN=z¦M¡ğâNó‰b@ş¥~ÉÜEÂ¹Ñ`U`(Ïì‘3“)ögs•šÆ>!ê°şBê7ÔõÊ"M„MÎ‰£^1ŸŞ÷¿š·Şıpÿ«çñ¶\üÃapÊzĞÚXÄÃ ÛufcŸİ5ñ±MÙ{ã——±!Ûóœü‰±bóĞ¯2V´`öøşğ+ön¿è«”Ìö¾t½±K,ìß‡_ıhÎ™¨xfÅêêWÚ›š«ë›Óúælqa•Ÿ{uzÆş2™"¹²ªÖ½B²’²÷‘÷–¶¨3ô¯2tIœs¢ò^zã‘¯ùêdˆ[,Ôi%™sAa£^LËëÇì†çãâÙı^ê6ÉBötÙ®Gœ=ÿ ïÌäİæµ…¤
+}ßœ­Œ—FıéF]²Vh>f$k”Rß¨K<Oİ`qN!ÏºR¬ym:wáÁÊSPg¦Me‹8)õõËııÖÃ=ıºú¼çÃP$óeÚî+ÏQî¾õ5f_ı°8§yŞpN³¦°IŸ¤ğiûQ¾ê³ôSë°æÅ¦ÓšÅúZ¿¢„»Ë²®åÍÒ´ui¨+Oxm­XruIæ °3:MÆTä¼ŸÕ›ôDş˜ÉßC&ÛY8PRÄ $âœô_^^ÅGÃ?Ã•k.gqØ”e!dİ"!ª×T¸¸çõ­quíQäúî—ËÏ¨0ç."ùc¹(‡FİÛ»‹»Ë‡O×wŸ//>ü684oôSß<İ|¼øíêÓÏƒ#7¨8‡ÚnE9Déš%"¡iòÇ²ù¡mÍòÜ^›iÏ“ZX9½¾È\óÊ¤ØÓîf˜Ô›Émê[”:rV(5ğÙ5a€bX°[ñœ²2fL4kr®‹©T2G{Ñt-wN¿,äÓ)Û¦ š«¤Šü½HCn á˜!É4x¾_Û*“TµO^â4Zª]¶¨I$g‡İŒ8eY±›ëÛ;›¡jL²Ìç4 ¹í²9«1]é¿†›HU$p\-~è7!’Ë”ÉFíİóUhäİÆŒ ËÿåîŸåİÂÍ¢“Ó0™ZIèwH·eóuYP)œ‘nØ%§8Îˆï—Ò!•7[ğòFÙà õ0ê.-ŞåÅçü±Y(šY¥t¿Sä(®dwiÑQ‰ÒB°!ª¬b`OC+e‘Ğf-©v:}¤Í·åqÜ¶>{§#ŞÈ#¸ê=-ùw# ­¥å<dü@É:°2 Ø°cê±Ğ)Õíì`š'¡}è`)Ï‚4	¾ù#§ª./öBºA—|»™2Buç³Ód2Ş~šµ— ã‚fbhMP®%PÔÑ~ßQFT…ìˆw¬’ë&UAkËD­=¢Ê?š¢ö[3¾J†T–¦‰öÚ•şLU,£hÕCŞå(ê''YñH#ÔRµ,Å:q¯Ş¬.”Qk—İ¼‡)ÓwKÄ–TFB]Ïm‹À@áJºˆ6?L¥¯ôÂÅ-†d„¹Ê7bğW"Ï	((6„ÄŒ#LòzˆQKçØŒñëØiÈÜmÇÂRÁ K@”Û¾ÕxÑ$|ÛAõv…çÌF]¿£ÂYÇ%Ù—*ht\Ê?É:8 &Bj~2ÑB6D¨¥¿·èñHê3×£mÿ·
+†˜|VâÛ"HgÅL(¬ôÖp‡1>¾Æ¢«1›HM(CçÇd*4jv†FÁGıUËfòU*–™Í b7åJâ]´ÛĞı×ê=şiE½²ß}v%ı_¥\3|ÙI·’vÕ6d›5+£V]SôHdS>°âjpŒWÊÕOUî•ÄõŠxrQåçW‡ÃÑo›xĞó™ˆˆt^3ép2 ø¿#3ãÚÉ–­‘Ô&]£öÚ¶]tñZ=Xùèßhı`ë‚«k3¶¯¶iæÕ¼§W»DšÏç¯ªÅnG†¢€µ”®¤ø|8úÛûïŞ^\\¾ıpĞïÑÁßß¾ûéàÍ›7''Ç'oñ9ëèküòÊŒº5Å(=˜jë|RoÏQg³Zt›†"A°'¡R+ø7—4&/Õ¤ ·Óø4Ä2ä·Ò<0¤ n¥ÔÃAã¿Ï—Ít¢¿(yOeŒ*è‘NÙRŠ´™2—º¤•Ñ	8&ù4aÄšÒ´ÂÓ–´ıªS¯. Ú
+“_ÈT-Ù(MğJ"s›è÷
+³ñÜÄˆÊ’µ/skFX‰Ø5”D€0­épF(NëhiF¬½¸.†ó3ƒïÛ£MÅ6*Ûµj[vhu±½û "È‹ç[óuµ=Ãµïïò
+Cj-3ºãšP¶×¶CÜ4~æÂRıàÔóö0c¬Fª{Ûº	Yn‹$B0°~İıGúï–AœàÏ³hÑè.ÀŒìÎ©ŞËDV{ó³3GX±:Û7 š½~ÔÓÑÙŞCãíÖÓæáFæHÎ›.¾bãKªjÌ;Üåûƒo™D¥dP™®ÊtâÖ†-˜—[0åÊÃ‚Mí\ùîù?á–6å!*|E›5êZC Ìzø4A»/ ˜ˆf=@æŠïã$íÈ~´GÌçÔ§€pxPQ	_µ{¨¾iiØ6óÙBÖ3_h–ÔóŸæ­¨·m	ÿŠq;íøZÇê!›ËŞ-p»4{/É‘í$²]ØÎ¦{Işû}3CR$%ÙnÅmû„‡äp8œoÍól3[â–¤M^ógÁ…Sâ“Í¬½Jóœãˆem‹—‹m±w}Ã˜ï üˆÎ[¨¨"÷ŸWÎ>ıSÌQàÔŒ5 9èfXàûx^€=aC-úŒŠ°Ùè^c=3Âz$v=sğj]Ö.ãİ«ÎKOH£Ã#İÄÆm*b×«\ÀFÃ"b¤DõšÏş |…G5ğ›¡š>îĞ(GÅ–M¿íöqÍfT ,OHV>÷<ÿ5Å{xĞ‡y¨œ†¢´ã­Eš9‹Â·-0æá»âÏıÌ,(UgaÌÚëÇtP±éÑ­2¸™œQĞ)ƒ]ƒ«
+õO‚ ×”×bƒ>öÍb_CµAæK5Ğiñ@»åSqW1pƒÍÀıW|ÃZÑÕ$í»õÅ2Ï¤õ nŒvÕñ>"	';ß â—É²*X3¹’¸†`” "_ªw²Ï–«Ÿ°ÑÀSyliùy2©êq¹¸Õô¼QÖ697(j2ÆÆııçaáu,²À¾°<„TˆcRk&ğh%#ÁDB›ğ¢Qév‡BÖï†â`‚ï²"õô2kDÓ–Zñ
+SûVÆâÎÌ6¸MÑh$ì^ı‚§ıNOıÓºÌêE+ºá˜)1Ò°ûW^RšPìš8àÔŠI› @c²â\árd(õ€P	-Ğ¨ZD“<„+Â«ÖíÕšıF¯^^j=4›Œ\4uÃ{n…ë‡…â¸4ÏÆÊ‹r˜ uÃo%Z³ãñz¢¥Â7rG&š:ÿÆrÉ
+ÀÈöofÀ—ÔU›ÿfb©D‚Ë¿áø¶íßŒ]ÿFÜ¼7ÖÙÈ5ñì©hF½•
+²œÃÍ¨ÛW'm<#rquõñ1‡‡öÆ†šÄqTøÑ*ËñÜü-sbÆÅ"n ]º»Ş$ıw‰’ñÃtÅÉ;o&üÏù,Ñ‹€10z	TßÎ÷¾Q˜¬¥	”©˜ÛlM°Û±)˜ç<ùÜR‚?»''Ş¸;aG­”a–a€ ZÕO:§]‹ßõcëşõvGÁPñÆÏ|”‹òp¨VRaØ	Ì~×ù‹ğçI2¿Ëç+ íÎ|‘»\ƒ7½^Ïi®„É'¤K6,§à‡–`"ŞÊî#u@n=2"Z
+l#Îg2­Ûl¼”ì0 O`EªW–ÿIÒlcV/KÍü¶/Ù~Îà}­0Í¯‘7]æ·{é»	NÛfAÃÊî²ÂøÊi”<=­9ã¥OÙhéİû¾Oÿ+Ö_½#(ÓX¶©×{×¹¸Øk®&ê¾Óê3¼üï»Ëï«ä'¾v¯í@ÿ~kï"ô—µñ«){ÌOÏÚSé¯.k­Öx_ƒ\3ğÏ,ÿ-Û XYi
+:^ïı{WQlËşÎ3™ÊHû¦o¥#ÇÒ{©.N˜§Æ;A.ãz]ø?ìT81eÒËA0«pyÈ—qØn'~%Oôm€®t#sgı‡äãhw–>°W…‡4²Ã6¹ßzˆ IğFi¾†GE?üFÖÊA!ïˆÃ†ÃgItúîò?üdR¬ş}uùñW|øø‹•¥3®¬EòÂ§”uuÄ‘ø’”`#ÂxòË/auÂ—Ûğt¤d
+®ÜC;Ô	–qª.1'øiÙ’Ä‹ì)8'Ñ”g%½ÀGß…Ò`÷ñHJ~]-sHà†Q¿néœ/pfŠ#§3 ¡&Ë«B (Æ%í6ÿâg.tBDÇ2ùìijaàË.?ñˆ[Ä*³$Sÿø	ğB•|‰`¥oO¦²S7 eö&ÀI=5ÑrØãTÆ9i‹ÇÑ >½	¾p êjTŸœB#i,›Ò_6Pİ–ğaQÑCÙw9„å“S§”)ø”ñî&–Öé»~õU(•(ı°´si¼SÆ¡Ù-9FÓ·‡éÛ‹ÌG#ƒJiN©©Ë*Ù-ŠNĞØ%‹¡Û_“~±S
+È°CC¶·&K¶[•BXºPXª¶¦AHK·¨e×Î~ãå´Êd =ÿW=cd™–•«4şğ	“©gø¾ÈÌzInŒëíØ®oªw¾½ús)¯$Ö@óÂh¡T‡CNìÛÆaç@×ğììL©?t™ (zw†xã¾ü…|Sï­¿;®rKh¢|Ø==‘Ğ®—©°Aš-ÓMœ;ĞñT^>¡Æp$ìE›§oñ&ˆB¬…ÛU©*¤°
+3¿"§D•ĞxÓ"À–:H\ÕL$í0=ÆûcRt:”¯H¹·«˜·5›ùØb^w™ëZ_8+dxè¸¶u‹éÉÏ©·‰‘”O¿hµ^IÜ‰ğ–ruŠ.áC†ÑáƒÆ)°ˆ\ÈB4á=ï©Q×QãS~øXc¡"-Scn5æhÌ©ûû`i}FÙßÃ0ÊñĞyA¸0‰îùï©ˆc“ú„=;L<{fºÄvÍø}Ä«ô5>—\¼YwŸ'T®ä&sT{ˆ,¦!ğŞğYğ½âÌO £gOœLUQÁ8‘ã‰MP°¹üLãk©g;›ToO	1&x^˜¶ñğ^]`Äó0E<ÑB»©¯'½Înè¹U&WÉeôİ·°ó9ŒljbĞÉ,7wMãiÔ}Í¢H¼TK*ğAÿmq’ó¨Û<îÉ”gü¼BªÄbª’d
+)rM–¨ÀzŞê½}ÀX½,ügN”ÍR +-È~Ó›º(pŒâx’ƒÁ
+	lˆ½æhÔo¾ĞÑ	úô1§@×89E¿®ê×E¿ÁÖ~Ä½{Ó`öÄœ½«8F5şªÍ¿JtKrâ‡QõC1ÆÁş:Æ[×¤Fk9´E=)p½ó Ûï—Ïê3@Õ°‚½(Š¸*}Èì|$Õ8œ“p8ÁšRNdË<¦kÑ°éÑ4êãaªè?ïFı³;uš²ë»Ô Îöå·¯¯tö„¦×ª»˜ìòm\5rF™¢ÕŸ‘RÑè¿k’‚™0BÀ°¾ëég5I\q’ªÛ\±ÿµ\©)ı ùR±‚ÙuïF—Aá‚BuFO’©¦ö‚%ÇeŞÁ%< _p"û"ì”)epJ·gˆò–UÔu8FMŞEé‡8<÷,[£‘âğ?%{§SôZ¥f…ˆ]RÉî¿[Øù=¢îÀáØ©äø~G¿Gt
+KªªSè#ªŒ-ûNÆ\MnàÒ×ÒõT\Aê»['%˜LĞYzÚÚQw`F]oOVËù…ºb(”éoB¡uÉèZ§ä«éí¯`(üh°“¿`-ŒY0ˆã‚ÖÎù€‹BÕ¹;e¯ê
+r'Š”õïL?>«”“cÁ
+Æ÷›w³œ²b2å¸Õ|	Ÿäñ“¿Ø™›:4fŞ$åŞÙï[û–#çÉf“Œgü*¶å*ZÃåb‹PV’ÅŠ:ÕÊ¢öÊLÃğWw =ç"ËI1¬ y}=û-Hğ ?H  GET /fileadmin/site/digid-V3/images/svg/search-icon.svg HTTP/1.1
+Host: www.digid.nl
+Connection: keep-alive
+Referer: https://www.digid.nl/
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; sdk Build/JB_MR1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+
+HTTP/1.1 200 OK
+Last-Modified: Thu, 05 Feb 2015 09:04:08 GMT
+ETag: "3b4-50e53962a9200"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block
+Keep-Alive: timeout=4, max=99
+Content-Type: image/svg+xml
+X-FRAME-OPTIONS: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Connection: Keep-Alive
+Date: Wed, 09 Dec 2015 12:42:30 GMT
+Content-Length: 948
+
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_svg "http://www.w3.org/2000/svg">
+	<!ENTITY ns_xlink "http://www.w3.org/1999/xlink">
+]>
+<svg  version="1.1" id="Layer_1" xmlns="&ns_svg;" xmlns:xlink="&ns_xlink;" width="171.038" height="169.948"
+	 viewBox="0 0 171.038 169.948" overflow="visible" enable-background="new 0 0 171.038 169.948" xml:space="preserve">
+<path fill="#E17000" d="M171.038,155.806l-48.833-48.833C130.243,95.863,135,82.23,135,67.5C135,30.28,104.719,0,67.5,0
+	C49.47,0,32.52,7.021,19.771,19.771S0,49.47,0,67.5C0,104.72,30.28,135,67.5,135c15.289,0,29.401-5.117,40.73-13.718l48.665,48.666
+	L171.038,155.806z M67.5,115C41.308,115,20,93.691,20,67.5S41.308,20,67.5,20S115,41.309,115,67.5S93.691,115,67.5,115z"/>
+</svg>
+GET /fileadmin/site/digid-V3/images/foldable.png HTTP/1.1
+Host: www.digid.nl
+Connection: keep-alive
+Referer: https://www.digid.nl/
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; sdk Build/JB_MR1.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+
+HTTP/1.1 200 OK
+Last-Modified: Thu, 05 Feb 2015 09:04:08 GMT
+ETag: "408-50e53962a9200"
+Accept-Ranges: bytes
+Cache-Control: max-age=86400
+Expires: Tue, 10 Nov 2015 00:43:01 GMT
+Vary: Accept-Encoding
+X-XSS-Protection: 1; mode=block
+Keep-Alive: timeout=4, max=99
+Content-Type: image/png
+X-FRAME-OPTIONS: SAMEORIGIN
+Strict-Transport-Security: max-age=31536000 ; includeSubDomains
+Connection: Keep-Alive
+Date: Wed, 09 Dec 2015 12:42:30 GMT
+Content-Length: 1032
+
+‰PNG
+
+   IHDR      2   lğê   tEXtSoftware Adobe ImageReadyqÉe<  $iTXtXML:com.adobe.xmp     <?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?> <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.0-c061 64.140949, 2010/12/07-10:57:01        "> <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"> <rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#" xmp:CreatorTool="Adobe Photoshop CS5.1 Macintosh" xmpMM:InstanceID="xmp.iid:8B1127B91E5C11E3A0F8A509FDDAA7B1" xmpMM:DocumentID="xmp.did:8B1127BA1E5C11E3A0F8A509FDDAA7B1"> <xmpMM:DerivedFrom stRef:instanceID="xmp.iid:8B1127B71E5C11E3A0F8A509FDDAA7B1" stRef:documentID="xmp.did:8B1127B81E5C11E3A0F8A509FDDAA7B1"/> </rdf:Description> </rdf:RDF> </x:xmpmeta> <?xpacket end="r"?>¢Xø[   zIDATxÚì–Á€0E9œSgpNİ[b©Oÿ%„@x¡½AÛLZ ½¾…Pa_XÉë2­Ê~Ø²õ{p]·¼I'#ÿòqmEè#!B„"Dˆÿˆ\¢Û½T{îÂJmÔSOµaÎÊÒR²„aêÔ BOrÇ6~|Ê    IEND®B`‚

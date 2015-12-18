@@ -1,0 +1,3062 @@
+GET /particulieren/ HTTP/1.1
+Host: duo.nl
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+
+HTTP/1.1 200 OK
+Date: Wed, 09 Dec 2015 15:06:15 GMT
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Content-Length: 15333
+Content-Type: text/html
+Set-Cookie: ASPSESSIONIDAUASRRDA=CHHCMLKDLNAMKNJHNFBMFDNN; secure; path=/
+Cache-control: private
+
+
+<!DOCTYPE html>
+<html lang="nl">
+   <head>
+
+      <title>Home - DUO </title>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      
+          <meta name="google-site-verification" content="ALMOVqiEevF9EoYmImTnZysrV26Z_SvHPPfWPKDYlco" /> 
+          <meta name="google-site-verification" content="L9hBZMStMWJxacIM0VJBdqLi-_1b8nLDuUIPgEprO30" />
+      
+      
+      <link rel="canonical" href="https://duo.nl/particulieren/default.asp" />
+      <link rel="stylesheet" href="/includes/doelgroepsite/all.css">
+
+      <link rel="stylesheet" href="/includes/doelgroepsite/homepage.css">
+      <link rel="stylesheet" href="/includes/doelgroepsite/respdesignAll.css">
+      <link rel="stylesheet" href="/includes/doelgroepsite/respdesignHome.css">
+
+      <link rel="stylesheet" href="/includes/doelgroepsite/font.css">
+<!--[if lte IE 8]>
+      <link rel="stylesheet" href="/includes/doelgroepsite/ie8.css">
+
+<style>.content-body { top: -170px;}</style>
+
+<![endif]-->
+
+
+
+
+<!--[if IE 9]>
+   <style>
+      .ikben {
+         position: relative;
+         left: -476px;
+      }
+
+      #alertbox {
+         top: -5px;
+      }
+   </style>
+<![endif]-->
+
+
+
+
+
+      <script src="/includes/doelgroepsite/modernizr.js"></script>
+      <script src="/includes/doelgroepsite/jquery.js"></script>
+      <script src="/includes/doelgroepsite/jquery-migrate.js"></script>
+      <script src="/includes/doelgroepsite/slideout.js"></script>
+      <script src="/includes/doelgroepsite/generiek.js"></script>
+
+
+   </head>
+<body  id="home">
+<div id="container">
+
+<header>
+    <div id="logo">
+        <a href="/"><img alt="Dienst Uitvoering Onderwijs / Minsterie van Onderwijs Cultuur en Wetenschap" src="/Images/logo_tcm6-42242.png"></a>
+    </div>
+    <div id="inloggenDiv"><a href="https://www.duo.nl/particulieren/controle_mibg/checkmduo.asp">Inloggen</a></div>    <nav>
+    <div id="siteMenu320">
+                <a href="#" onclick="$('#ul320').css('display')==='none' ? $('#ul320').fadeIn('slow'):$('#ul320').fadeOut('slow')" class="menuLink">Menu</a>
+                <div id="ul320">
+                </div>
+                </div>
+                        <div id="siteMenu1220">
+<ul>
+<li>
+<a lang="nl" href="/particulieren/default.asp" class="home">Particulier</a>
+</li>
+<li>
+<a lang="nl" href="/zakelijk/default.asp" class="">Zakelijk</a>
+</li>
+<li>
+<a lang="nl" href="/organisatie/open_onderwijsdata/default.asp" class="">Onderwijsdata</a>
+</li>
+<li>
+<a lang="nl" href="/organisatie/default.asp" class="">Organisatie</a>
+</li>
+</ul>
+
+                </div>
+    <div class="search">
+       <form method="get" action="/particulieren/zoekresultaat.asp">
+          <fieldset>
+             <legend>Zoeken</legend>
+             <label for="q">zoektekst</label>
+             <input type="search" id="q" name="q" size="40" maxlength="120" placeholder="Zoeken">
+             <input id="zoekknop" class="zoekknop" type="submit" value="&#xf002;">
+          </fieldset>
+       </form>
+    </div>
+    </nav>
+    <div id="navbeam">
+    </div>
+</header>
+<section id="content-home">
+   <article class="content-head">
+      <div class="ikben">
+      <div id="partMenuItem"></div>
+<h1></h1>
+<ul>
+   <li>
+      <a href="/particulieren/mbo-er/default.asp" onmouseover="changePhoto(0);" >Mbo'er</a>
+   </li>
+   <li>
+      <a href="/particulieren/student-hbo-of-universiteit/default.asp" onmouseover="changePhoto(1);" >Student hbo of universiteit</a>
+   </li>
+   <li>
+      <a href="/particulieren/scholier/default.asp" onmouseover="changePhoto(2);" >Scholier</a>
+   </li>
+   <li>
+      <a href="/particulieren/ouder/default.asp" onmouseover="changePhoto(3);" >Ouder</a>
+   </li>
+   <li>
+      <a href="/particulieren/leraar/default.asp" onmouseover="changePhoto(4);" >Leraar</a>
+   </li>
+   <li>
+      <a href="/particulieren/terugbetaler/default.asp" onmouseover="changePhoto(5);" >Terugbetaler</a>
+   </li>
+   <li>
+      <a href="/particulieren/staatsexamenkandidaat/default.asp" onmouseover="changePhoto(6);" >Staatsexamenkandidaat</a>
+   </li>
+   <li>
+      <a href="/particulieren/international-student/default.asp" onmouseover="changePhoto(7);" >Foreign student</a>
+   </li>
+</ul>
+</div>
+<a href="https://www.duo.nl/particulieren/controle_mibg/checkmduo.asp" class="inloggen" onclick="_paq.push(['trackEvent', 'inloggen',window.location.pathname])"><span class="digid">Inloggen Mijn DUO</span></a>
+</article>
+<script>var backgroundimg = ["/Images/mbo-a_tcm7-42221.jpg","/Images/international-a_tcm7-42215.jpg","/Images/scholier-a_tcm7-42218.jpg","/Images/ouder-a_tcm7-42217.jpg","/Images/leraar-a_tcm7-42216.jpg","/Images/Terugbetaler2_tcm7-42222.jpg","/Images/staatex_A_tcm7-42219.jpg","/Images/hbo-wo-a_tcm7-42220.jpg"];</script>
+<article class="home-gradient">&nbsp;</article><section class="content-body">
+
+<!-- begin CPs -->
+<article class="dashblok3 sv" >
+    <a href="/particulieren/studievoorschot/default.asp" class="aStelsel">
+        <span class="regel1">De nieuwe studiefinanciering</span>
+           
+            <span class="regel2">Vanaf 1 september 2015</span>
+        
+    </a>
+</article>
+<article class="dashblok3" >
+<h2>Actueel</h2>
+<ul>
+<li>
+<a href="/particulieren/actueel/Je-studiefinanciering-voor-2016.asp" >Je studiefinanciering voor 2016</a>
+</li>
+<li>
+<a href="/particulieren/actueel/Zorg_voor_een_juist_e-mailadres.asp" >Zorg voor een juist e-mailadres</a>
+</li>
+<li>
+<a href="/particulieren/actueel/kies-voor-betaalgemak.asp" >Een studieschuld? Kies voor betaalgemak.</a>
+</li>
+</ul>
+</article>
+<article class="dashblok3 uitbetaaldatum" >
+
+<a href="/particulieren/deurmat/service/betaaldata.asp" class="aUitbetaling">Studiefinanciering<br/><span><p>over ... <span class="blaauw">13 dagen
+</span></p></a>
+
+<hr>
+<a href="/particulieren/diplomas/" class="aDiploma">Alles over 
+<span class="blaauw">diploma's</span>
+</a>
+
+
+
+</article>
+
+<!-- end CPs -->
+</section>
+
+<div class="clearboth"></div>
+</section>
+
+<footer>
+   <div class="bluebit">
+      <div class="payoff">
+         Onderwijs mogelijk maken
+      </div>
+    </div>
+    <div class="clearboth"></div>
+</footer>
+
+<section id="support" lang="nl">
+<article class="supportblok">
+      <h2>Service</h2>
+      <ul>
+         <li>
+               <a href="/particulieren/deurmat/service/inloggen-op-mijn-duo.asp" >Inloggen</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/service/rekenhulpen.asp" >Rekenhulpen</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/service/betaaldata.asp" >Betaaldata</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/service/formulieren.asp" >Formulieren</a>
+         </li>
+         <li>
+               <a href="http://www.duo.nl/SRVS/CGI-BIN/WEBCGI.EXE?New,Kb=Kennisbank,Company={DBD42CAE-B941-4CF4-960D-5F5C917B6281},decision_tree=ref(start),t=startup">Veelgestelde vragen</a> 
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/service/iemand-machtigen.asp" >Iemand machtigen</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/service/een-overlijden-melden.asp" >Een overlijden melden</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/service/privacy.asp" >Privacy</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/service/proclaimer.asp" >Proclaimer</a>
+         </li>
+      </ul>
+   </article>
+   <article class="supportblok">
+      <h2>Contact</h2>
+      <ul>
+         <li>
+               <a href="/particulieren/deurmat/contact/bellen.asp" >Contact opnemen</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/contact/een-formulier-opsturen.asp" >Een formulier opsturen</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/contact/een-examenlocatie-opzoeken.asp" >Een examenlocatie opzoeken</a>
+         </li>
+         <li>
+               <a href="http://www.inburgeren.nl">Naar inburgeren.nl</a> 
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/contact/volg-ons-op-twitter.asp" >Volg ons op Twitter</a>
+         </li>
+      </ul>
+   </article>
+   <article class="supportblok">
+      <h2>Oneens met DUO</h2>
+      <ul>
+         <li>
+               <a href="/particulieren/deurmat/oneens-met-duo/bezwaar-maken.asp" >Bezwaar maken</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/oneens-met-duo/in-beroep-gaan.asp" >In beroep gaan</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/oneens-met-duo/een-klacht.asp" >Een klacht indienen</a>
+         </li>
+         <li>
+               <a href="/particulieren/deurmat/oneens-met-duo/duo-is-te-laat.asp" >DUO is te laat</a>
+         </li>
+      </ul>
+   </article><div class="clearboth"></div>
+</section>
+<script>
+   gelijkeHoogte ("#support .supportblok");
+</script>
+
+
+</div> 
+
+<div id="hulpdiv"></div>
+
+
+
+
+
+    <!-- javascript -->
+
+<!--[if lte IE 8]>
+   <script>
+	var binnenHTML;
+	var binnenHTMLnav;
+	
+	window.onbeforeprint = function(){
+	    binnenHTML = document.getElementById('support').innerHTML;
+		binnenHTMLnav = document.getElementsByTagName('nav')[1].innerHTML;
+		document.getElementById('support').innerHTML = "";
+		document.getElementsByTagName('nav')[1].innerHTML = "";
+	}
+	window.onafterprint = function(){
+		document.getElementById('support').innerHTML = binnenHTML;
+		document.getElementsByTagName('nav')[1].innerHTML = binnenHTMLnav;
+	}
+   </script>
+<![endif]-->
+
+
+
+
+
+
+<script>
+    jQuery.migrateTrace = false;
+    jQuery.migrateMute = false;
+    
+    var indexBackgroundImg = 0;
+    var cols = 2;
+    var bigScreen = true;
+    var d3 = false;
+    var breedte = (navigator.appVersion.indexOf("Win") > -1) ? 615 : 631;
+
+
+        $("#ul320").html($("#siteMenu1220").html());
+
+    if (document.documentElement.clientWidth <= breedte) {
+        $("#ul320").html($("#siteMenu1220").html());
+
+        bigScreen = false;
+        $('#logo img').attr("src","/Images/u471_tcm6-42244.png");
+
+
+         // 1e menu item
+        $("#partMenuItem").html($('#ul320 .home').text());
+
+
+
+        $('.payoff').text('');
+
+        cols = 1;
+
+
+
+    } else {
+       bepaalBackgroundImgHomepage();
+    }
+
+    function bepaalBackgroundImgHomepage() {
+        indexBackgroundImg = 0;
+        if (backgroundimg.length > 0) {
+           $("#content-home").css("background-image","url("+backgroundimg[indexBackgroundImg++]+")");
+
+           for (var n=0; n<backgroundimg.length;n++){
+              var x = document.createElement("div");
+              $(x).css("background-image","url("+backgroundimg[n]+")");
+              $("#hulpdiv").append(x);
+           }
+
+        }
+
+        if (document.documentElement.clientWidth < 631) {
+            d3 = true;
+        } else {
+            if (document.documentElement.clientWidth <= 900) {
+                cols = 2;
+            }
+                else {
+                cols = 3;
+                }
+        }
+
+    }    
+    function slideSwitch() {
+        if (backgroundimg.length > 0) {
+           $("#content-home").css("background-image","url("+backgroundimg[indexBackgroundImg++]+")");
+           if (indexBackgroundImg >= backgroundimg.length) {
+               indexBackgroundImg = 0;
+           }
+        } 
+    }
+
+
+    function changePhoto(imgIndex) {
+       $("#content-home").css("background-image","url("+backgroundimg[imgIndex]+")");
+    }
+     
+    $(function() {
+        if (bigScreen) {
+           gelijkeHoogte (".dashblok3");
+           $("#content-home").css("background-image","url("+backgroundimg[0]+")");
+        }
+        $("#ul320").html($("#siteMenu1220").html());
+        // 1e menu item
+        $("#partMenuItem").html($('#ul320 .home').text());
+
+    });
+
+    if (d3) {
+        $(".dashblok3:last-child").css("height","100%");
+    }
+
+
+    
+	if ($.browser.mozilla) {
+		//een FF probleempje oplossen.
+		//een FF probleempje oplossen.
+	   $("header .search input[type=search]").css("height","30px");
+	   // Alleen een windows pobleem
+//	   if (navigator.appVersion.indexOf("Win")!=-1) {
+//		$("header .search input[type=submit]").css("top","1px");
+//                             $("header .search input[type=submit]").css("height","23px");
+//	   }
+    }
+
+
+
+$(window).resize(function() {
+        if (document.documentElement.clientWidth > breedte && indexBackgroundImg == 0 ) {
+           bepaalBackgroundImgHomepage();
+        }
+   });
+ 
+
+</script>
+<script>
+    /*@cc_on
+      @if (@_jscript_version == 10)
+         document.getElementById("q").style.height = "28px";
+      @end
+    @*/
+</script>
+<!-- Piwik -->
+<script type="text/javascript">
+
+      var url = window.location.href;
+        var siteIds = {
+
+            "duo.nl/particulieren"                                       : {"siteid": "1"},
+            "ib-groep.nl/particulieren"                                : {"siteid": "1"},
+            "duo.nl/zakelijk"                                              : {"siteid": "3"},
+            "ib-groep.nl/zakelijk"                                       : {"siteid": "3"},
+            "duo.nl/organisatie"                                         : {"siteid": "5"},
+            "ib-groep.nl/organisatie"                                  : {"siteid": "5"},
+            "duo.nl/organisatie/open_onderwijsdata"           : {"siteid": "7"},
+            "ib-groep.nl/organisatie/open_onderwijsdata"    : {"siteid": "7"},
+            "onderwijsdata.duo.nl"                                     : {"siteid": "7"},
+            "instellingsinformatie.duo.nl"                             : {"siteid": "9"},
+            "mijn.duo.nl"                                                   : {"siteid": "11"},
+            "inburgeren.nl"                                                : {"siteid": "13"}
+ 
+
+        };
+
+        var siteId = 2;
+        var keys = Object.keys(siteIds);
+        for (var i = 0; i < keys.length; i++) {
+            if (url.indexOf(keys[i]) > 0) {
+                siteId = siteIds[keys[i]].siteid;
+            }
+        }
+           var _x = location.hostname.split(".");
+
+    var domain = "*.";
+    if (_x.length >= 2) {
+        domain +=  _x[_x.length-2] + "." 
+    }
+    domain +=  _x[_x.length-1];
+
+
+var _paq = _paq || [];
+      _paq.push(['enableLinkTracking']);
+  _paq.push(["setLinkTrackingTimer", 1]);
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", domain]);
+  _paq.push(["setDomains", [domain]]);
+
+    if (typeof _abtesting == 'undefined') {
+        _paq.push(['setCustomVariable', 1, 'abtest', 'A', 'page']);
+    } else {
+        _paq.push(['setCustomVariable', 1, 'abtest', _abtesting, 'page']);
+    }
+
+
+  _paq.push(['trackPageView']);
+
+  (function() {
+    var u="https://collectie.duostats.nl/piwik/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', siteId]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+    g.defer=true; g.async=true; g.src='//duo.nl/includes/piwik.min.js'; s.parentNode.insertBefore(g,s);
+  })();
+
+</script>
+<noscript><p><img src="https://collectie.duostats.nl/piwik/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+</body>
+</html>GET /includes/doelgroepsite/all.css HTTP/1.1
+Host: duo.nl
+Connection: keep-alive
+Referer: https://duo.nl/particulieren/
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+Cookie: ASPSESSIONIDAUASRRDA=CHHCMLKDLNAMKNJHNFBMFDNN
+
+HTTP/1.1 200 OK
+Content-Length: 31495
+Content-Type: text/css
+Last-Modified: Thu, 02 Jul 2015 12:52:11 GMT
+Accept-Ranges: bytes
+ETag: "ea2ad2e9c5b4d01:5647"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Wed, 09 Dec 2015 15:06:15 GMT
+
+@charset "UTF-8";
+/* CSS Document */
+html {
+    font-size: 0.8125em; /* 1 */
+    -webkit-text-size-adjust: 0.8125em; /* 2 */
+    -ms-text-size-adjust: 0.8125em; /* 2 */
+}
+
+/* 1220px grid */
+body {
+	background: #f4f5f6;
+	font-size: 1em; /*13px;*/
+	margin: 0;
+	border-top: 3px solid #154273;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: 21px;
+	color: #333;
+}
+
+
+
+#home .home,
+#zakelijk .zakelijk
+#onderwijsdata .onderwijsdata
+#organisatie .organisatie {
+	background: #b2d7ee;
+	color: #333;
+}
+
+/********* ============================= *********/
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.692em;
+	font-weight: normal;
+	margin-bottom: 25px;
+	margin-top: 0;
+
+}
+
+h2 {
+	font-family: arial;
+	font-size: 1.538em;
+	margin-top: 0;
+	line-height: 24px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+h3 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 0.923em;
+}
+
+a {
+	color: #0162cd;
+}
+
+a[href*="https:"],
+a[href*="http:"] {
+    margin-right: 1em;
+}
+
+a[href*="https:"]:after,
+a[href*="http:"]:after {
+   position: relative;
+   font-family: awesome;
+   content: " \f08e";
+   font-size: 12px;
+   padding-left: 0.2em;
+   text-decoration: none;
+}
+
+a[href*="duo.nl"] {
+   margin-right: 0;            
+}
+
+a[href*="duo.nl"]:after {
+   content: none;
+}
+
+a:hover {
+	color: #154273;
+
+}
+
+.tekst ul {
+	list-style: square;
+	margin-left: 15px;
+	}
+
+
+
+
+
+/********* ============================= *********/
+
+#container {
+		max-width: 1220px;
+		background: #ffffff;
+		margin: 0 auto;
+	}
+
+/********* ============================= *********/
+
+
+	header {
+
+			}
+
+		header #logo {
+			text-align: center;
+			position: relative;
+         height: 112px;
+			}
+			
+			#logo span {
+				position: absolute;
+				left: 20px;
+				top: 40%;
+				font-size: 1.385em;
+				color: #d52b1e;
+				font-style: italic;
+				font-weight: bold;
+				font-family: arial;
+			}
+		   #inloggenDiv{
+		     float: right;
+           margin-top: -28px;
+           margin-right: 20px;
+           z-index: 2;
+           position: relative;
+		   }
+         #inloggenDiv a{
+            color: #535353;
+            text-decoration: none;
+         }
+
+         #inloggenDiv:after{
+            color: #535353;
+            font-family: awesome;
+            font-weight: normal;
+            font-size: 1.231em;
+            content: "\f090";
+            margin: 0 0 0 8px;
+            text-decoration: none;
+         }
+         #inloggenDiv a:hover{
+            text-decoration: underline;
+         }
+
+		header nav {
+			background: #007bc7;
+			height: 32px;
+			padding-top: 18px;
+			padding-left: 20px;
+			}
+
+			header nav ul {
+				list-style: none;
+				margin: 0 0  0 5px;
+				padding: 0;
+                text-align: left;
+			}
+
+			header nav ul li {
+				display: inline-block;
+				margin-left: -5px;
+				}
+
+			header nav ul li a {
+				padding: 8px 20px 8px 20px;
+				color: #ffffff;
+				text-decoration:  none;
+				font-weight: bold;
+				font-family:arial;
+				font-size: 1.077em;
+				background: none;
+				line-height: 20px;
+			}
+
+			header nav ul li a:before {
+				display: none;
+			}
+
+			header nav ul li a:hover {
+				color: #000;
+				text-decoration:  none;
+				background: #b2d7ee;
+			}
+/*firefox only hack*/
+@-moz-document url-prefix() {
+			header nav ul li a:hover {			
+			top: -1px;
+			}
+}
+		#navbeam {
+				background: #b2d7ee;
+				height: 10px;
+
+			}
+
+
+
+/********** BREADCRUMBS **************/
+
+#breadcrumb {
+	display: inline-block;
+	font-size: 0.846em;
+	margin-left: 17px;
+	margin-top: 15px;
+}
+	#breadcrumb span {
+		position:relative;
+		padding-right: 13px;
+		padding-left: 5px;
+	}
+
+	#home #breadcrumb span:after,
+	#breadcrumb a:after {
+		font-family: awesome;
+		content:"\f101"; /*Double angle*/
+		position: absolute;
+		right: 0;
+		}
+
+
+
+
+
+/********* ============================= *********/
+
+
+
+		ul  {
+			list-style: none;
+			padding-left: 0;
+			}
+
+		ul li,
+		ol li {
+				margin-bottom: 8px;
+				list-style-position:outside;
+			}
+
+			ul a,
+			ol a {
+				text-decoration: none;
+				color: #0162cd;
+				padding-left: 14px;
+				position: relative;
+				display: block;
+			}
+#content-landing .ikben ul {
+    padding-left: 30px;
+}
+                                                  #content-landing .ikben .topMenu a:before,
+			ul a:before {
+				position: relative;
+                left: 0;
+                font-family: awesome;
+                font-weight: normal;
+                font-size: inherit; /*1.385em;*/
+                content:"\f105";
+                display: inline-block;
+                text-decoration: none;
+                margin-right: 12px;
+                margin-left: -18px;
+            }
+
+			a.extern {
+				padding-left: 20px;
+
+			}
+
+			a.extern:before {
+				content: '\f08e';
+				font-size: 1.154em;
+			}
+
+			ul a:hover {
+				color: #0162cd;
+				text-decoration: underline;
+			}
+
+		.buttons {
+			position: absolute;
+			bottom: 25px;
+		}
+
+		.submit {
+			border-radius: 5px;
+			color: #fff;
+			background: linear-gradient(#53AD1F, #39870c);
+			text-decoration: none;
+			min-width: 60px;
+			padding: 7px 20px;
+			text-align: center;
+			font-weight: bold;
+			line-height: 16px
+		}
+
+
+
+
+
+/********* ============================= *********/
+
+#content-home {
+	background: none no-repeat 0 0;
+	min-height: 500px;
+	position: relative;
+                 background-size: cover;
+
+}
+
+.content-head {
+	padding-left: 20px;
+	}
+
+
+.ikben {
+	width: 28.53%;
+	padding: 40px 1.64% 60px 1.64%;
+	background: rgba(255, 255, 255, 0.90); /* nice browsers */
+                filter:alpha(opacity=90);  /*IE browsers*/
+                height: 340px;
+}
+
+
+	.ikben h1 {
+		font-family: verdana;
+        line-height: 28px;
+	}
+
+	.ikben li {
+		line-height: 24px;
+	}
+
+	.ikben a {
+		color: #333;
+		font-size: 1.231em;
+		padding-left: 20px;
+}
+
+
+	.ikben a:before {
+		font-size: 1.385em;
+		line-height: 28px;
+}
+
+
+.ikben .international {
+	background: none no-repeat 208px 5px;
+	padding-right: 50px ;
+}
+
+.ikben .international-page {
+	background: none no-repeat 186px 4px;
+	width: 225px !important;
+	padding-left: 0;
+}
+.ikben .active .international-page {
+	background: none no-repeat 196px 4px;
+	width: 235px !important;
+	padding-left: 0;
+}
+
+
+.inloggen {
+                font-family: arial;
+	font-size: 1.846em;
+	background: linear-gradient(to bottom, #53AD1F 0%, #39870C 100%); /* W3C */
+	background: -webkit-gradient(linear, left top, left bottom, from(#53AD1F), to(#39870C));
+	color: #fff;
+	text-decoration:none;
+	padding: 10px 30px 10px 20px;
+	width: 27.48%;
+	line-height: 50px;
+	display: block;
+	position: relative;
+	top: -120px;
+	height: 50px;
+   left: 66.57%;
+}
+
+	.inloggen:hover {
+		background: linear-gradient(to bottom, #4DA01D 0%, #32730C 100%); /* W3C */
+		background:  -webkit-gradient(linear, left top, left bottom, from(#4DA01D), to(#32730C));
+		color: #fff;
+                                text-decoration: none;
+	}
+
+	.inloggen .digid {
+	background:none no-repeat 0 0;
+	padding-left: 20%;
+	display: block;
+	}
+
+	.inloggen span span {
+		font-size: 1.385em;
+		font-weight: bold;
+		background: none;
+	}
+
+	.inloggen:hover {
+
+	}
+
+	.inloggen:after {
+position: relative;
+top: -52px;
+font-family: awesome;
+font-weight: normal;
+font-size: 2.292em; /*55px;*/
+content: "\f105";
+display: inline-block;
+text-decoration: none;
+margin: 0 0 0 100%;
+            }
+
+
+/******** =================== ************/
+
+
+.content-body {
+   padding: 0 0 0 20px;
+	clear: both;
+	float: left;
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 65%); /* W3C */
+   position: relative;
+   top: -485px;
+   width: 98.4%
+}
+
+.dashblok3 {
+	width: 28%;
+	padding: 1.64%;
+	margin: 0 1.64% 20px 0;
+	float: left;
+	height: 150px;
+	BORDER: 1px solid #d9ebf7;
+	background: rgba(255, 255, 255, 1); /* nice browsers */
+                position: relative;
+}
+.dashblok3:first-child {
+	width: 28.5%;
+    /*jjh*/
+    background-color: #E17000;
+    border: none;
+    position: relative;
+}
+
+.dashblok3:first-child .aStelsel {
+                 position: absolute;
+                 top: 50%;
+                 transform: translate(0, -50%);
+}
+.dashblok3:first-child p {
+	padding-top: 36px;
+}
+.dashblok3:first-child a:hover {
+	text-decoration: none;
+}
+
+.dashblok3:first-child .regel1,
+.dashblok3:first-child .regel2 {
+	display: block;
+    color: #FFF;
+    font-size: 20px;
+}
+
+.dashblok3:first-child .regel1 {
+	font-weight: bold;
+}
+
+.dashblok3 ul a:before {
+   margin-right: 8px;
+   margin-left: -12px;
+}
+.dashblok3:last-child {
+  	width: 28.08%;
+}
+.dashblok3:last-child hr {
+    height: 2px;
+    background-color: #007BC7;
+    border:none;
+}
+
+        .dashblok3:nth-of-type(odd) {
+            /*jjh
+            text-align:center;*/
+            display: table-cell; /* this says treat this element like a table cell */
+            vertical-align:middle; /*now we can center vertically like in a TD */
+            /*jjh
+            background: url(data:image/png;base64,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) no-repeat 95% 50% #FFFFFF;*/
+        }
+
+        .dashblok3:nth-of-type(odd) > a {
+            color: #000000;
+            text-decoration: none;
+            display: inline-block;
+            vertical-align: text-top;
+            max-width: 80%;
+            min-width: 80%;
+        }
+
+.diploma,
+.uitbetaaldatum {
+	position:relative;
+  	width: 28.33%;
+	border: 1px solid #d9ebf7;
+}
+
+.aStelsel {
+	
+line-height: 28px;
+font-size: 20px;
+width: 85%;
+}
+.aStelsel:after {
+	font-size: 70px;
+}
+
+		.aUitbetaling, .aDiploma, .aStelsel {
+			    position: relative;
+			       }
+			
+			       .aUitbetaling span {
+			       		display: block;
+				       }
+				       
+				       .aUitbetaling span span{
+			       		display: inline;
+				       }
+			       
+			       
+			.aUitbetaling:after, .aDiploma:after, .aStelsel:after {
+		  		font-family: awesome;
+				content: '\f105';
+				position: absolute;
+				right: -40px;
+				top:12px;
+				font-size: 52px;
+				color: #007bc7;
+		       }
+	       
+	       .aDiploma:after {
+			top: 0;
+	       }
+	       
+	       .aStelsel:after {
+			top: 50%;
+                                                  transform: translate(0, -50%);
+			color: #ffffff;
+			font-size: 80px;
+	       }
+	       
+                /*.diploma p:after,
+	.uitbetaaldatum p:after {
+			font-family: awesome;
+			content: '\f105';
+			position: absolute;
+			right: 0;
+			top:-15px;
+			font-size: 3.636em;
+			color: #007bc7;
+
+	}
+
+	.diploma p:after {
+	   top:-29px;
+	}
+    .uitbetaaldatum p:after {
+        color: #FFFFFF;
+        font-size: 7em;
+        top: 62px;
+    }
+    */
+
+    	.diploma p,
+	.uitbetaaldatum p {
+		margin: 0;
+		font-size: 1em;
+		line-height: 28px;
+		position: relative;
+		padding-right: 28px;
+	}
+	.uitbetaaldatum p {
+	   width: 95%;
+                }
+
+	.diploma p {
+	   width: 115%;
+                }
+                .dilpoma p span,
+	.uitbetaaldatum p span {
+		font-weight: normal;
+	}
+	.diploma p a,
+	.uitbetaaldatum p a {
+		text-decoration: none;
+		font-weight: normal;
+		position: relative;
+		padding-right: 20px;
+        color: #333;
+        vertical-align: middle;
+	}
+	.diploma p a {
+	   display: inline-block;
+	   padding-top: 22px;
+                }
+    .uitbetaaldatum p a {
+        color: #FFFFFF;
+        font-size: 1.687em;
+        top: 42px;
+    }
+                .blaauw {
+                                color: #007bc7;
+                                font-weight: bold;
+                }
+
+
+	.dashblok2 {
+		width: 540px;
+		float: left;
+		margin-right: 20px;
+		padding: 20px;
+		background: #d9ebf7;
+	}
+
+
+.dashlink {
+	float: left;
+	padding: 20px 60px 20px 20px;
+	background: #fff;
+	border: 1px solid #d9ebf7;
+	position:relative;
+	width:494px;
+	margin-right: 20px;
+}
+
+.dashlink a {
+	margin-right: 5px;
+	padding-right: 10px;
+	position: relative;
+	text-decoration: none;
+
+}
+
+.dashlink h2 {
+	margin-right: 5px;
+	padding-right: 10px;
+	position: relative;
+	}
+
+.dashlink a:after {
+
+}
+
+.dashlink:after {
+	position: absolute;
+	right: 20px;
+	font-family: awesome;
+	content:'\f054';
+	font-size: 3.846em;
+	color: #d9ebf7;
+	top: 55px;
+}
+
+.dashlink:hover:after {
+	color: #007bc7
+}
+
+
+.dashlink:hover {
+	border-color: #007bc7;
+	color: #333;
+	cursor: pointer;
+}
+
+
+
+
+
+/************* ONDERSTEUNING ****************/
+
+	#support {
+		background: none repeat scroll 0 0 #EAEBEE;
+		margin: 0 auto;
+	    padding: 40px 1.64% 100px 1.64%;
+    }
+	#support h2{
+                   color: #535353;
+                   font-size: 1.538em;
+                   margin-bottom: 10px;
+                   margin-top: 0px;
+                }
+	#support a {
+		color: #535353;
+	}
+
+	.supportblok {
+		float: left;
+    	padding: 0 1.64% 0 1.64%;
+	   border: 1px solid transparent;
+      margin: 0 0.82% 0;
+      width: 28.3%;
+      position: relative;
+      top: -84px;
+    }
+    .supportblok li{
+        line-height: 16px;
+    }
+    .supportblok:nth-child(3) {
+       margin: 0 0 0 7px;
+	   /*padding-left: 22px;*/
+    }
+
+    .supportblok ul a:before {
+       margin-right: 8px;
+       margin-left: -13px;
+    }
+
+
+/*=========== LANDINGSPAGINA *==============*/
+
+#content-landing,
+#content-content {
+	background: none no-repeat 0 0;
+	background-size: cover;
+	min-height: 500px;
+	position: relative;
+}
+
+#content-landing .dashblok2,
+#content-content  .dashblok2{
+	display: none;
+}
+
+ #content-landing .content-head  h1,
+ #content-content .content-head  h1{
+ 	display: none;
+ }
+
+
+ #content-landing .content-head .ikben,
+ #content-content .content-head .ikben {
+	width: 1180px;
+	margin-left: -20px;
+	padding-top: 20px;
+	padding-bottom: 0;
+	padding-left: 20px;
+	border-bottom: 3px solid #007bc7;
+	background: rgba(255, 255, 255, .90); /* nice browsers */
+	position:relative;
+ }
+ 
+  #content-landing .content-head ul,
+  #content-content .content-head ul {
+  	margin: 0;
+  }
+  
+  
+  #content-landing .content-head ul li,
+  #content-content .content-head ul li {
+ 	display: inline-block;
+ 	margin-right: 20px;
+	margin-bottom: 0;
+		 }
+ 
+  #content-landing .content-head ul li a,
+  #content-content .content-head ul li a {
+	width: auto;
+	padding-left: 0;
+ }
+ 
+  
+  #content-landing .content-head ul li .international,
+  #content-content .content-head ul li .international {
+	position: absolute;
+	right: -25px;
+	top: 24px; 
+	}
+ 
+ 
+ 
+  #content-landing .content-head ul li a:before,
+  #content-content .content-head ul li a:before {
+	display: none;
+	 }
+ 
+
+
+	#content-content .ikben ul,
+	#content-landing .ikben ul {
+		margin: 0;
+	}
+
+	#content-content .ikben .active a,
+	#content-landing .ikben .active a  {
+		color: #007bc7;
+		font-weight: bold;
+	}
+
+	#content-content .ikben a:hover,
+	#content-landing .ikben a:hover {
+		color: #007bc7;
+		text-decoration: none;
+	}
+
+	#content-content .ikben a,
+	#content-landing .ikben a {
+		padding-bottom: 25px;
+		position: relative;
+	}
+
+	#content-content .ikben .active a .marker,
+	#content-landing .ikben .active a .marker {
+		border-color: transparent transparent #007BC7;
+		border-style: solid;
+		border-width: 16px;
+		position: absolute;
+		bottom: 0;
+		left:50%;
+		margin-left: -16px
+	}
+	
+	
+	
+	#content-content .ikben a:hover .marker,
+	#content-landing .ikben a:hover .marker {
+		transition: border 300ms ease 0s;
+		border-color: transparent transparent #007BC7;
+		border-style: solid;
+		border-width: 16px;
+		position: absolute;
+		bottom: 0;
+		left:50%;
+		margin-left: -16px;
+
+			}
+	
+
+
+	#content-content .ikben .international:hover .marker,
+	#content-landing .ikben .international:hover .marker {
+		margin-left: -40px;
+			}
+	
+
+
+
+/************* ============== ****************/
+
+
+#content-landing article {
+	width: 340px;
+	background: #f5f5f5;
+	float: left;
+	margin-right: 20px;
+	padding: 20px;
+	height: 250px;
+	margin-bottom: 20px;
+}
+
+#content-landing .content-body {
+	margin-top: 260px;
+}
+
+#content-landing .top5 {
+	background: #007bc7;
+	color: #fff;
+}
+
+#content-landing .top5 ol {
+	font-weight: bold;
+	color: red;
+	position:relative;
+	z-index:3;
+	padding-left: 20px;
+}
+
+#content-landing .top5 ol li {
+	position: relative;
+	z-index:30;
+	margin-bottom: 12px;
+}
+
+#content-landing .top5 a {
+	font-weight: bold;
+	color: #fff;
+	position: relative;
+	z-index:2;
+	font-size: 1.077em;
+}
+
+#content-landing .top5 a:hover {
+	color: #fff;	
+}
+
+#content-landing .top5 a:before {
+	position: absolute;
+	left:-22px;
+	font-family:awesome;
+	content: '\f111';
+	z-index: 1;
+	font-size: 1.923em;
+}
+
+
+/**** ======== CONTENTPAGINA ========= *****/
+
+#content-landing .inloggen,
+ #content-content .inloggen {
+ 	display: none;
+ }
+
+#content-content .content-body  {
+	margin-top: 150px;
+}
+
+
+#content-content .content-body #breadcrumb {
+	padding: 20px;
+	background: #fff;
+	width: 740px;
+	float:left;
+	margin: 0;	
+	font-size: 1.077em;
+	color: #858585;
+	}
+	
+	
+	#content-content .content-body #breadcrumb a{
+		position: relative;
+		padding-right: 20px;
+		text-decoration: none;
+	}
+
+	
+	#content-content .content-body #breadcrumb a:after {
+		font-family: awesome;
+		content:"\f105"; /*Double angle*/
+		position: absolute;
+		right: 5px;
+		font-size: 1.077em;
+	}
+
+
+
+#content-content .content-body nav {
+	float: left;
+	width: 340px;
+	padding: 20px;
+	margin-right: 20px;
+	background: #fff;
+
+}
+
+.formlink {
+	text-decoration: none;
+	position: relative;
+	padding-left: 12px;
+}
+
+.formlink:hover {
+	text-decoration: underline;
+	
+}
+
+.formlink:before {
+	position: absolute;
+	font-family:awesome;
+	content:'\f105';
+	left: 0;
+	top:-2px;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+
+#content-content .content-body nav ul ul{
+	padding: 10px 20px 0 40px;
+	margin: -12px -20px 5px -20px;
+}
+
+#content-content .content-body nav ul{
+	margin-bottom: 60px;
+	}
+	
+	
+#content-content .content-body nav ul li{
+	margin-bottom: 1em
+	}
+
+#content-content .content-body nav a {
+		padding-left: 20px;
+		font-size: 1.077em;
+	}
+	
+	#content-content .content-body nav .active a {
+		font-weight: bold;
+		background: #b2d7ee;
+		padding: 5px 20px 5px 40px;
+		margin: -5px -20px -5px -20px;
+	}
+	
+	#content-content .content-body nav ul ul .active  a {
+		background: #d9ebf7;
+		padding-left: 60px;
+		margin-left: -40px;
+		}
+		
+	#content-content .content-body nav  ul ul .active a:before {
+		left:40px;
+		content:'\f054';
+		}
+	
+	#content-content .content-body nav .active a:before {
+		content:'\f078';
+		left: 20px;
+	}
+
+
+
+#content-content .content-body nav a:before {
+		content:'\f054';
+		font-size: 1.077em;
+		line-height: 22px;	
+	}
+	
+	#content-content .content-body nav ul ul a:before {
+		content:'\f054';
+		font-size: 1.077em;
+		line-height: 22px;	
+	}
+
+
+
+#content-content .content-body article {
+	float: left;
+	width: 740px;
+	padding: 0 20px 20px 20px;
+	font-size: 1em;
+	background: #fff;
+}
+
+#content-content .content-body .faq .alles {
+	float: right;
+	font-weight: bold;
+	text-decoration: none;
+	position: relative;
+	padding-left: 12px;	
+}
+
+
+#content-content .content-body .faq h2 {
+	font-weight: normal;
+}
+
+#content-content .content-body .faq .alles:hover {
+	color: #0162cd;
+	text-decoration: underline;
+}
+
+#content-content .content-body .faq .alles:before {
+	font-family: awesome;
+	position: absolute;
+	content:'\f105';
+	left: 0;	
+}
+
+#content-content .content-body nav .diploma {
+	border-top: 3px solid #007bc7;
+	padding: 20px;
+	margin-top: 40px;	
+	background: #d9ebf7;
+	margin: 0 -20px 0 -20px;
+	display: none;
+}
+
+
+
+#content-content .content-body nav .gerelateerd {
+	float: left;
+	padding: 20px 60px 20px 20px;
+	background: #fff;
+	border: 3px solid #d9ebf7;
+	border-radius: 8px;
+	position:relative;
+	margin: 20px -20px 0 -20px;
+}
+
+#content-content .content-body nav .gerelateerd:after {
+	position: absolute;
+	right: 20px;
+	font-family: awesome;
+	content:'\f054';
+	font-size: 3.846em;
+	color: #d9ebf7;
+	top: 55px;
+}
+
+#content-content .content-body nav .gerelateerd:hover:after {
+	color: #007bc7
+}
+
+
+#content-content .content-body nav .gerelateerd:hover {
+	border-color: #007bc7;
+	color: #333;
+	cursor: pointer;
+}
+
+
+#content-content .content-body nav .gerelateerd h2 {
+	font-size: 1.231em;
+	color: #0162cd;
+	}
+
+#content-content .content-body .faq{
+	background: #d9ebf7;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+#content-content .content-body .faq h2 {
+	margin: 0 0 20px 0;
+}
+
+#content-content .content-body .faq ul {
+	list-style: none;
+	padding: 0;
+	}
+
+#content-content .content-body article h1 {
+	font-size: 1.846em;
+	line-height: 40px;
+	margin-top: 0;
+}
+
+#content-content .content-body article h2 {
+	font-size: 1.538em;
+	margin-bottom: 1em;
+	margin-top: 1.5em;
+}
+
+#content-content .content-body article h3 {
+	font-size: 1em;
+	line-height: 22px;
+	margin-bottom: -1em;
+}
+
+
+#content-content .content-body article ul{
+	list-style: square;
+	padding-left: 13px;	
+}
+
+	#content-content .content-body article .boxed  {
+		border: 3px solid #d9ebf7;
+		padding: 20px;		
+		margin-top: 20px;
+	}
+	
+	
+	#content-content .content-body article ul li {
+		margin-bottom: 5px;
+	}
+	
+	#content-content .content-body article .boxed  h3 {
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+	
+		
+	#content-content .content-body article .boxed  ul {
+		margin-bottom: 0;
+	}
+
+
+
+
+/********* ============================= *********/			
+
+	footer {
+		border-bottom: 3px solid #154273;
+		margin-top: 3.2%;
+      height: 140px;
+		}
+
+
+	footer .bluebit {
+		width: 44px;
+		height: 25px;
+		background: #154273;
+		margin: 0 auto;
+      top: -93%;
+      position: relative;
+	}
+
+	footer .payoff {
+		font-family: serif;
+		font-style: italic;
+		color: #333333;
+		float:left;
+		width: 300px;
+		margin-left: 54px;
+		margin-top: -2px;
+		font-size: 1.2em;
+	}
+	
+	#faq {
+		width: 1160px;
+		margin: 0 auto;
+		padding: 40px 20px 70px 40px;
+		background: #e0e0e0;
+	}
+	
+		
+	.clearboth {
+		clear: both;
+	}
+
+header nav ul {
+   float: left;
+}
+
+header nav ul .home:before {
+	content:"\f015";
+	font-family: awesome;
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 6px;
+    height: 15px;
+    font-size: 1.175em;
+}
+
+nav .search {
+	float: right;
+}
+
+input[type=search] {
+   -webkit-appearance: none;
+   font-size: 1.231em;
+}
+
+.zoekknop {
+    -webkit-appearance: none;
+    border-radius: none;
+}
+
+nav .search label,
+nav .search legend {
+	display: none;
+}
+nav .search fieldset {
+border: none;
+margin: -10px 20px 0 0;
+padding: 0;
+}
+
+header .search input[type="search"] {
+   height: 30px;
+   width: 130px;
+   margin-top: 2px;
+   border: none;
+}
+
+header .search input[type="submit"] {
+    background-color: #D9EBF7; 
+    border: none;
+    color: #333;
+    padding: 4px 8px 5px 8px;
+    margin-left: -5px;
+    cursor: pointer;
+	position: relative;
+	height: 30px;
+                width: 40px;
+	font-family: awesome;
+                font-size: 1.538em;
+    top: 1px;
+}
+/*firefox only hack*/
+@-moz-document url-prefix() {
+  header .search input[type="submit"]{
+    padding:0;
+    height: 32px;
+    top: 1px;
+  }
+}
+
+
+header .search input {
+font-size: 1em;
+font-family: verdana;
+padding-left: 10px;
+color: #A8A8A8;
+}
+
+header .search input[type="submit"]:hover {
+    background-color: #D9EBF7; 
+}
+
+#content-home
+{
+    background-position: top right;
+transition: backgound-image 0.5s ease 0.1s;
+/* Safari */
+-webkit-transition:background-image 0.5s ease 0.1s;
+}
+
+/* Cookie bar */
+.message.cookie {
+padding-top: 5px;
+background-image: none;
+background-color: #E0E0E0;
+}
+
+.message.site {
+margin: 0 auto;
+padding-bottom: 10px;
+}
+
+.message p {
+margin: 0 auto;
+text-align: center;
+}
+
+.message, #site-message {
+padding: 30px 10px 5px;
+}
+
+#zoekresultaat {
+   position: relative;
+   top: -32em;
+   left: 10em;
+   width: 60em;
+}
+
+#results li {
+   list-style-type: decimal;
+}
+
+#results li a {
+   padding-left: 0;
+}
+
+/*** BEGIN GEEF UW MENING ***/
+#duo_mening{
+            visibility: visible;
+            display: block;
+            z-index: 999;
+            right: 0px;
+            bottom: 0px;
+            margin: 0px;
+            padding: 0px;
+            border-width: 0px;
+            position:fixed;
+}
+#duo_mening a {
+   visibility: visible; 
+   display: block; 
+   margin: 0px; 
+   padding: 0px; 
+   border-width: 0px; 
+   outline: medium none; 
+   opacity: 1;
+}
+#duo_mening img{
+   visibility: visible; 
+   display: block; 
+   margin: 0px; 
+   padding: 0px; 
+   border-width: 0px;
+}
+/*** EIND GEEF UW MENING ***/
+
+/* servicekantoor afspraak */
+#afspraak {
+height: 710px;
+width: 470px;
+border: none;
+overflow: hidden;
+}
+
+a:active, a:focus {outline:none;}
+
+
+.nobreak{
+   display: none;
+   white-space:nowrap;
+/*   overflow:hidden;
+   text-overflow:ellipsis;
+
+*/ float: left;
+   width: 23%;   
+}
+
+#breadcrumDeviceSelect{
+   border: 1px solid #007BC7 !important;
+}
+
+#partMenuItem {
+    display: none;
+}
+
+
+#feedbackbox {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 40px;
+   height: 40px;
+   width: 80px;
+   z-index: 500;
+   background: #1fa9ff; /* Old browsers */
+   /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/tbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzFmYTlmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMTZlYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+   background: -moz-linear-gradient(top,  #1fa9ff 0%, #016eb2 100%); /* FF3.6+ */
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1fa9ff), color-stop(100%,#016eb2)); /* Chrome,Safari4+ */
+   background: -webkit-linear-gradient(top,  #1fa9ff 0%,#016eb2 100%); /* Chrome10+,Safari5.1+ */
+   background: -o-linear-gradient(top,  #1fa9ff 0%,#016eb2 100%); /* Opera 11.10+ */
+   background: -ms-linear-gradient(top,  #1fa9ff 0%,#016eb2 100%); /* IE10+ */
+   background: linear-gradient(to bottom,  #1fa9ff 0%,#016eb2 100%); /* W3C */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fa9ff', endColorstr='#016eb2',GradientType=0 ); /* IE6-8 */	
+   padding-top: 10px;
+}
+p.feedback a {
+   text-decoration: none;
+}
+p.feedback {
+   text-align: center;
+   padding: 0;
+   margin: 5px 0 0 0;
+}
+a.feedbacklink {
+   color: white;
+   font-family: arial;
+   font-size: 30px;
+   display: block;
+}
+#feedbackbox span:before {
+   font-family: awesome;
+   content: "\f164";
+}
+@media only screen and (max-width : 631px) {
+   #feedbackbox {
+      right: 20px;
+      width: 60px;
+   }
+}
+
+.noshow {
+   display: none;
+}
+
+
+.beschrijvingIframe {
+  background-color: black;
+  color: white;
+  height: 25px;
+  margin-top: -26px;
+  padding: 5px 0 0 1em;
+  font-style: normal;
+  display: none;
+}
+#content .beschrijvingIframe a:hover,
+#content .beschrijvingIframe a {
+  color: white;
+  text-decoration: none;
+}
+.beschrijvingIframe:before {
+  content: "\f105";
+  font-family: awesome;
+  padding-right: 0.5em;
+  }GET /includes/doelgroepsite/homepage.css HTTP/1.1
+Host: duo.nl
+Connection: keep-alive
+Referer: https://duo.nl/particulieren/
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+Cookie: ASPSESSIONIDAUASRRDA=CHHCMLKDLNAMKNJHNFBMFDNN
+
+HTTP/1.1 200 OK
+Content-Length: 3403
+Content-Type: text/css
+Last-Modified: Mon, 22 Sep 2014 13:13:12 GMT
+Accept-Ranges: bytes
+ETag: "b22537f666d6cf1:5647"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Wed, 09 Dec 2015 15:06:15 GMT
+
+/** Tiles **/
+
+
+#tiles {
+    margin: 0 24px;
+    clear: both;
+}
+#tiles .tile {
+    padding: 20px;
+    width: 244px;
+
+    background-color: #F3F5F6;
+    line-height: 32px;
+    font-family: Verdana;
+    font-size: 0.846em;
+    float: left;
+    margin: 21px 20px 0 0;
+
+}
+
+#tiles  div:nth-child(3) {
+    margin-right: 0;
+}
+
+
+/** deurmat **/
+.aantaldagenSF,
+#tiles .tile h2 {
+    font-family: Verdana;
+    font-weight: normal;
+    font-size: 1.4em;
+    color: #333;
+}
+
+#tiles .tile h2 {
+   margin-bottom: 0;
+}
+
+.aantaldagenSF {
+    margin-top: -12px;
+    display: inline-block;
+    float: left;
+}
+
+
+.aantaldagenSF a:hover {
+    text-decoration: none;
+}
+
+.aantaldagenSF a span:hover {
+    text-decoration: underline;
+}
+
+.aantaldagenSF a:after {
+    content: ">";
+    padding-left: 0.3em;
+    text-decoration: none;
+}
+
+.tile ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+}
+
+.xnieuws li:before {
+    content: ">";
+    padding-right:3px;
+    color: #0162cd;
+}
+
+
+a {
+    color: #0162cd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#homepageNav {
+   border-bottom: 4px solid #007BC7;
+}
+#homepageNav h1 {
+   margin: 0;
+}
+.topMenuItems li {
+   margin-left: 0;
+}
+
+.tile li {
+   padding-left: 0.5em;
+   text-indent: -1em;
+}
+
+.tile li span {
+   display: inline-block;
+   line-height: 16px;
+   margin-left: 14px;
+}
+
+.tile li span:before{
+   content: ">";
+   padding-right: 3px;
+   color: #0162cd;
+}
+
+.menu_marker {
+border-top: 8px solid transparent;
+border-right: 8px solid transparent;
+border-bottom: 8px solid transparent;
+border-left: 8px solid #007bc7;
+display: inline-block;
+height: 1px;
+width: 0px;
+vertical-align: middle;
+position: relative;
+top: -2px;
+}
+
+#alertbox p {
+   display: inline;
+}
+#alertbox {
+   background-color: #fef1bc;
+   height: 22px;
+   position: relative;
+   width: 1175px;
+   top: -3px;
+   left: 0px;
+   z-index: 10;
+   padding: 5px;
+   text-align: left;
+   display: inline-block;
+   padding-left: 40px;
+   font-size: 1.231em;
+   font-weight: bold;
+}
+
+.content-body {
+   top: -170px;
+}
+
+#content-home {
+   height: 535px;
+}
+
+footer .bluebit {
+   clear: both;
+}
+
+.home-gradient {
+   /* IE10 Consumer Preview */
+   background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+
+   /* Mozilla Firefox */
+   background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+
+   /* Opera */
+   background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+
+   /* Webkit (Safari/Chrome 10) */
+   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(1, rgba(255, 255, 255, 1)));
+
+   /* Webkit (Chrome 11+) */
+   background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+
+   /* W3C Markup, IE10 Release Preview */
+   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+
+   top: -68px;
+   position: relative;
+   height: 100px;
+}
+
+.aDiploma,
+.aUitbetaling {
+   display: inline-block;
+   color: #000;
+   /*jjh
+   font-size: 1.692em;
+   line-height: 28px;*/
+   font-size: 1.4em;
+   line-height: 22px;
+   /*jjh
+   margin-top: 45px;*/
+    margin: 10px;
+}
+
+.aDiploma {
+   /*jjh
+   margin-top: 60px;*/
+}
+
+.aDiploma:hover,
+.aUitbetaling:hover {
+   text-decoration: none;
+}GET /includes/doelgroepsite/respdesignAll.css HTTP/1.1
+Host: duo.nl
+Connection: keep-alive
+Referer: https://duo.nl/particulieren/
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+Cookie: ASPSESSIONIDAUASRRDA=CHHCMLKDLNAMKNJHNFBMFDNN
+
+HTTP/1.1 200 OK
+Content-Length: 8490
+Content-Type: text/css
+Last-Modified: Mon, 16 Jun 2014 07:05:01 GMT
+Accept-Ranges: bytes
+ETag: "bc85c94a3189cf1:5647"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Wed, 09 Dec 2015 15:06:15 GMT
+
+#siteMenu320 {
+    display: none;
+}
+@media only screen  and (max-width: 1200px) {
+    #alertbox{
+      width: 96.2%;
+    }
+
+	#content-landing .content-head >.ikben > ul >li {
+	   display: none;
+	}
+	#content-landing .content-head >.ikben > ul >.active {
+	   display: block;
+	}
+	#content-landing .content-head >.ikben > ul >.active > a {
+	   display: block;
+	}
+
+	#content-landing .content-head .ikben, #content-content .content-head .ikben,
+	#content-landing .content-head .ikben, #content-content .content-head .ikben
+	#content-landing article, #content-content .ikben .active a .marker, #content-landing .ikben .active a .marker,
+	#content-content .ikben .active > a, #content-landing .ikben .active > a	{
+		background-color: transparent;
+		border: none;
+	}
+	#content-content .ikben .active > a, #content-landing .ikben .active > a	{
+		color: transparent;
+	}
+    #breadcrumDevice{
+      display: block;
+      width:44%;
+    }
+    #breadcrumDesktop{
+      display: none;
+    }
+    #breadcrumDeviceSelect {
+        width:100%;
+        font-size: 1.2em;
+    }
+    
+    #crum #breadcrumDeviceSelect + label:after{
+      content: "\f105";
+      font-family: awesome;
+      display: inline-block;
+      margin-left: 0px;
+      margin-right: 12px;
+      margin-left: 12px;
+      height: 18px;
+      font-size: 16px;
+    }
+
+
+}
+@media only screen and (min-width: 893px) and (max-width: 1024px){
+    #container {
+        max-width: 1024px;
+    }
+    #alertbox{
+      width: 95.5%;
+    }
+    header .search input[type="submit"] {
+        height: 25px;
+    }
+/*    .supportblok:nth-child(2),*/
+    .supportblok {
+        width: 26.9%;
+        padding: 20px;
+    }
+    #support {
+        padding: 20px 0 0 20px;
+    }
+    #content-home {
+        background-position: -75px 0;
+    }
+    header .search input[type="submit"] {
+        height: 30px;
+    }
+    @-moz-document url-prefix() {
+      header .search input[type="submit"] {
+          height: 32px;
+      }
+    }
+    #duo_mening{
+      margin-right: -70px;
+    }
+    #duo_mening img{
+      width:50%;
+    }
+
+    .content-body {
+        width: 98%;    
+    }
+}
+
+
+@media only screen and (min-width: 632px) and (max-width: 892px){
+    #container {
+        max-width: 892px;
+    }
+    #alertbox{
+      width: 94.55%;
+      height: auto;
+      margin-top: -10px;
+    }
+
+    @media only screen and (min-width: 632px) and (max-width: 720px){
+        #siteMenu1220 {
+            display: none;
+        }
+        #navbeam {
+           /*display: none;*/
+        }
+
+        #alertbox{
+          margin-top: 0;
+        }
+        #siteMenu320 {
+            background-color: #b3d7ee;
+            width: 90px;
+            float: left;
+            margin-top: -8px;
+            height: 26px;
+            padding-top: 4px;
+            display: block;
+            z-index: 12;
+            position: absolute;
+        }
+        #siteMenu320 .menuLink:before {
+            font-family: awesome;
+            font-size: 20px;
+            content:"\f0c9";
+            padding-right: 10px;
+        }
+        #siteMenu320 .menuLink {
+            color: #000;
+            
+            padding-left: 10px;
+            text-decoration: none;
+        }
+        #siteMenu320 #ul320 {
+            display: none;
+            background-color: #007bc7;
+            margin-left: -20px;
+            padding: 20px 0px 20px 25px;
+            position: relative;
+            z-index: 3;
+            height: 155px;
+            width: 260%;
+        }
+        #siteMenu320 #ul320 li {
+            margin-bottom: 2px;
+        }
+        #siteMenu320 #ul320 a:after {
+            float: right;
+            content: "\f105";
+            font-family: awesome;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        header nav ul li {
+            width: 90%
+        }
+        header nav ul li a {
+            background-color: #FFFFFF;
+            color: #000;
+        }
+        
+
+    }
+/*
+    #logo img {
+      content:url(/Images/logo_tcm6-6736.png);
+    }
+*/
+
+    .ikben {
+        width: 44.8%;
+    }
+
+    .inloggen {
+        position: relative;
+        left: 50%;
+        width: 41%;
+        font-size: 1.8em;
+    }
+    .inloggen:after {
+        margin: 0 0 0 100;
+    }
+    .dashblok3 {
+        width: 44%;
+    }
+
+    .dashblok3:nth-child(3) {
+        width: 93%;
+        margin-bottom: -120px;
+    }
+
+    .dashblok3:nth-child(3) li {
+        display: block;
+        width: 40%;
+        float: left;
+    }
+
+    .dashblok3:nth-child(3) li:nth-child(even) {
+        padding-left: 99px;
+    }
+
+    .uitbetaaldatum p {
+        width: 90%;
+    }
+    header .search input[type="submit"] {
+        height: 30px;
+    }
+    @-moz-document url-prefix() {
+      header .search input[type="submit"] {
+          height: 32px;
+      }
+    }
+/*    .supportblok:nth-child(2),*/
+    .supportblok {
+        width: 44%;
+        padding-top: 40px;
+    }
+    #support {
+        padding: 0 0 0 2.367%;
+    }
+
+    #content-home {
+        background-position: -280px 0;
+    }
+
+    ul li ul li {
+        width: 290px;
+    }
+    .topMenu {
+        width: 43.4%;
+    }
+    .topmenuText {
+        width: 255px;
+    }
+   footer{
+     margin-top: auto;
+     height: auto;
+   }
+    footer .bluebit {
+      top: -100%;
+    }
+    .payoff{
+      display: block;
+    }
+    #duo_mening{
+      margin-right: -70px;
+    }
+    #duo_mening img{
+      width:50%;
+    }
+    .content-body {
+        width: 97.7%;    
+    }
+
+}
+
+@media only screen and (max-width: 631px){
+    #container {
+        max-width: 631px;
+    }
+    
+     #alertbox{
+      width: 295px;
+     }
+/*
+    #logo img {
+      content:url(/Images/u471_tcm6-7004.png);
+    }
+    /*firefox only hack*/
+    @-moz-document url-prefix() {
+      #logo a:after {
+        content:url(/Images/u471_tcm6-7004.png);
+      }
+      #logo img{
+        display: none;
+      }
+*/
+   }
+
+    #content-home {
+        position: static;
+    }
+    #content-landing{
+          background-image: none !important;
+    }
+
+    .content-body{
+       top: -170px;
+       background-color: #FFF;
+       height: 525px;
+       width: 95%;
+    }
+    #content-landing .content-head >.ikben > ul >.active,
+    #content-landing .content-head >.ikben > ul >.active > a {
+      display: none;
+    }
+    .home-gradient {
+      background-image: none;
+    }
+    #siteMenu1220 {
+        display: none;
+    }
+    #siteMenu320 {
+        background-color: #b3d7ee;
+        width: 90px;
+        float: left;
+        margin-top: -8px;
+        height: 26px;
+        padding-top: 4px;
+        display: block;
+        z-index: 12;
+        position: absolute;
+    }
+    #siteMenu320 .menuLink:before {
+        font-family: awesome;
+        font-size: 20px;
+        content:"\f0c9";
+        padding-right: 10px;
+    }
+    #siteMenu320 .menuLink {
+        color: #333;
+        font-weight: normal;
+        padding-left: 10px;
+        text-decoration: none;
+    }
+    #siteMenu320 #ul320 {
+        display: none;
+        background-color: #007bc7;
+        margin-left: -20px;
+        padding: 20px 0px 20px 25px;
+        position: relative;
+        z-index: 3;
+        height: 155px;
+        width: 260%;
+    }
+    #siteMenu320 #ul320 li {
+        margin-bottom: 2px;
+    }
+    header nav ul li {
+      width: 90%
+    }
+    header nav ul li a {
+        background-color: #FFFFFF;
+        color: #000;
+    }
+    .ikben a:after,
+    #siteMenu320 #ul320 a:after {
+        float: right;
+        content: "\f105";
+        font-family: awesome;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    #navbeam {
+        /*display: none;*/
+    }
+    section{
+      background-image: none;
+      margin-bottom: 12px;
+    }
+    section a:onmouseover{
+      background-image: none;
+    }
+
+    .content-head {
+        padding-left: 0;
+    }
+   footer{
+     margin-top: auto;
+     height: auto;
+   }
+   footer .bluebit {
+      top: 3px;
+   }
+/*    .supportblok:nth-child(2),*/
+   .supportblok {
+     width: 96%;
+     margin-bottom: 12px;
+     margin-top: 0px;
+   }
+   .payoff{
+      display: none;
+   }
+    #duo_mening{
+      margin-right: -70px;
+    }
+    #duo_mening img{
+      width:50%;
+    }
+    #content-landing  .content-head .ikben {
+        width: 95%;
+    }
+    .content-body {
+        width: 95%;    
+    }
+
+}
+@media only screen and (max-width: 600px){
+    
+     #alertbox{
+      width: 94%;
+     }
+}
+@media only screen and (max-width: 320px){
+    #container {
+        width: 320px;
+    }
+    #alertbox{
+      width: 295px;
+      height: 100%;
+      padding-left: 20px;
+      top: 0;
+    }
+}GET /includes/doelgroepsite/respdesignHome.css HTTP/1.1
+Host: duo.nl
+Connection: keep-alive
+Referer: https://duo.nl/particulieren/
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+Cookie: ASPSESSIONIDAUASRRDA=CHHCMLKDLNAMKNJHNFBMFDNN
+
+HTTP/1.1 200 OK
+Content-Length: 6136
+Content-Type: text/css
+Last-Modified: Tue, 23 Sep 2014 08:34:53 GMT
+Accept-Ranges: bytes
+ETag: "7218c3f9d7cf1:5647"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Wed, 09 Dec 2015 15:06:15 GMT
+
+@media only screen and (min-width: 893px) and (max-width: 1024px){
+   @media only screen and (min-width: 893px) and (max-width: 928px){
+       .inloggen {
+          line-height: 25px;
+      }
+      .inloggen:after {
+          top: -40px;
+      }
+   }
+
+    #container {
+        max-width: 1024px;
+    }
+    .ikben {
+        width: 27%;
+    }
+    .ikben .international {
+         background-position: 90% 5px;
+    }
+    .dashblok3,
+    .dashblok3:first-child,
+    .dashblok3:last-child     {
+        width: 26.9%;
+    }
+    
+	    
+
+    .inloggen {
+        position: relative;
+        left: 64.3%;
+        width: 25.4%;
+        font-size: 1.65em;
+    }
+    .inloggen .digid {
+        background-position: left 3px;
+        }
+
+    .inloggen .digid {
+        font-size: 0.95em;
+        line-height: 2.5em;
+    }
+
+/*    .supportblok:nth-child(2),*/
+    .supportblok {
+        width: 26.9%;
+        padding: 0 20px;
+    }
+    #support {
+        padding: 20px 0 100px 20px;
+    }
+   .diploma p {
+     width: 100%;
+   }
+   .aDiploma, .aUitbetaling {
+        font-size: 1.55em;
+   }
+    #content-home {
+        background-position: -75px 0;
+    }
+}
+
+
+@media only screen and (min-width: 632px) and (max-width: 892px){
+    #container {
+        max-width: 892px;
+    }
+    @media only screen and (min-width: 632px) and (max-width: 720px){
+      #partMenuItem {
+          /*display: block;*/
+      }
+    }
+    #logo img {
+      content:url(/Images/logo_tcm6-6736.png);
+    }
+    .ikben {
+        width: 44.3%;
+    }
+
+    .inloggen {
+        position: relative;
+        left: 49%;
+        width: 42%;
+        font-size: 1.8em;
+    }
+    .inloggen:after {
+        margin: 0 0 0 100;
+    }
+	.dashblok3:first-child,
+    .dashblok3 {
+        width: 44%;
+    }
+
+    .dashblok3:nth-child(3) {
+        width: 93%;
+        margin-bottom: -120px;
+        
+    }
+    
+      .dashblok3:nth-child(3) hr {
+	       margin-top: 20px;
+	       margin-bottom: 20px;
+         }
+
+    
+    	.aUitbetaling {
+    		margin-top: 20px;
+	    	}
+    		.aUitbetaling span {
+			display: inline;
+		       }
+		       
+		       .aUitbetaling:after {
+		       	top:0;
+			       }
+    
+    .dashblok3:nth-child(3) li {
+        display: block;
+        width: 40%;
+        float: left;
+    }
+
+    .dashblok3:nth-child(3) li:nth-child(even) {
+        padding-left: 99px;
+    }
+
+    .uitbetaaldatum p {
+/*        width: 100%;*/
+    }
+/*    .supportblok:nth-child(2),*/
+    .supportblok {
+        width: 44%;
+        padding-top: 100px;
+    }
+    .supportblok:nth-child(3) {
+        padding-top: 50px;
+    }
+
+    #support {
+        padding: 20px 0 0 2.367%;
+    }
+
+    #content-home {
+        background-position: 30% 0;
+    }
+
+    ul li ul li {
+        width: 290px;
+    }
+    .topMenu {
+        width: 330px;
+    }
+    #divBlokken ul li ul li:nth-child(1) {
+        margin-left: 350px;
+    }
+    .topmenuText {
+        width: 255px;
+    }
+   footer{
+     margin-top: auto;
+     height: auto;
+   }
+
+    footer .bluebit {
+      top: -100%;
+    }
+    .payoff{
+      display: block;
+    }
+}
+
+@media only screen and (max-width: 631px){
+.supportblok {
+    top: 0;
+} 
+#partMenuItem {
+    display: block;
+}
+    #container {
+        max-width: 631px;
+    }
+    #content-home {
+        position: static;
+        background-image: none !important;
+    }
+    .content-body{
+       top: -83px;
+       background-color: #FFF;
+       height: 570px;
+       width: 93%;
+    }
+    .home-gradient {
+      background-image: none;
+      display: none;
+    }
+    #navbeam {
+        /*display: none;*/
+        height: 100%;
+    }
+    #alertbox {
+        width: 94%;
+              height: 100%;
+      padding-left: 20px;
+      top: 0;
+    }
+    section{
+      background-image: none;
+      margin-bottom: 12px;
+    }
+    section a:onmouseover{
+      background-image: none;
+    }
+
+    .content-head {
+        padding-left: 0;
+    }
+    .ikben {
+        padding: 20px 20px 20px 20px;
+        width: 88%;
+        background-color: #FFF;
+        height: 0%;
+    }
+    .ikben li {
+        background-color: #f5f5f5;
+        padding: 0 10px;
+        margin-bottom: 1px;
+        height: 40px;
+    }
+    .ikben a {
+        padding-left: 0;
+        font-weight: normal;
+        padding-top: 4px;
+    }
+    .ikben ul a:before {
+        padding: 0;
+        content: "";
+        margin: 0;
+    }
+
+    .ikben h1 {
+        font-size: 18px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .ikben .international {
+        padding-right: 0;
+        background-position: 195px 7px;
+    }
+    .ikben div:first-child {
+        padding-bottom: 10px;
+    }
+    .ikben div:first-child:before {
+        content: "\f015";
+        font-family: awesome;
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 6px;
+    }
+    .ikben div:first-child:after {
+        content: "\f105";
+        font-family: awesome;
+        display: inline-block;
+        margin-left: 0px;
+        margin-right: 6px;
+        padding-left: 1em;
+    }
+    .inloggen{
+      display: block;
+      width: 80.5%;
+      top: 560px;
+      left: 3.28%;
+      left: 20px;
+    }
+   footer{
+     margin-top: auto;
+     height: auto;
+   }
+
+    .dashblok3,
+	.dashblok3:first-child,
+    .dashblok3:last-child {
+      width: 86.5%;
+      padding: 10px 20px;
+   }
+   .dashblok3:nth-child(3) {
+      margin-bottom: -70px;
+   }
+/*   .supportblok:nth-child(2),*/
+   .supportblok {
+     width: 96%;
+     margin-bottom: 12px;
+     margin-top: 0px;
+   }
+    .payoff{
+      display: none;
+    }
+    
+    .ikben li {
+       line-height: 33px;
+    }
+}
+@media only screen and (min-width: 321px) and  (max-width: 480px) {
+    #alertbox {
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 481px) and  (max-width: 600px) {
+    #alertbox {
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    #alertbox {
+        width: 92.2%;
+    .inloggen {
+width: 85%;
+top: 560px;
+left: 3.28%;
+left: 20px;
+font-size: 1.7em;
+padding: 10px 0 10px 10px;
+    }
+    .ikben {
+        width: 87.5%;
+    }
+    .content-body {
+        width: 92%;
+    }
+    .diploma p {
+       width: 105%;
+    }
+    .inloggen:after {
+margin: 0 0 0 92%;
+}
+}GET /includes/doelgroepsite/generiek.js HTTP/1.1
+Host: duo.nl
+Connection: keep-alive
+Referer: https://duo.nl/particulieren/
+Accept: */*
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+Cookie: ASPSESSIONIDAUASRRDA=CHHCMLKDLNAMKNJHNFBMFDNN
+
+HTTP/1.1 200 OK
+Content-Length: 465
+Content-Type: application/x-javascript
+Last-Modified: Tue, 17 Dec 2013 12:32:16 GMT
+Accept-Ranges: bytes
+ETag: "b2a14d524fbce1:5647"
+Server: Microsoft-IIS/6.0
+X-Powered-By: ASP.NET
+Date: Wed, 09 Dec 2015 15:06:15 GMT
+
+/***
+* Zorgt er voor dat elementen met selector/id obj dezelfde hoogte krijgen
+*
+*/
+function gelijkeHoogte(obj) {
+   var maxHeight = 0;
+   var breedte = (navigator.appVersion.indexOf("Win") > -1) ? 615 : 631;
+
+   if (document.documentElement.clientWidth > breedte) {
+       $(obj).each(function() {
+       
+          if ($(this).height() > maxHeight) {
+             maxHeight = $(this).height();
+          }
+       });
+    		
+       $(obj).height(maxHeight);
+   }
+}

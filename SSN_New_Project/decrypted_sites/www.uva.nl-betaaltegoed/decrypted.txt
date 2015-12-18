@@ -1,0 +1,692 @@
+POST /login?ReturnUrl=%2f HTTP/1.1
+Host: uva-hva.mynetpay.nl
+Connection: keep-alive
+Referer: https://uva-hva.mynetpay.nl/login?ReturnUrl=%2f
+Content-Length: 1374
+Cache-Control: max-age=0
+Origin: https://uva-hva.mynetpay.nl
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+Cookie: ASP.NET_SessionId=wzi3znuhplrbbb004pf4x1jy
+
+__LASTFOCUS=&ScriptManager1_TSM=&StyleSheetManager1_TSSM=&__EVENTTARGET=ctl00%24ctl00%24center%24content%24btnAuth&__EVENTARGUMENT=&__VIEWSTATE=Ymk4YtUt0mnk6FheNCpH4MnQYoDHig6wdj7t%2BbdKzkvJ8To%2FTt4RuCAPN3AJqytExNFbBgmIDZTf0pGSTl3j8oAFV3%2B4sTCR2VpYQGXMUaQRQBzHUi2zRBZpiklm2MefXi77EDetIqEDTm4KEFSy2oxOoNTu2hPI%2Bhtw6GTG60GpmhU0tL6iWHEkcl56sowgpiDUmqLmi%2BBGnkNwVPYHLZ1eAzenjKlLHl%2FR0marccko7lZ65gnbT7JZeXcXew7SQI2mU%2B%2BszPFUixuUBcxhuFW1eI5WQngoZPZNVzm4uT6TvZBczSdWBSATzMd0fCMmOdSYD7zIczqrJuNtxloXno1ItqPqVYFNoUxgCEB4uElQbaasWg6LcSBJ8SR3DCZdRh%2BKjpttCwEoxOI8KOBo2Fz3jcYYxuvcMZRStVrCUCo05FlOBYpitzOaBxT%2BSFxh92I8aVClOPfQEMzDqF%2BV%2BDnWSVte6vpc1xF3uLpcpfx6W1PKWS7ahjyKf8FMHSFfIKc6uD%2FkR26RHP4G5PRvMugZkxF5Vmc%2Bq8flx1T1MS9YE%2FFcJZ1qbD3O545FoSsI0k1g7RrmP7RyjpXi0%2BXVqUtdZqjM%2FR2O0dxTSkI6GsbnjqkfxLAyhWxQDBT0A6zMPzST%2BjKHeqMwp%2Fbns1cRBA2sHerRKf%2B4LX9OFuUi6aGhM5Nt9yyXY3Uos0gwmJRA4uM9XIQo%2FKw%2BLO4i3cbXNw%3D%3D&__VIEWSTATEGENERATOR=C2EE9ABB&__EVENTVALIDATION=JmOuWOpzSApqVFKUdNIN0XANsc6HEYE0FY4uYUHjdN0PWiuWVBiLBHWC8dK%2FWPyG57%2FusXnaF1sEZOCJ9PFO2uKw9AfAiNJL1wrLRmHiakH4sgstNR7g1bsEfyZo3HOxaBT8t%2FwFPUUTFbvUEVsoLH4GNAw6nLP1vjcAqGgb1geb62DFMrZwbru39UTy8PWGl8RIdF1pl%2FicgUBi2zr94rlIEs7%2FX4TMDkcX9TQsDzA%3D&ctl00%24ctl00%24center%24content%24TxBUserName=11126566&ctl00%24ctl00%24center%24content%24TxBPassW=readitifyoucan&ctl00%24ctl00%24lang1%24ddlLanguage=en-USHTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/8.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Strict-Transport-Security: Strict-Transport-Security: max-age=16070400; includeSubDomains
+X-Frame-Options: X-Frame-Options: deny
+X-XSS-Protection: X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: X-Content-Type-Options: nosniff
+Date: Wed, 09 Dec 2015 15:29:49 GMT
+Content-Length: 14876
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	myNetPay
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html;&#32;charset=utf-8" /><meta name="viewport" content="width=device-width,&#32;minimum-scale=1.0,&#32;&#32;maximum-scale=1.0" /><link rel="shortcut&#32;icon" href="favicon.ico" />
+    <script type="text/javascript" src="/Scripts/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="/Scripts/css3-mediaqueries.js"></script>
+    <link rel="stylesheet" href="/Scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/Scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <link type="text/css" rel="stylesheet" href="/css/main.css"  />
+    <link type="text/css" rel="stylesheet" href="/css/_custom.css"  />
+    
+    
+    
+
+    <link type="text/css" rel="stylesheet" href="/css/login.css"  />
+
+    <script type="text/javascript" src="Scripts/cookieCuttr/jquery.cookie.js"></script>
+    <script type="text/javascript" src="Scripts/cookieCuttr/jquery.cookiecuttr.js"></script>
+    <link rel="stylesheet" href="Scripts/cookieCuttr/cookiecuttr.css" type="text/css" media="screen" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.cookieCuttr({
+                cookieAnalytics: false,
+                cookieMessage: '',
+                cookiePolicyLink: 'info/cookie'
+            }
+            );
+        }); 
+    </script>
+
+
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox").fancybox();
+        });
+    </script>
+
+<link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930&amp;t=635332088925424071&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c%20Version%3d2015.1.225.45%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a45085116" type="text/css" rel="stylesheet" /></head>
+
+<body>
+<form method="post" action="login?ReturnUrl=%2f" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="ScriptManager1_TSM" id="ScriptManager1_TSM" value="" />
+<input type="hidden" name="StyleSheetManager1_TSSM" id="StyleSheetManager1_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="VK3yQnk9Ygn3qzb3aTUiLWN7YoZs0x7ewM8UOvu8ozn8NIdBelGqivvdPpgAcm91Xeggg7G5xc/QiZ+lWKIv5nGyYGGdBhxvQgiAy3mUHu8jSy6y4bZk2Hb2/FblG4JMxowqN+eOWfL9O4KZ18aLFJN2Dy4q+/qSR1RoqRcTS7tYWWEtpQqGiDXoANabPAPPybu0BweaKoDx3laSBwo7vEyg9mT5AMcFV07fvx1XZUaD+LsEnGqKXmWYK/d5Rrd4r5S00O2puKE6HjMEvn/wSERvlZX84s04D/ZdlzPEcZx2ByT2Jaspcz6+HdVg6BAUooMMk7gS6CdJ6rd99msb7tMejqAKeKmU/q1VO8Pt9LvAyd7olo6x34dg3WI/HyOCXeprw7N7iVfym14svjbAImasyzsVVNeG4m3KeOXlNN5E+0LaOGeuB9gKvnPu8T3nOPsJwVDafPMEZKvINF1iS8+ULAX1pVF1QPJA9BFOGH4jPHWlWDiNnXN5BPpjK64sM/jfwu/aHWq1RH9Z304aVrgooKz8aP6RyH43GuC7Ov0bG0QdaQMLG8RKwhXCDVzmaltTZIanvlmOOKKCZ5MJmtoe4ab894mp+Mz39ftcWFbX1MzYtBj49PLdydmbKlBd7Z9vii2ZqBWNPOWfHHWOR71gdyuKSWDbPUHmJj1upHGpgBKReIY+4OzynOLC1Unawaw6qiNH2epXlXKrHqAQI+KaSW6enNRWBtSA7sKpksJ8zBpYHTLNZpjUH5otb61+xFmt+yYToLScyKcNfcw55cti0kWISc/14QAw+QKg6l4=" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZFn5GKMslb1DRqZgYYTT2MgTLsEoS8N1BD_ULdoYjoNL4df5TT2QRNoc2KIJrVv93w2&amp;t=635589471476784022" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1Lp1CmKluAZ5lHBXuN0cjUXH0SLnpkJ04F0B2Tp1jPqxQT6nNixAEolls9m5yu9AeCpgTQUPqj7CnEJuGGl3jyt5oD3Z74zBaSD2z7BzEjPdt7jXZF6V-BQiM0JCkTH6rw2&amp;t=fffffffff2209473" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c%20Version%3d4.0.0.0%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a1453655a-6b8d-49b1-94c2-f77a352f5241%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c%20Version%3d2015.1.225.45%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a16e4e7cd%3aed16cbdc%3af7645509%3a88144a7a" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="80h1A6pCIbNSHZTtXlRcCY21/DxdK/EB+jDJS6GXzGaQa5C8fUPwpGSOGjWzozuWg4uGSiUVHuciNQLJkxR7S6fbUdE7lS/5vPHeLTSBPBVtF5T5eU5UBtIyuoEYeIrzYQPv9dQch5637gs2I91OInEvFchTlaPHlDCO6faGx9eQQK34PosUYDi2Z1on0qvh+RnNdAwYAsNtw8LCMsTytM/5E05Ae2CoyWM7S68gr1M=" />
+</div>
+      <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1', ['tctl00$ctl00$center$content$ctl00$ctl00$center$content$RadAjaxPanel1Panel','','tctl00$ctl00$AjaxManager1SU','AjaxManager1SU'], [], [], 90, 'ctl00$ctl00');
+//]]>
+</script>
+
+    
+    
+    <!-- 2015.1.225.45 --><div id="AjaxManager1SU">
+	<span id="ctl00_ctl00_AjaxManager1" style="display:none;"></span>
+</div>
+
+  <div id="wrapper">
+    <div id="container">
+        <div id="header" >
+            
+
+            
+        </div>  
+    
+        
+<div id="col-block">
+    
+
+<div class="box loginpagina">
+  <div id="login-col-left"></div> 
+  <div id="login-col-right">
+      <h1><span id="center_content_lbLoginWith">Login with your HvA-ID or UvAnetID</span></h1><a id="center_content_lnkInfo" class="fancybox&#32;fancybox.ajax" href="info/how-to-login"><img src="common/ic_info.png" alt="" /></a>
+      
+      <div class="RadAjaxPanel" id="ctl00_ctl00_center_content_ctl00_ctl00_center_content_RadAjaxPanel1Panel">
+	<div id="ctl00_ctl00_center_content_RadAjaxPanel1">
+		
+
+   
+
+     
+          <div id="center_content_Panel1" onkeypress="javascript:return&#32;WebForm_FireDefaultButton(event,&#32;&#39;center_content_btnAuth&#39;)">
+			
+        <div id="login">
+                
+            <div class="row">
+                <input name="ctl00$ctl00$center$content$TxBUserName" type="text" value="11126566" maxlength="40" id="center_content_TxBUserName" class="txtBox" placeholder="Username" /> 
+                <label for="center_content_TxBUserName" id="center_content_lbUsername">Username</label>
+                <span id="center_content_rfv1" class="errorIcon" style="visibility:hidden;"></span>
+            </div>
+
+            
+                <div class="row">
+                    <input name="ctl00$ctl00$center$content$TxBPassW" type="password" maxlength="25" id="center_content_TxBPassW" class="txtBox" autocomplete="off" placeholder="Password" /><label for="center_content_TxBPassW" id="center_content_lbPwd">Password</label><span id="center_content_rfv2" class="errorIcon" style="visibility:hidden;"></span>
+                </div>
+            
+            
+           <div class="row">
+            <input type="button" name="ctl00$ctl00$center$content$btnAuth" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new&#32;WebForm_PostBackOptions(&quot;ctl00$ctl00$center$content$btnAuth&quot;,&#32;&quot;&quot;,&#32;true,&#32;&quot;login&quot;,&#32;&quot;&quot;,&#32;false,&#32;true))" id="center_content_btnAuth" title="Login" class="button" />
+           </div>
+            
+            <div id="center_content_pnlLoginDisplayMessage" class="loginError">
+				
+            <div class="errorTextContainer">
+                <span id="center_content_lblMsg" class="errorText">Incorrect Username/Password combination</span>
+            </div>
+        
+			</div>
+            
+            
+
+						
+              <div id="center_content_pnlInfo" class="inf">
+				
+                <h2>This is the payment environment provided by Xafax, a partner of the UvA and AUAS/HvA.
+            
+			</div>
+			
+			<p>
+			
+			<div class=”inf”>
+				You can use this website to top up credit on your student ID card or staff ID card. <br/>You can then use that credit to make payments at the UvA and AUAS/HvA.
+			</div>
+			
+            
+        </div>
+    
+		</div>
+ 
+
+         
+	</div>
+</div>
+
+</div> 
+</div>
+
+
+</div> 
+
+    
+        <div id="bottom">
+           
+
+ <div class="language">
+    <select name="ctl00$ctl00$lang1$ddlLanguage" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$lang1$ddlLanguage\&#39;,\&#39;\&#39;)&#39;,&#32;0)" id="lang1_ddlLanguage" class="ddlLanguage">
+	<option value="nl-NL">Nederlands</option>
+	<option selected="selected" value="en-US">Engels</option>
+
+</select>
+</div>
+
+
+
+
+           <div class="list-links socmed">
+            <a id="lnkFacebook" class="facebook" href="https://www.facebook.com/hvanieuws" target="_blank"></a><a id="lnkTwitter" class="twitter" href="https://twitter.com/hva" target="_blank"></a>
+           </div>
+           <div class="list-links">
+            <ul>
+                <li></li>
+                <li><a href="http://student.uva.nl/az/content/betalen-bij-de-uva/faqs-betalen-met-de-collegekaart/veelgestelde-vragen-betalen-met-collegekaart.html" name="test" target="blank" alt="FAQ UvA">FAQ UvA</a></li>              
+				<li><a href="http://www.hva.nl/onderwijs/praktisch/praktisch/praktisch/content/folder/facility-services/collegekaart/faqs-betalen-met-de-collegekaart%5B2%5D/faqs-betalen-met-de-collegekaart.html" name="test" target="blank" alt="FAQ UvA">FAQ HvA</a></li>              
+				<li><a id="lnkTermsCondition" class="fancybox&#32;fancybox.ajax" href="https://uva-hva.mynetpay.nl/info/Terms_UvA-HvA.aspx">Terms & conditions</a></li>
+                
+                <li><a id="lnkCookie" class="fancybox&#32;fancybox.ajax" href="info/cookie">Cookie policy</a></li>
+            </ul>
+            
+           </div>
+           <div class="list-links copyright">&copy; 2015 Xafax</div>
+        </div>
+
+    </div>  
+ 
+</div>
+
+
+<div id="updateProgress" style="display:none;">
+	
+ <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #000000; opacity: 0.7;">
+            <img id="imgLoading" title="Loading&#32;..." src="common/imgLoader.gif" alt="Loading&#32;..." style="padding: 10px;position:fixed;top:35%;left:45%;" />
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("center_content_rfv1"), document.getElementById("center_content_rfv2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var center_content_rfv1 = document.all ? document.all["center_content_rfv1"] : document.getElementById("center_content_rfv1");
+center_content_rfv1.controltovalidate = "center_content_TxBUserName";
+center_content_rfv1.focusOnError = "t";
+center_content_rfv1.validationGroup = "login";
+center_content_rfv1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+center_content_rfv1.initialvalue = "";
+var center_content_rfv2 = document.all ? document.all["center_content_rfv2"] : document.getElementById("center_content_rfv2");
+center_content_rfv2.controltovalidate = "center_content_TxBPassW";
+center_content_rfv2.focusOnError = "t";
+center_content_rfv2.validationGroup = "login";
+center_content_rfv2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+center_content_rfv2.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        ;(function() {
+                        function loadHandler() {
+                            var hf = $get('StyleSheetManager1_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Web.UI, Version=2015.1.225.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-US:d3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69:45085116';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"updateProgress","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$ctl00$AjaxManager1","updatePanelsRenderMode":0}, null, null, $get("ctl00_ctl00_AjaxManager1"));
+});
+
+document.getElementById('center_content_rfv1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('center_content_rfv1'));
+}
+
+document.getElementById('center_content_rfv2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('center_content_rfv2'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxPanel, {"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"enableAJAX":true,"enableHistory":false,"links":[],"loadingPanelID":"","styles":[],"uniqueID":"ctl00$ctl00$center$content$RadAjaxPanel1"}, null, null, $get("ctl00_ctl00_center_content_RadAjaxPanel1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":true,"minDisplayTime":0,"skin":"","uniqueID":"ctl00$ctl00$updateProgress","zIndex":90000}, null, null, $get("updateProgress"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
+GET /Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930&t=635332088925424071&compress=1&_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c%20Version%3d2015.1.225.45%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a45085116 HTTP/1.1
+Host: uva-hva.mynetpay.nl
+Connection: keep-alive
+Referer: https://uva-hva.mynetpay.nl/login?ReturnUrl=%2f
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+Cookie: ASP.NET_SessionId=wzi3znuhplrbbb004pf4x1jy
+
+HTTP/1.1 302 Found
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Location: /login?ReturnUrl=%2fTelerik.Web.UI.WebResource.axd%3fd%3dPMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930%26t%3d635332088925424071%26compress%3d1%26_TSM_CombinedScripts_%3d%253b%253bTelerik.Web.UI%252c%2520Version%253d2015.1.225.45%252c%2520Culture%253dneutral%252c%2520PublicKeyToken%253d121fae78165ba3d4%253aen-US%253ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%253a45085116&d=PMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930&t=635332088925424071&compress=1&_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c%20Version%3d2015.1.225.45%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a45085116
+Server: Microsoft-IIS/8.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Strict-Transport-Security: Strict-Transport-Security: max-age=16070400; includeSubDomains
+X-Frame-Options: X-Frame-Options: deny
+X-XSS-Protection: X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: X-Content-Type-Options: nosniff
+Date: Wed, 09 Dec 2015 15:29:49 GMT
+Content-Length: 939
+
+<html><head><title>Object moved</title></head><body>
+<h2>Object moved to <a href="/login?ReturnUrl=%2fTelerik.Web.UI.WebResource.axd%3fd%3dPMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930%26t%3d635332088925424071%26compress%3d1%26_TSM_CombinedScripts_%3d%253b%253bTelerik.Web.UI%252c%2520Version%253d2015.1.225.45%252c%2520Culture%253dneutral%252c%2520PublicKeyToken%253d121fae78165ba3d4%253aen-US%253ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%253a45085116&amp;d=PMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930&amp;t=635332088925424071&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c%20Version%3d2015.1.225.45%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a45085116">here</a>.</h2>
+</body></html>
+GET /login?ReturnUrl=%2fTelerik.Web.UI.WebResource.axd%3fd%3dPMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930%26t%3d635332088925424071%26compress%3d1%26_TSM_CombinedScripts_%3d%253b%253bTelerik.Web.UI%252c%2520Version%253d2015.1.225.45%252c%2520Culture%253dneutral%252c%2520PublicKeyToken%253d121fae78165ba3d4%253aen-US%253ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%253a45085116&d=PMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930&t=635332088925424071&compress=1&_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c%20Version%3d2015.1.225.45%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a45085116 HTTP/1.1
+Host: uva-hva.mynetpay.nl
+Connection: keep-alive
+Referer: https://uva-hva.mynetpay.nl/login?ReturnUrl=%2f
+Accept: text/css,*/*;q=0.1
+X-Requested-With: com.android.browser
+User-Agent: Mozilla/5.0 (Linux; U; Android 4.2.2; en-us; Desire HD Build/JDQ39E; CyanogenMod-10.1) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30
+Accept-Encoding: gzip,deflate
+Accept-Language: en-US
+Accept-Charset: utf-8, iso-8859-1, utf-16, *;q=0.7
+Cookie: ASP.NET_SessionId=wzi3znuhplrbbb004pf4x1jy
+
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=utf-8
+Server: Microsoft-IIS/8.5
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Strict-Transport-Security: Strict-Transport-Security: max-age=16070400; includeSubDomains
+X-Frame-Options: X-Frame-Options: deny
+X-XSS-Protection: X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: X-Content-Type-Options: nosniff
+Date: Wed, 09 Dec 2015 15:29:49 GMT
+Content-Length: 15778
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Xafax myNetPay | Login
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta http-equiv="Content-Type" content="text/html;&#32;charset=utf-8" /><meta name="viewport" content="width=device-width,&#32;minimum-scale=1.0,&#32;&#32;maximum-scale=1.0" /><link rel="shortcut&#32;icon" href="favicon.ico" />
+    <script type="text/javascript" src="/Scripts/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="/Scripts/css3-mediaqueries.js"></script>
+    <link rel="stylesheet" href="/Scripts/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="/Scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <link type="text/css" rel="stylesheet" href="/css/main.css"  />
+    <link type="text/css" rel="stylesheet" href="/css/_custom.css"  />
+    
+    
+    
+
+    <link type="text/css" rel="stylesheet" href="/css/login.css"  />
+
+    <script type="text/javascript" src="Scripts/cookieCuttr/jquery.cookie.js"></script>
+    <script type="text/javascript" src="Scripts/cookieCuttr/jquery.cookiecuttr.js"></script>
+    <link rel="stylesheet" href="Scripts/cookieCuttr/cookiecuttr.css" type="text/css" media="screen" />
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.cookieCuttr({
+                cookieAnalytics: false,
+                cookieMessage: 'Cookies improve the way our website works, by using this website you are agreeing to our use of cookies.<br/>For more information see our <a href="{{cookiePolicyLink}}" title="cookie policy" class="fancybox fancybox.ajax">cookie policy</a>.',
+                cookiePolicyLink: 'info/cookie'
+            }
+            );
+        }); 
+    </script>
+
+
+
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".fancybox").fancybox();
+        });
+    </script>
+
+<link href="/Telerik.Web.UI.WebResource.axd?d=PMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930&amp;t=635332088925424071&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c%20Version%3d2015.1.225.45%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a45085116" type="text/css" rel="stylesheet" /></head>
+
+<body>
+<form method="post" action="login?ReturnUrl=%2fTelerik.Web.UI.WebResource.axd%3fd%3dPMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930%26t%3d635332088925424071%26compress%3d1%26_TSM_CombinedScripts_%3d%253b%253bTelerik.Web.UI%252c%2520Version%253d2015.1.225.45%252c%2520Culture%253dneutral%252c%2520PublicKeyToken%253d121fae78165ba3d4%253aen-US%253ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%253a45085116&amp;d=PMrIT5dOWaVYIcpFWUE4nB32IwXRz8GtVxbYxfe6Px0sgBY3zHdZaJ4BQFiisayWUjHTaLC8sHdBSFLr8pfieX02R4NE83rNGZtlGqGeXYdQogIYIa_mUtUZix78Ed930&amp;t=635332088925424071&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bTelerik.Web.UI%2c+Version%3d2015.1.225.45%2c+Culture%3dneutral%2c+PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a45085116" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="ScriptManager1_TSM" id="ScriptManager1_TSM" value="" />
+<input type="hidden" name="StyleSheetManager1_TSSM" id="StyleSheetManager1_TSSM" value="" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="nHRsyoKclUjM+v4tusY8BPoZXJuz8kNs1h8QYwukO8gSPgrrihe8RJDZWeS2gJRDO9xHOE7nl6F5F3QNS+7AW3bktlZ3EAqNXun5oQi4BiiVzzD8Qq+esnMn8x8oUxrKCAKbjaCFJobF1vulmgNQ6H682V5c0JTY9hw2X8MSCfB5CKs0vlaFWAEYgB0pjAze7hrkxZWLNbOS1jlSwgQb8NGuMpUS8BSrLI+1HLj7AF+ml9Os4C9MJuHEYiD59iEA0qA3sI0Sul7o0ZxWCNNC83KEY9aGSFxT+szg387ca+cn+zIIbOaqxjvL3Bw60z4xnz0fXkjpE4prfNQLqdzWer9TaCp2S0lftKAhxu0aJtYEG9eEvpJapDrPrNdYXUO4O7zPi/Bd59Qr9RlY/hexIDXYmUWpTvAfxOYTqm4rOrOBpR+9ejzUCWG/fEyNR6bGy4a4lbFekrsl4fAY7FpeVoPYutH/cd0XmSAqIvkjxz2ZG5SWD01aFciotnOTsfClTNuA+F83HpTARFSh81dojSlz1rPGxNOrnFePRmBYps5M9L2YiMcyIJ8U9SzGqDUVR6LHiLfTeNlUYfligd2caw/iFytne6o5cVhP3Ap8s79oX9jE/B82lU0xCXQrGkefmEdbxjlJIZh3uq3dWtgyMHA97LQFC4DQoCsCJAwGS4aMwAPuT2dhS6dUyUOn1i6BPd6s4CbVzedYtkKB5SEQ2Q==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZFn5GKMslb1DRqZgYYTT2MgTLsEoS8N1BD_ULdoYjoNL4df5TT2QRNoc2KIJrVv93w2&amp;t=635589471476784022" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=nv7asgRUU0tRmHNR2D6t1Lp1CmKluAZ5lHBXuN0cjUXH0SLnpkJ04F0B2Tp1jPqxQT6nNixAEolls9m5yu9AeCpgTQUPqj7CnEJuGGl3jyt5oD3Z74zBaSD2z7BzEjPdt7jXZF6V-BQiM0JCkTH6rw2&amp;t=fffffffff2209473" type="text/javascript"></script>
+<script src="/Telerik.Web.UI.WebResource.axd?_TSM_HiddenField_=ScriptManager1_TSM&amp;compress=1&amp;_TSM_CombinedScripts_=%3b%3bSystem.Web.Extensions%2c%20Version%3d4.0.0.0%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d31bf3856ad364e35%3aen-US%3a1453655a-6b8d-49b1-94c2-f77a352f5241%3aea597d4b%3ab25378d2%3bTelerik.Web.UI%2c%20Version%3d2015.1.225.45%2c%20Culture%3dneutral%2c%20PublicKeyToken%3d121fae78165ba3d4%3aen-US%3ad3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69%3a16e4e7cd%3aed16cbdc%3af7645509%3a88144a7a" type="text/javascript"></script>
+<script src="/WebResource.axd?d=JoBkLzP19aTuxbWOhHobYiTmS6j3fbxoq8utQowybhF3evqn4qbaWZBdOEMwFeNNISP2OrkZjLu-OD0VpV0Q_A2&amp;t=635589471476784022" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C2EE9ABB" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="51tT2s3gbxO5K0zfIPb47IDM56GdpcsSab95cQFoojREQlEm1bjTANb1Z5kepJSETP/nHnZkG2xIFyv/FZodkeINOmBlIeoAlvTA2ICQL0IdjltF0IQFXcpKkvzmHVaLPqY1l75mI45aCnJtzs+8Gwz6wiyEXSLElAXhtTfjcMZRQpKzZtl43ininD7QBPO53tLOQiNrbvKBYhTMrPVKuLtBzaI4Hn4CWIivEnvcCL4=" />
+</div>
+      <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1', ['tctl00$ctl00$center$content$ctl00$ctl00$center$content$RadAjaxPanel1Panel','','tctl00$ctl00$AjaxManager1SU','AjaxManager1SU'], [], [], 90, 'ctl00$ctl00');
+//]]>
+</script>
+
+    
+    
+    <!-- 2015.1.225.45 --><div id="AjaxManager1SU">
+	<span id="ctl00_ctl00_AjaxManager1" style="display:none;"></span>
+</div>
+
+  <div id="wrapper">
+    <div id="container">
+        <div id="header" >
+            
+
+            
+        </div>  
+    
+        
+<div id="col-block">
+    
+
+<div class="box loginpagina">
+  <div id="login-col-left"></div> 
+  <div id="login-col-right">
+      <h1><span id="center_content_lbLoginWith">Login with your HvA-ID or UvAnetID</span></h1><a id="center_content_lnkInfo" class="fancybox&#32;fancybox.ajax" href="info/how-to-login"><img src="common/ic_info.png" alt="" /></a>
+      
+      <div class="RadAjaxPanel" id="ctl00_ctl00_center_content_ctl00_ctl00_center_content_RadAjaxPanel1Panel">
+	<div id="ctl00_ctl00_center_content_RadAjaxPanel1">
+		
+
+   
+
+     
+          <div id="center_content_Panel1" onkeypress="javascript:return&#32;WebForm_FireDefaultButton(event,&#32;&#39;center_content_btnAuth&#39;)">
+			
+        <div id="login">
+                
+            <div class="row">
+                <input name="ctl00$ctl00$center$content$TxBUserName" type="text" maxlength="40" id="center_content_TxBUserName" class="txtBox" placeholder="Username" /> 
+                <label for="center_content_TxBUserName" id="center_content_lbUsername">Username</label>
+                <span id="center_content_rfv1" class="errorIcon" style="visibility:hidden;"></span>
+            </div>
+
+            
+                <div class="row">
+                    <input name="ctl00$ctl00$center$content$TxBPassW" type="password" maxlength="25" id="center_content_TxBPassW" class="txtBox" autocomplete="off" placeholder="Password" /><label for="center_content_TxBPassW" id="center_content_lbPwd">Password</label><span id="center_content_rfv2" class="errorIcon" style="visibility:hidden;"></span>
+                </div>
+            
+            
+           <div class="row">
+            <input type="button" name="ctl00$ctl00$center$content$btnAuth" value="Login" onclick="javascript:WebForm_DoPostBackWithOptions(new&#32;WebForm_PostBackOptions(&quot;ctl00$ctl00$center$content$btnAuth&quot;,&#32;&quot;&quot;,&#32;true,&#32;&quot;login&quot;,&#32;&quot;&quot;,&#32;false,&#32;true))" id="center_content_btnAuth" title="Login" class="button" />
+           </div>
+            
+            
+            
+            
+
+						
+              <div id="center_content_pnlInfo" class="inf">
+				
+                <h2>This is the payment environment provided by Xafax, a partner of the UvA and AUAS/HvA.
+            
+			</div>
+			
+			<p>
+			
+			<div class=”inf”>
+				You can use this website to top up credit on your student ID card or staff ID card. <br/>You can then use that credit to make payments at the UvA and AUAS/HvA.
+			</div>
+			
+            
+        </div>
+    
+		</div>
+ 
+
+         
+	</div>
+</div>
+
+</div> 
+</div>
+
+
+</div> 
+
+    
+        <div id="bottom">
+           
+
+ <div class="language">
+    <select name="ctl00$ctl00$lang1$ddlLanguage" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ctl00$lang1$ddlLanguage\&#39;,\&#39;\&#39;)&#39;,&#32;0)" id="lang1_ddlLanguage" class="ddlLanguage">
+	<option value="nl-NL">Nederlands</option>
+	<option selected="selected" value="en-US">Engels</option>
+
+</select>
+</div>
+
+
+
+
+           <div class="list-links socmed">
+            <a id="lnkFacebook" class="facebook" href="https://www.facebook.com/hvanieuws" target="_blank"></a><a id="lnkTwitter" class="twitter" href="https://twitter.com/hva" target="_blank"></a>
+           </div>
+           <div class="list-links">
+            <ul>
+                <li></li>
+                <li><a href="http://student.uva.nl/az/content/betalen-bij-de-uva/faqs-betalen-met-de-collegekaart/veelgestelde-vragen-betalen-met-collegekaart.html" name="test" target="blank" alt="FAQ UvA">FAQ UvA</a></li>              
+				<li><a href="http://www.hva.nl/onderwijs/praktisch/praktisch/praktisch/content/folder/facility-services/collegekaart/faqs-betalen-met-de-collegekaart%5B2%5D/faqs-betalen-met-de-collegekaart.html" name="test" target="blank" alt="FAQ UvA">FAQ HvA</a></li>              
+				<li><a id="lnkTermsCondition" class="fancybox&#32;fancybox.ajax" href="https://uva-hva.mynetpay.nl/info/Terms_UvA-HvA.aspx">Terms & conditions</a></li>
+                
+                <li><a id="lnkCookie" class="fancybox&#32;fancybox.ajax" href="info/cookie">Cookie policy</a></li>
+            </ul>
+            
+           </div>
+           <div class="list-links copyright">&copy; 2015 Xafax</div>
+        </div>
+
+    </div>  
+ 
+</div>
+
+
+<div id="updateProgress" style="display:none;">
+	
+ <div style="position: fixed; text-align: center; height: 100%; width: 100%; top: 0; right: 0; left: 0; z-index: 9999999; background-color: #000000; opacity: 0.7;">
+            <img id="imgLoading" title="Loading&#32;..." src="common/imgLoader.gif" alt="Loading&#32;..." style="padding: 10px;position:fixed;top:35%;left:45%;" />
+</div>
+
+</div>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("center_content_rfv1"), document.getElementById("center_content_rfv2"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var center_content_rfv1 = document.all ? document.all["center_content_rfv1"] : document.getElementById("center_content_rfv1");
+center_content_rfv1.controltovalidate = "center_content_TxBUserName";
+center_content_rfv1.focusOnError = "t";
+center_content_rfv1.validationGroup = "login";
+center_content_rfv1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+center_content_rfv1.initialvalue = "";
+var center_content_rfv2 = document.all ? document.all["center_content_rfv2"] : document.getElementById("center_content_rfv2");
+center_content_rfv2.controltovalidate = "center_content_TxBPassW";
+center_content_rfv2.focusOnError = "t";
+center_content_rfv2.validationGroup = "login";
+center_content_rfv2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+center_content_rfv2.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        ;(function() {
+                        function loadHandler() {
+                            var hf = $get('StyleSheetManager1_TSSM');
+                            if (!hf._RSSM_init) { hf._RSSM_init = true; hf.value = ''; }
+                            hf.value += ';Telerik.Web.UI, Version=2015.1.225.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-US:d3cd47d0-4d93-4bad-8b9f-f9fea0aa4c69:45085116';
+                            Sys.Application.remove_load(loadHandler);
+                        };
+                        Sys.Application.add_load(loadHandler);
+                    })();WebForm_AutoFocus('center_content_TxBUserName');Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxManager, {"_updatePanels":"","ajaxSettings":[],"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"defaultLoadingPanelID":"updateProgress","enableAJAX":true,"enableHistory":false,"links":[],"styles":[],"uniqueID":"ctl00$ctl00$AjaxManager1","updatePanelsRenderMode":0}, null, null, $get("ctl00_ctl00_AjaxManager1"));
+});
+
+document.getElementById('center_content_rfv1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('center_content_rfv1'));
+}
+
+document.getElementById('center_content_rfv2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('center_content_rfv2'));
+}
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxPanel, {"clientEvents":{OnRequestStart:"",OnResponseEnd:""},"enableAJAX":true,"enableHistory":false,"links":[],"loadingPanelID":"","styles":[],"uniqueID":"ctl00$ctl00$center$content$RadAjaxPanel1"}, null, null, $get("ctl00_ctl00_center_content_RadAjaxPanel1"));
+});
+Sys.Application.add_init(function() {
+    $create(Telerik.Web.UI.RadAjaxLoadingPanel, {"initialDelayTime":0,"isSticky":true,"minDisplayTime":0,"skin":"","uniqueID":"ctl00$ctl00$updateProgress","zIndex":90000}, null, null, $get("updateProgress"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
