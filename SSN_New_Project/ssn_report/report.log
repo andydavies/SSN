@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.12)  21 DEC 2015 14:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2015.11.12)  21 DEC 2015 15:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -677,23 +677,11 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2
 
-] (./report.lof)
-\tf@lof=\write5
-\openout5 = `report.lof'.
-
- [3
-
-] (./report.lot)
-\tf@lot=\write6
-\openout6 = `report.lot'.
-
- [4
-
 ]
 Chapter 1.
-[5
+[3
 
-] [6]
+] [4]
 Chapter 2.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
@@ -701,38 +689,38 @@ Missing character: There is no ù in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
-[7
+[5
 
 ]
 Chapter 3.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-[8
+[6
 
 ]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 115.
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 114.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 115.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 130.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 114.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 129.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 129.
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--143
+Underfull \hbox (badness 10000) in paragraph at lines 138--142
 
  []
 
@@ -740,23 +728,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--143
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--167
+Underfull \hbox (badness 10000) in paragraph at lines 162--166
 
+ []
+
+[7
+
+] [8]
+Chapter 4.
+
+Overfull \hbox (3.5598pt too wide) in paragraph at lines 200--201
+\OT1/cmr/m/n/12 IP used \OT1/cmtt/m/n/12 145.100.102.106 \OT1/cmr/m/n/12 rep-re
+-sents the IP of desk-top work-sta-tion, and \OT1/cmtt/m/n/12 Port:44330
  []
 
 [9
 
 ] [10]
-Chapter 4.
-
-Overfull \hbox (3.5598pt too wide) in paragraph at lines 201--202
-\OT1/cmr/m/n/12 IP used \OT1/cmtt/m/n/12 145.100.102.106 \OT1/cmr/m/n/12 rep-re
--sents the IP of desk-top work-sta-tion, and \OT1/cmtt/m/n/12 Port:44330
- []
-
-[11
-
-] [12]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
@@ -766,40 +754,94 @@ Missing character: There is no î in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no î in font cmr12!
- [13] <images/diagram.png, id=60, 868.24374pt x 618.31pt>
+ [11] <images/diagram.png, id=53, 868.24374pt x 618.31pt>
 File: images/diagram.png Graphic file (type png)
 
 <use images/diagram.png>
-Package pdftex.def Info: images/diagram.png used on input line 298.
+Package pdftex.def Info: images/diagram.png used on input line 297.
 (pdftex.def)             Requested size: 452.9679pt x 322.57973pt.
- [14 <./images/diagram.png>] [15
+ [12 <./images/diagram.png>]
+<images/debug.png, id=58, 752.8125pt x 580.1675pt>
+File: images/debug.png Graphic file (type png)
+ <use images/debug.png>
+Package pdftex.def Info: images/debug.png used on input line 322.
+(pdftex.def)             Requested size: 376.40532pt x 290.08302pt.
+
+[13
+
+ <./images/debug.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 338--338
+[]\OT1/cmr/m/n/12 TLS[]ECDHE[]RSA[]WITH
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--340
+[]\OT1/cmr/m/n/12 TLS[]RSA[]WITH[]RC4[]128
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
+[]\OT1/cmr/m/n/12 TLS[]ECDHE[]RSA
+ []
+
+
+Overfull \hbox (2.17836pt too wide) in paragraph at lines 342--342
+[]\OT1/cmr/m/n/12 WITH[]AES[]128[]CBC[]SHA| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 344--344
+[]\OT1/cmr/m/n/12 TLS[]RSA[]WITH
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
+[]\OT1/cmr/m/n/12 TLS[]ECDHE[]RSA
+ []
+
+
+Overfull \hbox (2.17836pt too wide) in paragraph at lines 346--346
+[]\OT1/cmr/m/n/12 WITH[]AES[]256[]CBC[]SHA| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 348--348
+[]\OT1/cmr/m/n/12 TLS[]RSA[]WITH[]AES
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 350--350
+[]\OT1/cmr/m/n/12 TLS[]ECDHE[]RSA[]WITH
+ []
+
+[14
 
 ]
 Chapter 5.
-[16
+[15
 
 ]
 Chapter 6.
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--322
+Underfull \hbox (badness 10000) in paragraph at lines 378--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 315--322
+Underfull \hbox (badness 10000) in paragraph at lines 378--385
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--330
+Underfull \hbox (badness 10000) in paragraph at lines 389--393
 
  []
 
-[17
+[16
 
 ]
 Chapter 7.
-(./report.bbl [18
+(./report.bbl [17
 
 ]
 Underfull \hbox (badness 7522) in paragraph at lines 4--9
@@ -813,30 +855,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 securityresearch . com / 2013 / 10 /
  []
 
-) [19
+) [18
 
-] [20
+] [19
 
 
 ]
 Appendix A.
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2014/09/06 1.5e listings language file
-) [21
+) [20
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 387.
- [22]
-[23] [24] [25] [26] (./report.aux) ) 
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 450.
+ [21]
+[22] [23] [24] [25] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 17028 strings out of 494977
- 350280 string characters out of 6180182
- 641745 words of memory out of 5000000
- 19871 multiletter control sequences out of 15000+600000
+ 17027 strings out of 494977
+ 350320 string characters out of 6180182
+ 641860 words of memory out of 5000000
+ 19875 multiletter control sequences out of 15000+600000
  9831 words of font info for 35 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 66i,8n,72p,809b,1787s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 66i,11n,72p,809b,1787s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
@@ -846,10 +888,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lcircle1.pfb>
-Output written on report.pdf (27 pages, 374849 bytes).
+Output written on report.pdf (26 pages, 442537 bytes).
 PDF statistics:
  134 PDF objects out of 1000 (max. 8388607)
- 91 compressed objects within 1 object stream
+ 90 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 
