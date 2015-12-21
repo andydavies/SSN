@@ -7,4 +7,11 @@ Gursev~Singh Kalra.
   \url{http://blog.opensecurityresearch.com/2013/10/extracting-rsaprivatecrtkey-and.html},
   2013.
 
+\bibitem{ref2}
+Sally Vandeven.
+\newblock Ssl/tls: What’s under the hood.
+\newblock
+  \url{http://www.sans.org/reading-room/whitepapers/authentication/ssl-tls-whats-hood-34297},
+  2013.
+
 \end{thebibliography}

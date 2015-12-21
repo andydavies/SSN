@@ -64,7 +64,7 @@ The client will encrypt the pre-master secret with the server's public key and s
 
 So the TLS/SSL session is established using asymmetric encryption (RSA) and the transportation of the traffic is secured using symmetric encryption. This means that if the session and master key where to be extracted from the local memory, then the traffic that was encrypted by this symmetric encryption can be decrypted. 
 
-And the protocol analyser Wireshark is capable of doing just that. When provided with the right master-key and session-id it can decrypt the TLS/SSL traffic. 
+And the protocol analyser Wireshark is capable of doing just that. When provided with the right master-key and session-id it can decrypt the TLS/SSL traffic. \cite{ref1}
 
 \newpage
 \section{The research}
@@ -84,8 +84,10 @@ The article by Gursev Singh Kalra, titled ”Extracting RSAPrivate-
 CrtKey and Certificates from an Android Process”, describes how to
 dump X.509 certificates and construct a RSA private key (RSAPrivate-
 CrtKey) from the Android application memory using Eclipse Memory
-Analyzer Tool (MAT) and Java code. This paper gave us the indication that there are possibilities to extract the keys from a running
+Analyzer Tool (MAT) and Java code. This paper gave us the indication that there also might be possibilities to extract the keys from a running
 process.\cite{ref1}
+
+Also the paper by Sally Vandeven from the SANS Institute was related to this paper. Titled SSL/TLS: What's Under the Hood, it describes how a TLS session is established, how pre-master secrets/master secrets of desktop browsers can be captured and how those captured keys can be used to decrypt captured traffic. We used the step-by-step instruction that was added to the paper on how to use Wireshark to decrypt captured traffic.\cite{ref2}
 
 \chapter{Approach}
 \section{Dynamic code instrumentation}
