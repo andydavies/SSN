@@ -86,7 +86,8 @@ dump X.509 certificates and construct a RSA private key (RSAPrivate-
 CrtKey) from the Android application memory using Eclipse Memory
 Analyzer Tool (MAT) and Java code. This paper gave us the indication that there also might be possibilities to extract the keys from a running
 process.\cite{ref1}
-
+\newline
+\newline
 Also the paper by Sally Vandeven from the SANS Institute was related to this paper. Titled SSL/TLS: What's Under the Hood, it describes how a TLS session is established, how pre-master secrets/master secrets of desktop browsers can be captured and how those captured keys can be used to decrypt captured traffic. We used the step-by-step instruction that was added to the paper on how to use Wireshark to decrypt captured traffic.\cite{ref2}
 
 \chapter{Approach}
@@ -361,9 +362,9 @@ The first public website that was tested was \textit{https://bb.vu.nl}. With the
 
 The third website, \textit{https://digid.nl/inloggen} was fully decryptable and the password could be recovered from the HTTP headers. We noticed that when you connect to this website, it will send multiple \textit{server hello} packets that contain the same session-ID but the master-key differs on each packet. There was no single value pair with which we we able to decrypt the entire page, but rather some of the master-key enabled us to decrypted different parts of the web page.  
 
-Both \textit{https://hotmail.com} and \textit{https://duo.nl} were decryptable using a single master-key and session-ID. In the case of \textit{https://hotmail.com}, the email address and password could be extracted from the HTTP header. 
+Both \textit{https://hotmail.com} and \textit{https://duo.nl} were decryptable using a single master-key and session-ID. In the case of \textit{https://hotmail.com}, the email adress and password could be extracted from the HTTP header. 
 
-The last website website we tested was \textit{https://os3.nl}, the educations web page. Although we found several pairs of session-IDs that where visible in the \textit{server hello} packets, none of the corresponding master-keys were able to decrypt the traffic. This likely caused by the use of session tickets by the web server. 
+The last website website we tested was \textit{https://os3.nl}, the educations web page. Although we found several pairs of session-IDs that where visable in the \textit{server hello} packets, none of the corrosponding master-keys were able to decrypt the traffic. 
 
 
 
@@ -372,13 +373,6 @@ The last website website we tested was \textit{https://os3.nl}, the educations w
 
 
 \chapter{Conclusion}
-
-Using dynamic code instrumentation we were able to extract SSL session keys from the process memory of the Android stock browser. Using Frida, we could trace function calls to the OpenSSL library. After some searching we found several function that accept the master-key as one of their arguments. When tracing these function, the results where polluted by incorrect master-keys. As a second approach, the master-key and session-ID could be extracted from the session object which is frequently passed to many functions in the OpenSSL library. 
-
-The OpenSSL function \texttt{SSL\_CTX\_add\_session(SSL\_CTX *s, SSL\_SESSION *c)} proved to be the function that was both traceable and from which the address of the session object could be retrieved. Using fixed offsets, the master-key and session-ID were extractable and most of the SSL trafic could be decrypted using the found key(s).
-
-   
-
 
 \chapter{Attack Limitations \& Future work}
 
@@ -400,7 +394,7 @@ As future work research can be done on the use of Frida wireless. Although, ther
 \newline
 The second improvement could be the use of Frida without root access. Cedric Van Bockhaven mentioned that: "By decompiling, injecting a shared object, and then repackaging." you are able to use Frida without root access.
 
-
+\chapter{Contribution} 
 
 \bibliographystyle{plain}
 \bibliography{bibliography}
@@ -545,7 +539,7 @@ showstringspaces=false}
 }
 
 
-\section{Frida Script - Python}
+\section{Frida script - Python}
 
 \begin{lstlisting}[frame=single, breaklines=true]
 # frida-trace -U -i SSL_CTX_add_session com.android.browser
