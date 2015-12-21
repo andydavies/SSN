@@ -7,6 +7,11 @@ Gursev~Singh Kalra.
   \url{http://blog.opensecurityresearch.com/2013/10/extracting-rsaprivatecrtkey-and.html},
   2013.
 
+\bibitem{book1}
+Mark Stamp.
+\newblock {\em Information Security: Principles and Practice, 2nd Edition}.
+\newblock Wiley, 2011.
+
 \bibitem{ref2}
 Sally Vandeven.
 \newblock Ssl/tls: What’s under the hood.

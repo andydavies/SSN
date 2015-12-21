@@ -28,7 +28,10 @@
 \textbf{\huge SSN Project}
 \vspace{10pt}
 
-\textit{\Large "SSL session key extraction from memory on Android mobile devices"}
+%Welke?
+\textit{\Large "SSL session key extraction from the process memory on Android mobile devices"}
+
+\textit{\Large "SSL session key extraction from the process memory of a running Android application."}
 \vspace{80pt}
 
 \large Stamatios Maritsas - Stamatios.Maritsas@os3.nl
@@ -41,43 +44,51 @@
 \normalsize December, 2015
 \end{center}
 
-\abstract{ABSTRACT SESSION HAS TO BE EDITED!!}
+\abstract{TLS/SSL is a widely used cryptographic protocol. The web implementation of this protocol is called HTTPS which stands for HTTP over SSL. 
+
+Public-key cryptography is used by TLS/SSL to establish a secure session. When this secure session has been established it generates short term symmetric keys for each data connection in this session.
+
+This paper will cover how the tool Frida was used to extract these symmetric keys from a running Android application and how these keys where subsequently used to decrypt captured traffic.}
 
 \tableofcontents
 
 
 \chapter{Introduction}
 
-\section{TLS/SSL sessions and connections}
+\section{TLS/SSL}
 
-The TLS/SSL protocol is a widely used protocol for securing the communication over the Internet. It is often implemented in applications such as email, browsing, VoIP and secure transactions in general. Typically when a browser connects to a secured web-page a TLS/SSL is used to secure the connection. 
+Transport Layer Security (TLS) and Secure Sockets Layer (SSL) are widely used protocols for securing the communication over the Internet. 
 
-The way TLS/SSL sets up a secure connection is as follows: 
+The SSL and TLS acronym are often used interchangeable to refer to transport layer encryption. Although SSL is the predecessor of TLS since 1999 and the current protocol in use is TLS, you can see in this paper that many tools and library's still use the SSL acronym. In this chapter the TLS acronym will be used and a combination of TLS and SSL will be used in the rest of this paper.
+\newline
+\newline
+TLS is often implemented in applications such as email, browsing, VoIP and secure transactions in general. Typically when a browser connects to a secured web-page TLS is used to secure the connection. 
+
+The way TLS sets up a secure connection is as follows: 
 
 \begin{enumerate}
 \item First by negotiating the cipher suite with the server and  authenticating the server by validating the certificate of the server with the Certificate Authority. 
-\item Exchange the pre-master secret with the server using RSA key exchange. This is to establish a TLS/SSL session. 
+\item Exchange the pre-master secret with the server using RSA key exchange. This is to establish a TLS session. 
 The client will encrypt the pre-master secret with the server's public key and send it to the server. The server will then use its private key to decrypt the pre-master key.
-\item Public key operations are expensive and are therefore only executed for establishing the session and authentication. For the actual transport of the data, TLS/SSL symmetric encryption is used. Both sides will generate a session-ID and a Master-key using the pre-master key. These keys will be used to encrypt the application data that will be sent over the network.
+\item Public key operations are expensive and are therefore only executed for establishing the session and authentication. For the actual transport of the data, TLS symmetric encryption is used. Both sides will generate a session-ID and a Master-key using the pre-master key. These keys will be used to encrypt the application data that will be sent over the network.
 \item When a connection has been closed the session-ID and the Master-key will be destroyed.  
 \end{enumerate}
 
-So the TLS/SSL session is established using asymmetric encryption (RSA) and the transportation of the traffic is secured using symmetric encryption. This means that if the session and master key where to be extracted from the local memory, then the traffic that was encrypted by this symmetric encryption can be decrypted. 
+So the TLS session is established using asymmetric encryption and the transportation of the traffic is secured using symmetric encryption. This means that if the session and master key where to be extracted from the local memory, then the traffic that was encrypted by this symmetric encryption can be decrypted. 
 
-And the protocol analyser Wireshark is capable of doing just that. When provided with the right master-key and session-id it can decrypt the TLS/SSL traffic. \cite{ref1}
+The protocol analyser Wireshark is capable of doing just that. When provided with the right master-key and session-id it can decrypt TLS traffic.\cite{ref1}\cite{book1}
 
-\newpage
-\section{The research}
+\section{Goal of this paper}
 
-The research goal was to investigate whether it was possible to extract the TLS/SSL session key from a running android process and to see whether those keys could be used to decrypt captured traffic. 
+The research goal was to investigate whether it was possible to extract the TLS session key from a running Android process and to see whether those keys could be used to decrypt captured traffic. 
 
 So the research question is as follows:
 
 \begin{framed}
-\noindent \textit{How can we obtain the SSL sessions keys from the process memory of an running Android application?}
+\noindent \textit{How can we obtain the TLS/SSL sessions keys from the process memory of a running Android application?}
 \end{framed}
 
-During the research the focus was primarily on the SSL library's that the android application uses to establish this connection.
+During the research the focus was primarily on the SSL/TLS library's that the Android application uses to establish this connection.
 
 \chapter{Related Work}
 The article by Gursev Singh Kalra, titled ”Extracting RSAPrivate-
@@ -94,16 +105,18 @@ Also the paper by Sally Vandeven from the SANS Institute was related to this pap
 \section{Dynamic code instrumentation}
 
 A dynamic code instrumentation tool is used to monitor, debug and log extensive information about the execution of an application. It is often used for software engineering for debugging. A dynamic code instrumentation tool will "hook" into a process and "trace" certain function calls and can output or alter certain variables of the process memory while the application is running.
-
+\newline
+\newline
 Using this kind of tooling, we wanted to extract the session-ID and the master-key out of the process memory. 
 
 \subsection{Frida}
 
 The instrumentation tool we used was Frida. Frida is an open source instrumentation tool that injects javascript (using Google's V8 engine) into the process space of an application. Frida can be executed from the command line but can also be controlled by using bindings (QML, Python, .NET, Node.js). These bindings makes Frida scriptable. 
 
-To use Frida on android, a "frida server" has to be running on the phone. This is simply done by pushing the executable to the phone and execute it through the Android Debugger shell as a linux process. This frida-server will then take commands and attaches to running android processes.
-
-Initially we used the CLI of frida to find functions that would return the value's that we wanted. When we found the right function (SS\_CTX\_add\_session) we’ve created an python script so the results could be more easily parsed. We used Python since this API offered the most documentation. 
+To use Frida on Android, a "frida server" has to be running on the phone. This is simply done by pushing the executable to the phone and execute it through the Android Debugger shell as a linux process. This frida-server will then take commands and attaches to running Android processes.
+\newline
+\newline
+Initially we used the CLI of frida to find functions that would return the value's that we wanted. When we found the right function (SS\_CTX\_add\_session) we've created an python script so the results could be more easily parsed. We used Python since this API offered the most documentation. 
 
 The result of this was a single script that attaches the process, traces the desired function and prints out the desired values to a certain format. The script contains the javascript code that frida executes in the process that it hooks.
 
@@ -111,7 +124,7 @@ The final script can be found at Appendix A1.
 \clearpage
 
 \section{Exploring OpenSSL}
-The stock android browser uses OpenSSL. This libary is opensourced and can be found on GitHub [ccc]. To power of Frida allows us to search for functions that are called with either the master-key or session-ID as its parameters or functions that return these values. The search functionality of Github allows to search on keywords such as \texttt{master-key} and \texttt{master\_key}. The keyword \texttt{master\_key} turned out to be used by functions as one of their input arguments including the following functions:
+The stock Android browser uses OpenSSL. This libary is opensourced and can be found on GitHub [ccc]. To power of Frida allows us to search for functions that are called with either the master-key or session-ID as its parameters or functions that return these values. The search functionality of Github allows to search on keywords such as \texttt{master-key} and \texttt{master\_key}. The keyword \texttt{master\_key} turned out to be used by functions as one of their input arguments including the following functions:
 
 \begin{lstlisting}[frame=single, breaklines=true]
 EVP_DigestUpdate(s1, s->session->master_key,s->session->master_key_length);
