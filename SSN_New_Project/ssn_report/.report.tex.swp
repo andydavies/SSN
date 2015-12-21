@@ -55,16 +55,16 @@ The TLS/SSL protocol is a widely used protocol for securing the communication ov
 The way TLS/SSL sets up a secure connection is as follows: 
 
 \begin{enumerate}
-\item First by negotiating the cipher suite with the server and  authenticating the server by validating the certificate of the server with the Certificate Authority. 
+\item First authenticating the server by validating the certificate of that server with the CA.
 \item Exchange the pre-master secret with the server using RSA key exchange. This is to establish a TLS/SSL session. 
-The client will encrypt the pre-master secret with the server's public key and send it to the server. The server will then use its private key to decrypt the pre-master key.
-\item Public key operations are expensive and are therefore only executed for establishing the session and authentication. For the actual transport of the data, TLS/SSL symmetric encryption is used. Both sides will generate a session-ID and a Master-key using the pre-master key. These keys will be used to encrypt the application data that will be sent over the network.
-\item When a connection has been closed the session-ID and the Master-key will be destroyed.  
+The client will encrypt the pre-master secret with the server's public key and send it to the server. The server will then use its private key to decrypt the pre-master key. Once a TLS/SSL session has been created, multiple connections will be opened that will transport the traffic.
+\item Public key operations are expensive and are therefore only executed for establishing the session. The TLS/SSL connections themselves rely on a session-ID and a Master-key which have been generated using the pre-master key. 
+\item When the connection has been closed the session-ID and the Master-key will be destroyed.  
 \end{enumerate}
 
-So the TLS/SSL session is established using asymmetric encryption (RSA) and the transportation of the traffic is secured using symmetric encryption. This means that if the session and master key where to be extracted from the local memory, then the traffic that was encrypted by this symmetric encryption can be decrypted. 
+So the TLS/SSL session is established using the RSA key exchange and the transportation of the traffic is secured with the use of symmetric keys. This could mean tough that if the session and master key where to be extracted from the local memory, then the traffic that was encrypted by this symmetric encryption could be decrypted. 
 
-And the protocol analyser Wireshark is capable of doing just that. When provided with the right master-key and session-id it can decrypt the TLS/SSL traffic. 
+The protocol analyser Wireshark is capable of doing just that. When provided with the right master-key and session-id it can decrypt the TLS/SSL traffic. 
 
 \newpage
 \section{The research}
