@@ -25,9 +25,9 @@ Our research is going to include the following steps:
 
 \begin{enumerate}
 \item{Investigate the architecture of Android processes, related work, and methods of analysing the application memory.}
-\item{The actual analysis of memory dumps of running process and parsing the data to find keys}
+\item{The actual analysis of memory dumps of running process and parsing the data to find keys.}
 \item{Extract the SSL keys and try to decode captured traffic.}
-\item{Testing different application to examine similarities in key storage.}
+\item{Testing different applications to examine similarities in key storage.}
 \end{enumerate}
 
 \clearpage
@@ -42,7 +42,7 @@ The article by Gursev Singh Kalra, titled "Extracting RSAPrivateCrtKey and Certi
 \hline
 Week & Work \\ 
 \hline
-1 & Start looking at how Android processes internally work and how keys are stored. Also, research memory analysis and tools that can parse and analyse memory dumps. Furthermore do research on the SSL protocol and its implementation in android. \\ 
+1 & Start looking at how Android processes internally work and how SSL keys are stored. Also, look at memory analysis and tools that can parse and analyse memory dumps. Furthermore do research on the SSL protocol and its implementation in android. \\ 
 \hline
 2 & \textbf{Phase 1 of 2nd week:} Locate the cryptographic material using the chosen memory analysis tool.\\
 & \textbf{Phase 2 of 2nd week:} Try to dump any possible certificates and extract the SSL keys. Repeat the process on multiple applications.\\ 
@@ -60,11 +60,13 @@ Week & Work \\
 We intend to use an Android smart phone for the memory analysis in combination with a tool to dump and inspect the memory (i.e. Eclipse Memory Analyzer). When successfully extracted a key we will use a separate router to capture and later decode the traffic. 
 
 \section{Ethical issues}
-We will use a test phone that is owned by one of the team members. This will ensure no personal information is published without consent. At start we will try to extract SSL keys from a simple application that does not involve personal information. When successful we will try different application that involve personal information. When it turns out that encryption keys of these application can also be captured it will break the confidentiality of the network connection and the process of capturing keys could possible be used for malicious purposes. 
+We will use a test phone that is owned by one of the team members. This will ensure no personal information is published without consent. We will start by trying to extract SSL keys from a simple application that does not involve personal information. If the extraction of SSL keys is successful we will try other applications that deal with personal information. 
 
-Although the risk of misusing this information, we feel that doing this research will contribute to the security awareness of android processes.
+If key extraction is possible from another app on the same device than this is a serious vulnerability that should be reported via responsible disclosure. However, it is likely that physical access or administrator privileges are required for an exploit.
 
-We also have to be sure that the software that we are going to use in order to analyse the memory of an application and the heap are NOT violating the terms and conditions of said application. 
+Although there is a risk that the results of this research might be used for malicious purposes, we feel that doing this research will contribute to the security awareness of android processes.
+
+We also have to be sure that the software that we are going to use in order to analyse the memory of an application and the heap are not violating the terms and conditions of the application. 
 
 \bibliographystyle{plain}
 \bibliography{bibliography}
