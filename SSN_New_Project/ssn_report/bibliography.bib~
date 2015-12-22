@@ -26,5 +26,5 @@
   title = {OpenSSL 1.1.0-pre2-dev},
   year = {2015},
   publisher = {GitHub},
-  howpublished = "\url{https://github.com/openssl/openssl}"
+  howpublished = \url{https://github.com/openssl/openssl}
 }
