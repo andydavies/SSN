@@ -12,6 +12,14 @@
   howpublished = "\url{http://www.sans.org/reading-room/whitepapers/authentication/ssl-tls-whats-hood-34297}",
   urldate = {2015-12-21}
 }
+
+@misc{frida,
+  author = {Ole Andr\'{e} V. Ravnås and  Håvard Sørbø},
+  title = {Frida},
+  howpublished = "\url{http://www.frida.re/docs/android/}",
+
+}
+
 @book{book1,
   Author = {Mark Stamp},
   Title = {Information Security: Principles and Practice, 2nd Edition},
@@ -26,5 +34,5 @@
   title = {OpenSSL 1.1.0-pre2-dev},
   year = {2015},
   publisher = {GitHub},
-  howpublished = \url{https://github.com/openssl/openssl}
+  howpublished = "\url{https://github.com/openssl/openssl}"
 }
