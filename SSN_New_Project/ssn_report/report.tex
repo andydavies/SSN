@@ -29,7 +29,6 @@
 \vspace{10pt}
 
 %Welke?
-\textit{\Large "SSL session key extraction from the process memory on Android mobile devices"}
 
 \textit{\Large "SSL session key extraction from the process memory of a running Android application."}
 \vspace{80pt}
@@ -48,7 +47,7 @@
 
 Asymmetric cryptography is used by TLS/SSL to establish a secure session. When this secure session has been established it generates short term symmetric keys for each data connection in this session.
 
-This paper will cover how the tool Frida was used to extract these symmetric keys from a running Android application and how these keys where subsequently used to decrypt captured traffic.}
+This paper will cover how dynamic code instrumentation was used to extract these symmetric keys from a running Android application and how these keys where subsequently used to decrypt captured traffic.}
 
 \tableofcontents
 
@@ -64,7 +63,7 @@ The SSL and TLS acronym are often used interchangeable to refer to transport lay
 \newline
 TLS is often implemented in applications such as email, browsing, VoIP and secure transactions in general. Typically when a browser connects to a secured web-page TLS is used to secure the connection. 
 
-The way TLS sets up a secure connection is as follows: 
+\noindent The way TLS sets up a secure connection is as follows: 
 
 \begin{enumerate}
 \item First by negotiating the cipher suite with the server and  authenticating the server by validating the certificate of the server with the Certificate Authority. 
@@ -74,57 +73,54 @@ The client will encrypt the pre-master secret with the server's public key and s
 \item When a connection has been closed the session-ID and the Master-key will be destroyed.  
 \end{enumerate}
 
-So the TLS session is established using asymmetric encryption and the transportation of the traffic is secured using symmetric encryption. This means that if the session and master key where to be extracted from the local memory, then the traffic that was encrypted by this symmetric encryption can be decrypted. 
+\noindent So the TLS session is established using asymmetric encryption and the transportation of the traffic is secured using symmetric encryption. This means that if the session and master key where to be extracted from the local memory, then the traffic that was encrypted by this symmetric encryption can be decrypted. 
 
-The protocol analyser Wireshark is capable of doing just that. When provided with the right master-key and session-id it can decrypt TLS traffic.\cite{ref1}\cite{book1}
+The protocol analyzer Wireshark is capable of doing just that. When provided with the right master-key and session-id it can decrypt TLS traffic.\cite{ref1,book1}
 
 \section{Goal of this paper}
 
 The research goal was to investigate whether it was possible to extract the TLS session key from a running Android process and to see whether those keys could be used to decrypt captured traffic. 
-
-So the research question is as follows:
+\newline
+\noindent The corresponding research question is as follows:
 
 \begin{framed}
 \noindent \textit{How can we obtain the TLS/SSL sessions keys from the process memory of a running Android application?}
 \end{framed}
 
-During the research the focus was primarily on the SSL/TLS library's that the Android application uses to establish this connection.
+\noindent The research primarily focused on the native OpenSSL library than is used by many Android applications among which the the stock browser.
 
 \chapter{Related Work}
 The article by Gursev Singh Kalra, titled ”Extracting RSAPrivate-
 CrtKey and Certificates from an Android Process”, describes how to
 dump X.509 certificates and construct a RSA private key (RSAPrivate-
 CrtKey) from the Android application memory using Eclipse Memory
-Analyzer Tool (MAT) and Java code. This paper gave us the indication that there also might be possibilities to extract the keys from a running
+Analyzer Tool (MAT) and inspecting the Java code. This paper gave us the indication that there also might be possibilities to extract the keys from a running
 process.\cite{ref1}
 \newline
 \newline
-Also the paper by Sally Vandeven from the SANS Institute was related to this paper. Titled SSL/TLS: What's Under the Hood, it describes how a TLS session is established, how pre-master secrets/master secrets of desktop browsers can be captured and how those captured keys can be used to decrypt captured traffic. We used the step-by-step instruction that was added to the paper on how to use Wireshark to decrypt captured traffic.\cite{ref2}
+Also, the paper by Sally Vandeven from the SANS Institute Titled SSL/TLS: What's Under the Hood, describes how a TLS session is established, how pre-master secrets/master secrets of desktop browsers can be captured and how those captured keys can be used to decrypt captured traffic. We used the step-by-step instruction on how to use Wireshark to decrypt captured traffic using the master-key.\cite{ref2}
 
 \chapter{Approach}
 \section{Dynamic code instrumentation}
 
-A dynamic code instrumentation tool is used to monitor, debug and log extensive information about the execution of an application. It is often used for software engineering for debugging. A dynamic code instrumentation tool will "hook" into a process and "trace" certain function calls and can output or alter certain variables of the process memory while the application is running.
+A dynamic code instrumentation tool is used to monitor, debug and log extensive information about the execution of an application. It is often used in software engineering for debugging purposes. A dynamic code instrumentation tool will "hook" into a process and "trace" certain function calls and can output or alter certain variables of the process memory while the application is running.
 \newline
 \newline
-Using this kind of tooling, we wanted to extract the session-ID and the master-key out of the process memory. 
+The rest of this paper will focus on the use of dynamic code instrumentation that is used to trace function calls to the OpenSSL library. 
 
 \subsection{Frida}
 
-The instrumentation tool we used was Frida. Frida is an open source instrumentation tool that injects javascript (using Google's V8 engine) into the process space of an application. Frida can be executed from the command line but can also be controlled by using bindings (QML, Python, .NET, Node.js). These bindings makes Frida scriptable. 
+The instrumentation tool used for this research is called Frida. Frida is an open source instrumentation tool that injects JavaScript (using Google's V8 engine) into the process space of an application. Frida can be executed from the command line but can also be controlled by using bindings (QML, Python, .NET, Node.js). These bindings makes Frida scriptable. 
 
-To use Frida on Android, a "frida server" has to be running on the phone. This is simply done by pushing the executable to the phone and execute it through the Android Debugger shell as a linux process. This frida-server will then take commands and attaches to running Android processes.
+To use Frida on Android, a \texttt{frida-server} has to be running on the phone. This is simply done by pushing the executable to the phone and execute it through the Android Debugger shell as a process. Once the frida-server is running, it will accept commands and attach to a running Android processes that is specified in one of the commands.
 \newline
 \newline
-Initially we used the CLI of frida to find functions that would return the value's that we wanted. When we found the right function (SS\_CTX\_add\_session) we've created an python script so the results could be more easily parsed. We used Python since this API offered the most documentation. 
-
-The result of this was a single script that attaches the process, traces the desired function and prints out the desired values to a certain format. The script contains the javascript code that frida executes in the process that it hooks.
-
-The final script can be found at Appendix A1.
+The CLI (command line interface) of Frida can be used to trace specif function or you can specify some wildcards. find functions that would return the value's that we wanted. Once the command is executed by the \texttt{frida-server}, Frida will create a JavaScript file that contains two functions: \texttt{onEnter} and \texttt{onLeave} that a respectivly called when the traced function is called and when it is finished. Frida also passes the argument that are used by the traced function. Inside the \texttt{onEnter} and \texttt{onLeave} functions, the user is able to perform operations on the arguments such as printing them to the console or modification of the arguments. 
+ The script contains the JavaScript code that Frida executes in the process that it hooks. The JavaScript that has been written for this research can be found at Appendix A1 and the corresponding Python binding in Appendix A2 .
 \clearpage
 
 \section{Exploring OpenSSL}
-The stock Android browser uses OpenSSL. This libary is opensourced and can be found on GitHub [ccc]. To power of Frida allows us to search for functions that are called with either the master-key or session-ID as its parameters or functions that return these values. The search functionality of Github allows to search on keywords such as \texttt{master-key} and \texttt{master\_key}. The keyword \texttt{master\_key} turned out to be used by functions as one of their input arguments including the following functions:
+The stock Android browser uses OpenSSL. This library is open sourced and can be found on GitHub\cite{git}. The power of Frida allows us to search for functions that are called with either the master-key or session-ID as its parameter(s) or functions that return these values. The search functionality of Github allows to search on keywords such as \texttt{master-key} and \texttt{master\_key}. The keyword \texttt{master\_key} turned out to be used by functions as one of their input arguments including the following functions:
 
 \begin{lstlisting}[frame=single, breaklines=true]
 EVP_DigestUpdate(s1, s->session->master_key,s->session->master_key_length);
@@ -134,27 +130,27 @@ EVP_DigestUpdate(s1, s->session->master_key,s->session->master_key_length);
 OPENSSL_cleanse(ss->master_key, sizeof ss->master_key);
 \end{lstlisting}
 
-The \texttt{EVP\_DigestUpdate} functions accepts the master-key as its second argument and the length of the key as its last argument. The \texttt{OPENSSL\_cleanse} can be found across the library and is called multiple times to clean data. In the call depicted above, it accepts (a pointer to) the master key and accepts a size parameter. 
+\noindent The \texttt{EVP\_DigestUpdate} functions accepts the master-key as its second argument and the length of the key as its last argument. The \texttt{OPENSSL\_cleanse} can be found across the library and is called multiple times to clean data. In the call depicted above, it accepts (a pointer to) the data to the master-key and a size parameter. 
 
-When using Frida, the \texttt{EVP\_DigestUpdate} update function is not traceable. However the \texttt{OPENSSL\_cleanse} is traceable. Due to the frequent call to this function you are not able to just trace this function without some filtering. The size parameter can help hereby as the master-key length is fixed at 48 bytes. This allows us to filter function calls to the \texttt{OPENSSL\_cleanse} function where the second parameter equals 48. Test however show that there is still a lot of garbage after filtering. This is due to cleaning of data chunks that also have the same size or the removal of old sessions from which the master key is to cleaned. 
+When using Frida, the \texttt{EVP\_DigestUpdate} function is not traceable. However the \texttt{OPENSSL\_cleanse} is traceable. Due to the frequent calls to this function, we were not able to just trace this function without some filtering. The size parameter can help hereby as the master-key length is fixed at 48 bytes. This allows us to filter function calls to the \texttt{OPENSSL\_cleanse} function where the second parameter equals 48. Test however show that there is still a lot of garbage after filtering. This is due to cleaning of data chunks that also have the same size or the removal of old sessions from which the master-key is has to be cleaned. 
 
 
-\noindent The \texttt{OPENSSL\_cleanse} function with the master-key as parameter is called inside the following function:
+\noindent Next we looked where \texttt{OPENSSL\_cleanse} function with the master-key as parameter is called. It turned out to be inside the following function:
 
 \begin{lstlisting}[frame=single, breaklines=true]
 void SSL_SESSION_free(SSL_SESSION *ss)
 \end{lstlisting}
 
-This function is responsible for removing the session from memory. As its parameter, a pointer to session is given. Besides the \texttt{OPENSSL\_cleanse} function, another interesting function is called within \texttt{SSL\_SESSION\_free}:
-\\
+This function is responsible for removing the session from the memory. It accepts a pointer to session that needs to be cleared. Besides the \texttt{OPENSSL\_cleanse} function, another interesting function is called within \texttt{SSL\_SESSION\_free}:
+
 \begin{lstlisting}[frame=single, breaklines=true]
 OPENSSL_cleanse(ss->session_id, sizeof ss->session_id);
 \end{lstlisting}
 
-This functions removes the session-ID and the same filtering trick as with the master-key size can be applied (filtering on 32 bytes instead of 48). This however also gives a polluted result.
+This functions removes the session-ID and the same filtering trick as with the master-key size can be applied (filtering on 32 bytes instead of 48). This Method, as described earlier, also suffers from polluted results.
 \newline
 \newline
-\noindent Another way to extract the master-key and session-ID is to look at the session object (\texttt{*ss}) which is passed as an argument to the \texttt{SSL\_SESSION\_free} function. This session object contains all the information about the session among which the master-key and session-ID. Using Frida it is possible to retrieve the memory location of the session object as the \texttt{SSL\_SESSION\_free} function is called. The same holds for the function calls to \texttt{OPENSSL\_cleanse} where the address of \texttt{ss->session\_id} and \texttt{ss->master\_key} can be retrieved. When comparing the memory locations, the following offsets hold true:
+\noindent Another way to extract the master-key and session-ID is to look at the session object (\texttt{*ss}) which is passed as an argument to the \texttt{SSL\_SESSION\_free} function. This session object contains all the information about the session among which the master-key and session-ID. Using Frida it is possible to retrieve the memory location of the session object by extracting tracing the \texttt{SSL\_SESSION\_free} function. The same holds for the function calls to \texttt{OPENSSL\_cleanse} where the memory address of \texttt{ss->session\_id} and \texttt{ss->master\_key} can be retrieved. When comparing the memory locations, the following offsets can be found:
 
 \tikzstyle{arrow} = [thick,->,>=stealth]
 \tikzstyle{session} = [rectangle, rounded corners, minimum width=4cm, minimum height=1cm,text centered, draw=black, fill=green!30]
@@ -175,15 +171,15 @@ This functions removes the session-ID and the same filtering trick as with the m
 \end{tikzpicture}
 \caption{Master-key and session-ID offset.}
 \end{figure}
-\noindent With these offset it is possible to extract the master-key and session-ID from the session object. This also allows to trace functions in which the session object is an argument parameter. 
+\noindent With these offsets it is possible to extract the master-key and session-ID from the session object. This now allows us to trace functions that accept the session object rather than the master-key or session-ID, which broadens the number of functions that are of interest. 
 \newline
 \newline
-One of the function that is called on the intialization of a HTTPS connection is:
+One of the function that is called on the initialization of a HTTPS connection is:
 \begin{lstlisting}[frame=single, breaklines=true]
 SSL_CTX_add_session(SSL_CTX *s, SSL_SESSION *c)
 \end{lstlisting}
-The second argument that is accepted by the \texttt{SSL\_CTX\_add\_session} function is the session object (*c). To extract the master key from this function, the memory location of the session object needs to be incremented by 20. The newly computed address now points to the memory location of the master key from which the first 48 bytes need to be read. This raw data needs to undergo some processing before the master-key can be seen, see appendix for the script used. The same procedure can be repeated to extract the session-ID. The only difference is the offset. 
-
+The second argument that is accepted by the \texttt{SSL\_CTX\_add\_session} function is the session object (\texttt{*c}). To extract the master key from this function, the memory location of the session object needs to be incremented by 20. The newly computed address now points to the memory location of the master-key from which the first 48 bytes need to be read. This raw data needs to undergo some processing before the master-key can be seen, see appendix A1 for the script used. The same procedure can be repeated to extract the session-ID. The only difference is the offset. 
+This function turned out to be the best hook point to retrieve the master-key and session-ID as it is called on the initialization of a session rather, opposite to the \texttt{OPENSSL\_cleanse} and \texttt{SSL\_SESSION\_free} functions that are called when the session is discarded.
 
 \chapter{Experiments}
 \section{Setup}
@@ -266,9 +262,9 @@ tcp    0   0 0.0.0.0:8888    0.0.0.0:*    LISTEN  3638/tinyproxy
 
 \subsubsection{Wireshark}
 
-As we mention above, using Wireshark we were able to monitor all the traffic  that been through Tinyproxy's server \texttt{Port 8888}. We were interested only for the TLS/SSL traffic that passing by on that specific port, so we created a filter on Wireshark to make our testing work easier. The filter's string was \texttt{tcp.port==8888 \&\& ssl}. We should also say that while editing Wireshark's preferences about HTTP protocol we were able to add and \texttt{Port:44330} as an SSL port in order to monitor SSL traffic on that port too.
+As we mention above, using Wireshark we were able to monitor all the traffic  that is destined for the proxy server on Port 8888. As we were interested only in the TLS/SSL traffic, we created a filter on Wireshark to make testing and filtering more easy. The filter's string was set to \texttt{tcp.port==8888 \&\& ssl}. Another change made to Wireshark is the default port for the SSL/TLS traffic which is set to 443. As the debug server runs on port 44330, we manually added this port to the default port for SSL/TLS traffic.  
 
-Another capability of Wireshark that we took advantage of it was that it can decrypt an SSL session, using simply as a source only a file with the correct combination of \texttt{RSA Session-ID} and the \texttt{Master-Key}. The default format of such a file is as follows:
+Another capability of Wireshark that we used was the ability to decrypt an SSL session, using simple text file with the correct combination of \texttt{RSA Session-ID} and the \texttt{Master-Key}. The format that is accepted by Wireshark is as follows:
 \begin{lstlisting}[frame=single, breaklines=true]
 RSA Session-ID:<value> Master-Key:<value>		
 \end{lstlisting}
@@ -384,6 +380,13 @@ The last website website we tested was \textit{https://os3.nl}, the web page of 
 
 \chapter{Conclusion}
 
+<<<<<<< HEAD
+=======
+Using dynamic code instrumentation we were able to extract SSL session keys from the process memory of the Android stock browser. Using Frida, we could trace function calls to the OpenSSL library. After some searching we found several function that accept the master-key as one of their arguments. When tracing these function, the results where polluted by incorrect master-keys. As a second approach, the master-key and session-ID could be extracted from the session object which is frequently passed to many functions in the OpenSSL library. 
+\newline
+\newline
+The OpenSSL function \texttt{SSL\_CTX\_add\_session(SSL\_CTX *s, SSL\_SESSION *c)} proved to be the function that was both traceable and from which the address of the session object could be retrieved. Using fixed offsets, the master-key and session-ID were extractable and most of the SSL traffic could be decrypted using the found key(s).
+>>>>>>> cc33b574665697c1cc791741c058ad324a77a1de
 
 \chapter{Attack Limitations \& Future work}
 
@@ -405,7 +408,7 @@ As future work, research can be done on the wireless use of Frida. There have be
 \newline
 The second improvement could be the use of Frida without root access. Cedric Van Bockhaven mentioned that: "By decompiling, injecting a shared object, and then repackaging." you are able to use Frida without root access.
 
-\chapter{Contribution} 
+
 
 \bibliographystyle{plain}
 \bibliography{bibliography}
