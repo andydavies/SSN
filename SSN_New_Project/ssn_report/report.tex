@@ -46,7 +46,7 @@
 
 \abstract{TLS/SSL is a widely used cryptographic protocol. The web implementation of this protocol is called HTTPS which stands for HTTP over SSL. 
 
-Public-key cryptography is used by TLS/SSL to establish a secure session. When this secure session has been established it generates short term symmetric keys for each data connection in this session.
+Asymmetric cryptography is used by TLS/SSL to establish a secure session. When this secure session has been established it generates short term symmetric keys for each data connection in this session.
 
 This paper will cover how the tool Frida was used to extract these symmetric keys from a running Android application and how these keys where subsequently used to decrypt captured traffic.}
 
@@ -59,7 +59,7 @@ This paper will cover how the tool Frida was used to extract these symmetric key
 
 Transport Layer Security (TLS) and Secure Sockets Layer (SSL) are widely used protocols for securing the communication over the Internet. 
 
-The SSL and TLS acronym are often used interchangeable to refer to transport layer encryption. Although SSL is the predecessor of TLS since 1999 and the current protocol in use is TLS, you can see in this paper that many tools and library's still use the SSL acronym. In this chapter the TLS acronym will be used and a combination of TLS and SSL will be used in the rest of this paper.
+The SSL and TLS acronym are often used interchangeable to refer to transport layer encryption. Although SSL is the predecessor of TLS since 1999 and the current protocol in use is TLS, you can see in this paper that many tools and library's still use the SSL acronym. In this paper a combination of TLS and SSL will be used.
 \newline
 \newline
 TLS is often implemented in applications such as email, browsing, VoIP and secure transactions in general. Typically when a browser connects to a secured web-page TLS is used to secure the connection. 
@@ -188,16 +188,19 @@ The second argument that is accepted by the \texttt{SSL\_CTX\_add\_session} func
 \chapter{Experiments}
 \section{Setup}
 
-Deciding that our approach to the project would actually be the dynamic code instrumentation using particularly Frida, we had to set up an experimental environment for all our tests. Briefly speaking, the main components of this environment were a desktop workstation and an Android smart phone. Let us now see, in a more extend way, and all the services that were setted up in each of these components and helped us both gather important information and draw a conclusion.    
+After deciding that dynamic code instrumentation was going to be used (particularly Frida), we had to set up an experimental environment. Briefly speaking, the main components of this environment were a desktop workstation and an Android smart phone.  
+
+The paragraphs below will go into more detail on how the the experimental environment was set up.
+
 
 \subsection{OpenSSL HTTPS debug server}
 
-First of all, we had to set up a simple \texttt{OpenSSL HTTPS server}, which actually helped us to verify if the combination of master-key and session-ID that we were finding, while tracing several OpenSSL library functions were matching with the one that debug server had as output on the browser.
+First of all, we had to set up a simple \texttt{OpenSSL HTTPS server}. This server helped us verifying the master-key and session-ID. The debug server would output the master-key and session-ID in the browser and by tracing several OpenSSL library functions we could search for and verify if we extracted the correct values.
 
 In essence, we have been through the following procedure:
 
 \begin{enumerate}
-\item We needed to create two certificates, which will be used by the \texttt{OpenSSL s\_server} command:
+\item Create two certificates, which will be used by the \texttt{OpenSSL s\_server}:
 \begin{lstlisting}[frame=single, breaklines=true]
 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out
 cert.pem -days 365 -nodes	
@@ -209,35 +212,36 @@ openssl s_server -key key.pem -cert cert.pem -accept 44330
 -www -no_ticket
 \end{lstlisting}
 
-\item Accessing the \texttt{s\_server} via built-in Android smart phone's browser:
+\item Accessing the \texttt{s\_server} via the built-in Android smart phone's browser:
 \begin{lstlisting}[frame=single, breaklines=true]
 https://145.100.102.106:44330
 \end{lstlisting}
-IP used \texttt{145.100.102.106} represents the IP of desktop workstation, and \texttt{Port:44330} is the default port that we want our debug server to operate on.  
+The IP \texttt{145.100.102.106} represents the desktop workstation and \texttt{Port:44330} is the default port that we want our debug server to operate on.  
 
 \end{enumerate}
 
 \subsection{Traffic capture}
 
-In this subsection, we are going to explain the two applications, which helped us in the analysis of TLS/SSL network packets. Due to the fact that the Android smartphone was being always connected with a mini-USB cable to the desktop workstation, we were not able to capture in some way the HTTPS traffic that was it being generated while browsing. As a solution to that problem, we decided, first of all, to use a proxy server, in order to be able to capture the desired traffic (SSL/TLS) on specified proxy server's port and secondly having a Wireshark filter, which would monitor the desired traffic on that server's port. 
+In this subsection the two applications that where used to analyse the TLS/SSL network packets are explained. First of all we needed to capture the TLS/SSL traffic that was being generated while browsing. To do this we set up a proxy server. On the same machine the proxy server was running we set up Wireshark. This would capture and monitor the traffic that was incoming on the proxy's server port.
+
 
 \subsubsection{Proxy server}
 
-As a proxy server, we used Tinyproxy, which is a light-weight HTTP/HTTPS proxy daemon for POSIX operating systems. It only requires a minimal POSIX environment to build and operate and it can use additional libraries to add functionality. Designed from the ground up to be fast and yet small, it is a very convenient solution for use cases such as embedded deployments where a full featured HTTP proxy is required, but the system resources for a larger proxy are unavailable.
+For the proxy server we used Tinyproxy, which is a light-weight HTTP/HTTPS proxy daemon that doesn't require anything more than a POSIX environment (Unix-like system) to operate on. It was designed to be a fast and small proxy and for our experiment this proxy was sufficient.
 
 \begin{enumerate}
 \item Installation \\
-In order to install Tinyproxy we did the following:
+Installing Tinyproxy using the Advanced Packaging Tool:
 \begin{lstlisting}[frame=single, breaklines=true]
 sudo apt-get install tinyproxy			
 \end{lstlisting}	
 
 \item Configuration \\
-Inside its configuration file, which is located to \texttt{/etc/tinyproxy.conf} we needed to add the entry:
+Inside its configuration file, which is located at \texttt{/etc/tinyproxy.conf} we needed to add the entry:
 \begin{lstlisting}[frame=single, breaklines=true]
 Allow 145.100.102.66/27			
 \end{lstlisting}		
-which was the IP that the Android smart phone was getting, while is 			was being connected to our SNE Lab WiFi (always the same). The \texttt{Allow} tag helps the user easily customize the authorization controls. 
+which was the IP that the Android smart phone was getting, while it 			was being connected to our SNE Lab WiFi (always the same). The \texttt{Allow} tag helps the user easily customize the authorization controls. 
 
 \item Start/Stop service \\
 Restarting Tinyproxy server right after every change inside its configuration file using the following pair of commands:
@@ -323,20 +327,16 @@ adb shell "/data/local/tmp/frida-server &"
 
 \section{Debug Server Decryption}
 
-The first experiment was conducted on the OpenSSL debug server to confirm that the extracted master-key and session-ID were indeed the correct values. The conformation took place by looking at the returned page from the server to the phone which displays the session-ID and master-key. 
-
-
-%The handshake includes multiple  \textit{server hello} packets from which the session-ID can be extracted. Using the session id  
+The first experiment was conducted on the OpenSSL debug server. The debug server shows the master-key and session-ID in the browser. This allowed us to confirm that the master-key and session-ID we extracted from the process memory were indeed the correct values.
 
 \subsection{Result}
-
-Using the the python script (see appendix) we were able to extract the correct master-key and session-ID. Using the found value pair we where also able to decode the captured traffic using Wireshark (see figure 4.2).
+Using the the python script (see appendix) we were able to extract the correct master-key and session-ID. Using the found value pair we were also able to decode the captured traffic using Wireshark (see figure 4.2).
 
 
 \begin{figure}[h]
 \centering
   \includegraphics[scale=0.5]{images/debug.png}
-  \caption{Part of the decrypted SSL stream from the debug server that shows the session-ID and Master-Key.}
+  \caption{Part of the decrypted SSL stream from the debug server that shows the session-ID and master-key.}
   %%\label{fig:boat1}
 \end{figure}
 
@@ -344,7 +344,7 @@ Using the the python script (see appendix) we were able to extract the correct m
 \clearpage
 \section{Other websites}
 
-After successfully decrypting traffic to the the OpenSSL debug server, we also tried the same method on diffrent public websites (See table 4.2). 
+After successfully decrypting traffic of the OpenSSL debug server, we tried the same method on different public websites (See table 4.2). 
 
 
 \begin{table}[h]
@@ -371,30 +371,28 @@ After successfully decrypting traffic to the the OpenSSL debug server, we also t
 \end{table}
 
 
-The first public website that was tested was \textit{https://bb.vu.nl}. With the acquired session-ID and master-key it was possible to decrypt the HTTP headers which included the password and user-name on a log in attempt. The actual page contents were not decryptable. The same holds for the banking website \textit{ https://mijn.ing.nl}.
-
-The third website, \textit{https://digid.nl/inloggen} was fully decryptable and the password could be recovered from the HTTP headers. We noticed that when you connect to this website, it will send multiple \textit{server hello} packets that contain the same session-ID but the master-key differs on each packet. There was no single value pair with which we we able to decrypt the entire page, but rather some of the master-key enabled us to decrypted different parts of the web page.  
-
-Both \textit{https://hotmail.com} and \textit{https://duo.nl} were decryptable using a single master-key and session-ID. In the case of \textit{https://hotmail.com}, the email adress and password could be extracted from the HTTP header. 
-
-The last website website we tested was \textit{https://os3.nl}, the educations web page. Although we found several pairs of session-IDs that where visable in the \textit{server hello} packets, none of the corrosponding master-keys were able to decrypt the traffic. 
-
-
-
-
-
-
+The first public website that was tested was \textit{https://bb.vu.nl}. With the acquired session-ID and master-key it was possible to decrypt the HTTP headers which included the password and user-name of a log in attempt. The actual page contents were not decryptable. The same holds for the banking website \textit{ https://mijn.ing.nl}.
+\newline
+\newline
+The third website, \textit{https://digid.nl/inloggen} was fully decryptable and the password could be recovered from the HTTP headers. We noticed that when you connect to this website, it will send multiple \textit{server hello} packets that contain the same session-ID but the master-key differs for each packet. This means that instead of decrypting the entire page with a single value pair, we had to decrypt multiple parts of the web-page and glue them together afterwards.
+\newline
+\newline
+Both \textit{https://hotmail.com} and \textit{https://duo.nl} were decryptable using a single master-key and session-ID. In the case of \textit{https://hotmail.com}, the email address and password could be extracted from the HTTP header. 
+\newline
+\newline
+The last website website we tested was \textit{https://os3.nl}, the web page of our master program. Although we found several pairs of session-IDs that where visible in the \textit{server hello} packets, none of the corresponding master-keys were able to decrypt the traffic.
 
 \chapter{Conclusion}
+
 
 \chapter{Attack Limitations \& Future work}
 
 
 \section{Attack Limitations}
-The use of Frida puts some constrains on the attack possibilities. First, the Android phone needs to be rooted. The frida-server is not able to inject itself unless running as root. Secondly, Frida's documentation is scarce and a lot of trial and error is involved. Also, Frida was not able to trace all functions of the OpenSSL library and the error returned cannot be used to find the specific cause.  
+The use of Frida puts some constrains on the attack possibilities. First, the Android phone needs to be rooted. The frida-server is not able to inject itself unless running as root. Secondly, Frida's documentation is scarce and a lot of trial and error is involved. Also, Frida was not able to trace all functions of the OpenSSL library and the error returned wasn’t usable to find the specific cause.  
 \newline
 \newline
-The second limitation is the ability to capture network traffic. In the test-setup we used a proxy server and we explicitly configured the phone to route all its traffic through that proxy server. In the real-world case, an attacker would need to somehow capture the traffic using ARP spoofing for example. When not on the same network as the victim the problem of capturing data becomes even harder. 
+The second limitation is the ability to capture network traffic. In the test-setup we used a proxy server and we explicitly configured the phone to route all its traffic through that proxy server. In the real-world case, an attacker would need to somehow capture the traffic (e.g. ARP spoofing). When not on the same network as the victim the problem of capturing data becomes harder. 
 \newline
 \newline
 The third limiting factor is the fact that the Android phone needs to be physically connected to a computer (the computer needs to run Android Debug Bridge (adb)). Although posts on the Github repository indicate that it is possible to attach to the frida-server over ssh, it is not yet been documented.   
@@ -402,7 +400,7 @@ The third limiting factor is the fact that the Android phone needs to be physica
 
 \section{Future work}
 
-As future work research can be done on the use of Frida wireless. Although, there have been forum postings about remote connection over SSH, that is not officially documented and it is not an official feature.
+As future work, research can be done on the wireless use of Frida. There have been forum postings about making a remote connection with Frida over SSH, but this has not been officially documented yet and is also not an official feature of Frida.
 \newline
 \newline
 The second improvement could be the use of Frida without root access. Cedric Van Bockhaven mentioned that: "By decompiling, injecting a shared object, and then repackaging." you are able to use Frida without root access.
